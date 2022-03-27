@@ -1,0 +1,58 @@
+.my-info {
+  padding-top: 200px;
+  &__subtitle {
+    margin-bottom: 20px;
+    font-size: 21px;
+    font-weight: 400;
+  }
+
+  &__title {
+    font-size: 57px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    span {
+      color: $main-color;
+    }
+  }
+
+  &__download-resume {
+    color: $white-color;
+    border: 2px solid $main-color;
+    padding: 10px 30px;
+  }
+}
+.social {
+  margin-bottom: 30px;
+  display: flex;
+  &__link {
+    margin-right: 20px;
+    svg {
+      width: 35px;
+      height: 35px;
+      fill: #616161;
+      transition: ease-in-out 0.3s;
+      &:hover {
+        fill: $main-color;
+      }
+    }
+  }
+}
+
+@include small-tablet {
+  .my-info {
+    padding-top: 100px;
+    &__subtitle {
+      font-size: 17px;
+      margin-bottom: 10px;
+    }
+    &__title {
+      white-space: nowrap;
+      font-size: 23px;
+      margin-bottom: 10px;
+    }
+  }
+  .social {
+    margin-bottom: 20px;
+  }
+}
