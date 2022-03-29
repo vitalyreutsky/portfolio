@@ -24,88 +24,102 @@
     <div class="site-container">
       <div class="container">
         <header class="header">
-  <button
-    class="burger"
-    aria-label="Открыть меню"
-    aria-expanded="false"
-    data-burger
-  >
-    <span class="burger__line"></span>
-  </button>
-  <nav data-menu class="nav-menu">
-    <ul class="nav__list">
-      <li class="nav__link active">
-        <a href="#">Главная</a>
-      </li>
-      <li class="nav__link">
-        <a href="#">Обо мне</a>
-      </li>
-      <li class="nav__link">
-        <a href="#">Услуги</a>
-      </li>
-      <li class="nav__link">
-        <a href="#">Портфолио</a>
-      </li>
-      <li class="nav__link">
-        <a href="#">Контакты</a>
-      </li>
-      <li class="nav__link">
-        <button class="nav__link-btn btn btn-reset">Связаться со мной</button>
-      </li>
-    </ul>
-  </nav>
+  <div class="header__container container">
+    <div class="toggle-lang">
+      <span class="toggle-lang__ru">РУС</span>
+      <input type="checkbox" class="toggle-lang__checkbox" />
+      <span class="toggle-lang__eng">ENG</span>
+    </div>
+    <nav data-menu class="nav-menu">
+      <ul class="nav__list">
+        <li class="nav__link active">
+          <a href="#">Главная</a>
+        </li>
+        <li class="nav__link">
+          <a href="#">Обо мне</a>
+        </li>
+        <li class="nav__link">
+          <a href="#">Услуги</a>
+        </li>
+        <li class="nav__link">
+          <a href="#">Портфолио</a>
+        </li>
+        <li class="nav__link">
+          <a href="#">Контакты</a>
+        </li>
+        <li class="nav__link">
+          <button class="nav__link-btn btn btn-reset">Связаться со мной</button>
+        </li>
+      </ul>
+    </nav>
+    <button
+      class="burger"
+      aria-label="Открыть меню"
+      aria-expanded="false"
+      data-burger
+    >
+      <span class="burger__line"></span>
+    </button>
+  </div>
 </header>
 
-        <div class="my-info">
-  <h3 class="my-info__subtitle">Всем привет!</h3>
-  <h1 class="my-info__title">Я <span class="for-typed">Виталий Реутский</span></h1>
-  <div class="social">
-    <a
-      class="social__link"
-      href="https://www.instagram.com/vreutsky"
-      target="blank"
-    >
-      <svg class="instagram">
-        <use xlink:href="img/sprite.svg#insta"></use>
-      </svg>
-    </a>
+        <main class="main">
+          <div class="my-info">
+  <div class="my-info__content">
+    <h3 class="my-info__subtitle">Всем привет!</h3>
+    <h1 class="my-info__title">
+      Я <span class="for-typed">Виталий Реутский</span>
+    </h1>
+    <div class="social">
+      <a
+        class="social__link"
+        href="https://www.instagram.com/vreutsky"
+        target="blank"
+      >
+        <svg class="instagram">
+          <use xlink:href="img/sprite.svg#insta"></use>
+        </svg>
+      </a>
 
-    <a class="social__link" href="https://vk.com/vreutsky77" target="blank">
-      <svg class="vkontakte">
-        <use xlink:href="img/sprite.svg#vk"></use>
-      </svg>
-    </a>
+      <a class="social__link" href="https://vk.com/vreutsky77" target="blank">
+        <svg class="vkontakte">
+          <use xlink:href="img/sprite.svg#vk"></use>
+        </svg>
+      </a>
 
-    <a
-      class="social__link"
-      href="https://www.linkedin.com/in/vitaly-reutsky-a1b953209/"
-      target="blank"
-    >
-      <svg class="linkedin">
-        <use xlink:href="img/sprite.svg#link"></use>
-      </svg>
-    </a>
+      <a
+        class="social__link"
+        href="https://www.linkedin.com/in/vitaly-reutsky-a1b953209/"
+        target="blank"
+      >
+        <svg class="linkedin">
+          <use xlink:href="img/sprite.svg#link"></use>
+        </svg>
+      </a>
 
-    <a
-      class="social__link"
-      href="https://github.com/vitalyreutsky"
-      target="blank"
-    >
-      <svg class="github">
-        <use xlink:href="img/sprite.svg#gh"></use>
-      </svg>
-    </a>
+      <a
+        class="social__link"
+        href="https://github.com/vitalyreutsky"
+        target="blank"
+      >
+        <svg class="github">
+          <use xlink:href="img/sprite.svg#gh"></use>
+        </svg>
+      </a>
 
-    <a class="social__link" href="https://t.me/vreutsky" target="blank">
-      <svg class="telegram">
-        <use xlink:href="img/sprite.svg#telegram"></use>
-      </svg>
-    </a>
+      <a class="social__link" href="https://t.me/vreutsky" target="blank">
+        <svg class="telegram">
+          <use xlink:href="img/sprite.svg#telegram"></use>
+        </svg>
+      </a>
+    </div>
+    <button class="my-info__download-resume btn btn-reset">
+      Скачать мое резюме
+    </button>
   </div>
-  <button class="my-info__download-resume btn btn-reset">Скачать мое резюме</button>
 </div>
 
-        <main class="main"></main>
+        </main>
 
         <footer class="footer">
   <div class="container"></div>
