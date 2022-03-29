@@ -127,6 +127,9 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vendor_focus_visible_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./vendor/focus-visible.js */ "./src/js/vendor/focus-visible.js");
 /* harmony import */ var _vendor_focus_visible_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_vendor_focus_visible_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _vendor_particles_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./vendor/particles.js */ "./src/js/vendor/particles.js");
+/* harmony import */ var _vendor_particles_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_vendor_particles_js__WEBPACK_IMPORTED_MODULE_1__);
+
 
 
 /***/ }),
@@ -780,6 +783,16 @@ if (typeof document !== 'undefined') {
   // coordination is required to use the polyfill in the top-level document:
   applyFocusVisiblePolyfill(document);
 }
+
+/***/ }),
+
+/***/ "./src/js/vendor/particles.js":
+/*!************************************!*\
+  !*** ./src/js/vendor/particles.js ***!
+  \************************************/
+/***/ (() => {
+
+
 
 /***/ }),
 

@@ -21,31 +21,14 @@
 </head>
 
   <body class="page__body">
-    <div class="graph-modal">
-  <div
-    class="graph-modal__container"
-    role="dialog"
-    aria-modal="true"
-    data-graph-target="modal"
-  >
-    <button
-      class="btn-reset graph-modal__close"
-      aria-label="Закрыть модальное окно"
-    ></button>
-    <div class="graph-modal__content">hello</div>
-  </div>
-</div>
-
-    <div class="site-container">
+    <div class="site-container" id="particles-js">
       <div class="container">
         <header class="header">
   <div class="header__container container">
-    <div class="toggle">
-      <div class="toggle-lang">
-        <span class="toggle-lang__ru">РУС</span>
-        <input type="checkbox" class="toggle-lang__checkbox" />
-        <span class="toggle-lang__eng">ENG</span>
-      </div>
+    <div class="toggle-lang">
+      <span class="toggle-lang__ru">РУС</span>
+      <input type="checkbox" class="toggle-lang__checkbox" />
+      <span class="toggle-lang__eng">ENG</span>
     </div>
     <nav data-menu class="nav-menu">
       <ul class="nav__list">
@@ -66,13 +49,6 @@
         </li>
       </ul>
     </nav>
-    <button
-      data-da=".toggle, 1024, 1"
-      data-graph-path="modal"
-      class="nav__link-btn btn btn-reset"
-    >
-      Связаться со мной
-    </button>
     <button
       class="burger"
       aria-label="Открыть меню"
