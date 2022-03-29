@@ -66,12 +66,11 @@ a {
 .site-container {
   width: 100%;
   min-height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 8, 8, 0.3))), url("../img/bg.png");
-  background: -o-linear-gradient(rgba(8, 8, 8, 0.3)), url("../img/bg.png");
-  background: linear-gradient(rgba(8, 8, 8, 0.3)), url("../img/bg.png");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.521)), to(rgba(78, 61, 61, 0.4))), url("../img/bg.png");
+  background: -o-linear-gradient(rgba(22, 22, 22, 0.521), rgba(78, 61, 61, 0.4)), url("../img/bg.png");
+  background: linear-gradient(rgba(22, 22, 22, 0.521), rgba(78, 61, 61, 0.4)), url("../img/bg.png");
   background-repeat: no-repeat;
   background-position: 90% bottom;
-  background-size: auto;
   background-attachment: fixed;
 }
 
@@ -423,7 +422,7 @@ a {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 50px 0;
+    padding: 20px 0;
   }
 
   .nav__link {
@@ -543,7 +542,7 @@ a {
 
 @media (max-width: 768px) {
   .my-info {
-    padding-top: 350px;
+    padding-top: 300px;
   }
   .my-info__subtitle {
     margin-bottom: 10px;
@@ -565,6 +564,7 @@ a {
     font-size: 23px;
   }
   .my-info__content {
+    padding: 20px 10px;
     margin: 0 auto;
     max-width: 100%;
   }
