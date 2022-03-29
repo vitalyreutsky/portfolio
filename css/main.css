@@ -66,7 +66,9 @@ a {
 .site-container {
   width: 100%;
   min-height: 100%;
-  background: url("../img/bg.png");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(27, 27, 27, 0.6)), to(rgba(155, 158, 100, 0.4))), url("../img/bg.png");
+  background: -o-linear-gradient(top, rgba(27, 27, 27, 0.6), rgba(155, 158, 100, 0.4)), url("../img/bg.png");
+  background: linear-gradient(top, rgba(27, 27, 27, 0.6), rgba(155, 158, 100, 0.4)), url("../img/bg.png");
   background-repeat: no-repeat;
   background-position: 90% bottom;
   background-size: auto;
@@ -555,9 +557,10 @@ a {
     padding-top: 70px;
   }
   .my-info__title {
-    font-size: 23px;
+    font-size: 25px;
   }
   .my-info__content {
+    padding: 10px;
     margin: 0 auto;
     max-width: 100%;
     background-color: transparent;

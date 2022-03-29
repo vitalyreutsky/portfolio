@@ -21,6 +21,21 @@
 </head>
 
   <body class="page__body">
+    <div class="graph-modal">
+  <div
+    class="graph-modal__container"
+    role="dialog"
+    aria-modal="true"
+    data-graph-target="modal"
+  >
+    <button
+      class="btn-reset graph-modal__close"
+      aria-label="Закрыть модальное окно"
+    ></button>
+    <div class="graph-modal__content">hello</div>
+  </div>
+</div>
+
     <div class="site-container">
       <div class="container">
         <header class="header">
@@ -48,7 +63,9 @@
           <a href="#">Контакты</a>
         </li>
         <li class="nav__link">
-          <button class="nav__link-btn btn btn-reset">Связаться со мной</button>
+          <button data-graph-path="modal" class="nav__link-btn btn btn-reset">
+            Связаться со мной
+          </button>
         </li>
       </ul>
     </nav>
@@ -63,8 +80,7 @@
   </div>
 </header>
 
-        <main class="main">
-          <div class="my-info">
+        <main class="main"><div class="my-info">
   <div class="my-info__content">
     <h3 class="my-info__subtitle">Всем привет!</h3>
     <h1 class="my-info__title">
@@ -120,8 +136,7 @@
     </div>
   </div>
 </div>
-
-        </main>
+</main>
 
         <footer class="footer">
   <div class="container"></div>
