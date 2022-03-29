@@ -1,32 +1,39 @@
 <header class="header">
-  <button
-    class="burger"
-    aria-label="Открыть меню"
-    aria-expanded="false"
-    data-burger
-  >
-    <span class="burger__line"></span>
-  </button>
-  <nav data-menu class="nav-menu">
-    <ul class="nav__list">
-      <li class="nav__link active">
-        <a href="#">Главная</a>
-      </li>
-      <li class="nav__link">
-        <a href="#">Обо мне</a>
-      </li>
-      <li class="nav__link">
-        <a href="#">Услуги</a>
-      </li>
-      <li class="nav__link">
-        <a href="#">Портфолио</a>
-      </li>
-      <li class="nav__link">
-        <a href="#">Контакты</a>
-      </li>
-      <li class="nav__link">
-        <button class="nav__link-btn btn btn-reset">Связаться со мной</button>
-      </li>
-    </ul>
-  </nav>
+  <div class="header__container container">
+    <div class="toggle-lang">
+      <span class="toggle-lang__ru">РУС</span>
+      <input type="checkbox" class="toggle-lang__checkbox" />
+      <span class="toggle-lang__eng">ENG</span>
+    </div>
+    <nav data-menu class="nav-menu">
+      <ul class="nav__list">
+        <li class="nav__link active">
+          <a href="#">Главная</a>
+        </li>
+        <li class="nav__link">
+          <a href="#">Обо мне</a>
+        </li>
+        <li class="nav__link">
+          <a href="#">Услуги</a>
+        </li>
+        <li class="nav__link">
+          <a href="#">Портфолио</a>
+        </li>
+        <li class="nav__link">
+          <a href="#">Контакты</a>
+        </li>
+        <li class="nav__link">
+          <button class="nav__link-btn btn btn-reset">Связаться со мной</button>
+        </li>
+      </ul>
+    </nav>
+    <button
+      class="burger"
+      aria-label="Открыть меню"
+      aria-expanded="false"
+      data-burger
+    >
+      <span class="burger__line"></span>
+    </button>
+  </div>
 </header>
