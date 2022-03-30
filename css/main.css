@@ -79,9 +79,9 @@ a {
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(black)), url("../img/bg.png");
-  background: -o-linear-gradient(left, rgba(0, 0, 0, 0), black), url("../img/bg.png");
-  background: linear-gradient(to right, rgba(0, 0, 0, 0), black), url("../img/bg.png");
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(70%, rgba(0, 0, 0, 0.9))), url("../img/bg.png");
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9) 70%), url("../img/bg.png");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9) 70%), url("../img/bg.png");
   background-repeat: no-repeat;
   background-position: 90% bottom;
   background-attachment: fixed;
@@ -357,7 +357,7 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.95);
   }
 
   .menu--active {
