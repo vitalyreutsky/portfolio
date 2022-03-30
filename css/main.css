@@ -66,14 +66,20 @@ a {
 .site-container {
   width: 100%;
   min-height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.521)), to(rgba(78, 61, 61, 0.4))), url("../img/bg.png");
-  background: -o-linear-gradient(rgba(22, 22, 22, 0.521), rgba(78, 61, 61, 0.4)), url("../img/bg.png");
-  background: linear-gradient(rgba(22, 22, 22, 0.521), rgba(78, 61, 61, 0.4)), url("../img/bg.png");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(78, 61, 61, 0.4))), url("../img/bg.png");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.2), rgba(78, 61, 61, 0.4)), url("../img/bg.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(78, 61, 61, 0.4)), url("../img/bg.png");
   background-repeat: no-repeat;
   background-position: 90% bottom;
   background-attachment: fixed;
 }
 
+@media (max-width: 576px) {
+  .site-container {
+    background-position: 60% bottom;
+    background-size: cover;
+  }
+}
 .is-hidden {
   display: none !important;
   /* stylelint-disable-line declaration-no-important */
@@ -489,7 +495,6 @@ a {
 
 .my-info {
   padding-top: 250px;
-  height: 100vh;
 }
 .my-info__content {
   background-color: rgba(0, 0, 0, 0.8);
@@ -541,9 +546,6 @@ a {
 }
 
 @media (max-width: 768px) {
-  .my-info {
-    padding-top: 300px;
-  }
   .my-info__subtitle {
     margin-bottom: 10px;
   }
