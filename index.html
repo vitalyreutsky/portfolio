@@ -9,7 +9,7 @@
   <title></title>
   <link
     rel="preload"
-    href="fonts/MullerRegular.woff2"
+    href="fonts/fjPlatzGroteske-Regular.woff2"
     as="font"
     type="font/woff2"
     crossorigin
@@ -22,8 +22,7 @@
 
   <body class="page__body">
     <div class="site-container" id="particles-js">
-      <div class="container">
-        <header class="header">
+      <header class="header">
   <div class="header__container container">
     <div class="toggle-lang">
       <span class="toggle-lang__ru">РУС</span>
@@ -32,19 +31,34 @@
     </div>
     <nav data-menu class="nav-menu">
       <ul class="nav__list">
-        <li class="nav__link active">
+        <li class="nav__link">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#home"></use>
+          </svg>
           <a href="#">Главная</a>
         </li>
         <li class="nav__link">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#about"></use>
+          </svg>
           <a href="#">Обо мне</a>
         </li>
         <li class="nav__link">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#services"></use>
+          </svg>
           <a href="#">Услуги</a>
         </li>
         <li class="nav__link">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#portfolio"></use>
+          </svg>
           <a href="#">Портфолио</a>
         </li>
         <li class="nav__link">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#contacts"></use>
+          </svg>
           <a href="#">Контакты</a>
         </li>
       </ul>
@@ -60,13 +74,13 @@
   </div>
 </header>
 
-        <main class="main"><div class="my-info">
-  <div class="my-info__content">
-    <h3 class="my-info__subtitle">Привет!</h3>
-    <h1 class="my-info__title">
-      Я <span class="for-typed">Виталий Реутский</span>
-    </h1>
-    <div class="my-info__connect">
+      <main class="main"><div class="my-info">
+  <div class="container">
+    <div class="my-info__content">
+      <h3 class="my-info__subtitle">Привет!</h3>
+      <h1 class="my-info__title">
+        Я <span class="for-typed">Виталий Реутский</span>
+      </h1>
       <div class="social">
         <a
           class="social__link"
@@ -118,11 +132,10 @@
 </div>
 </main>
 
-        <footer class="footer">
+      <footer class="footer">
   <div class="container"></div>
 </footer>
 
-      </div>
     </div>
   </body>
 </html>
