@@ -546,8 +546,6 @@ a {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    width: 100%;
-    margin-bottom: 30px;
   }
   .my-info__title {
     font-size: 23px;
@@ -555,7 +553,6 @@ a {
   .my-info__content {
     text-align: center;
     width: 100%;
-    padding: 20px 10px;
   }
 
   .social {
