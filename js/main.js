@@ -145,7 +145,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var btnDownload = document.querySelector(".my-info__download-resume");
 var navMenu = document.querySelector(".nav-menu");
-window.addEventListener("click", function (event) {
+var burgerBtn = document.querySelector(".burger");
+burgerBtn.addEventListener("click", function (event) {
   event.preventDefault();
 
   if (navMenu.classList.contains("menu--active")) {
