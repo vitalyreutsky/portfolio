@@ -78,6 +78,10 @@ a {
   background-attachment: fixed;
 }
 
+.main {
+  height: 100vh;
+}
+
 .is-hidden {
   display: none !important;
   /* stylelint-disable-line declaration-no-important */
@@ -434,7 +438,6 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 100vh !important;
 }
 .my-info__content {
   width: 70%;
