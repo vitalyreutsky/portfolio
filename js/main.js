@@ -15,6 +15,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_dynamic_adapt__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_dynamic_adapt__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/button */ "./src/js/components/button.js");
 /* harmony import */ var _components_button__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_button__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_preload__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/preload */ "./src/js/components/preload.js");
+/* harmony import */ var _components_preload__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_preload__WEBPACK_IMPORTED_MODULE_3__);
+
 
 
 
@@ -329,6 +332,18 @@ DynamicAdapt.prototype.arraySort = function (arr) {
 
 var da = new DynamicAdapt("max");
 da.init();
+
+/***/ }),
+
+/***/ "./src/js/components/preload.js":
+/*!**************************************!*\
+  !*** ./src/js/components/preload.js ***!
+  \**************************************/
+/***/ (() => {
+
+var preload = document.querySelector(".preloader");
+window.addEventListener("load", function () {//preload.style.display = "none";
+});
 
 /***/ }),
 
