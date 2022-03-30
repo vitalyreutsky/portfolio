@@ -78,10 +78,6 @@ a {
   background-attachment: fixed;
 }
 
-.main {
-  height: 100vh;
-}
-
 .is-hidden {
   display: none !important;
   /* stylelint-disable-line declaration-no-important */
@@ -432,7 +428,7 @@ a {
 }
 
 .my-info {
-  height: 100%;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -543,9 +539,7 @@ a {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    padding: 30px 0px;
   }
   .my-info__title {
     font-size: 23px;
