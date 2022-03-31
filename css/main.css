@@ -71,11 +71,14 @@ a {
 }
 
 .site-container {
-  height: 100%;
+  min-height: 100%;
   background: url("../img/bg.png");
   background-repeat: no-repeat;
-  background-position: 90% bottom;
   background-attachment: fixed;
+}
+
+.bg-content {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .is-hidden {
@@ -556,7 +559,7 @@ a {
     margin-bottom: 10px;
   }
   .my-info__title {
-    font-size: 33px;
+    font-size: 27px;
     margin-bottom: 10px;
   }
 
@@ -589,7 +592,7 @@ a {
     height: 30px;
   }
 }
-.about__content {
-  background-color: rgba(0, 0, 0, 0.7);
+.about {
+  margin-bottom: 50px;
 }
 /*# sourceMappingURL=main.css.map */
