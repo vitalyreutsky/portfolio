@@ -62,7 +62,9 @@ h6 {
 .page__body::after {
   content: "";
   position: fixed;
-  background: url("../img/bg.png");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(226, 225, 231, 0)), color-stop(80%, rgba(0, 0, 0, 0.85))), url("../img/bg.png");
+  background-image: -o-linear-gradient(left, rgba(226, 225, 231, 0), rgba(0, 0, 0, 0.85) 80%), url("../img/bg.png");
+  background-image: linear-gradient(to right, rgba(226, 225, 231, 0), rgba(0, 0, 0, 0.85) 80%), url("../img/bg.png");
   background-position: right bottom;
   background-repeat: no-repeat;
   height: 100vh;
