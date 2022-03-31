@@ -64,7 +64,6 @@ h6 {
   position: fixed;
   background: url("../img/bg.png");
   background-position: right bottom;
-  background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
   top: 0;
@@ -580,7 +579,7 @@ a {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
-    padding: 100px 0px;
+    padding: 0px 0px 50px;
   }
   .my-info__title {
     font-size: 21px;
