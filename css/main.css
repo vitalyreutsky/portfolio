@@ -84,6 +84,10 @@ a {
   text-decoration: none;
 }
 
+.site-container {
+  min-height: 100%;
+}
+
 .bg-content {
   background-color: rgba(0, 0, 0, 0.7);
 }
