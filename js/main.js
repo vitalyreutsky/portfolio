@@ -341,7 +341,22 @@ da.init();
   \**************************************/
 /***/ (() => {
 
+document.addEventListener("DOMContentLoaded", function () {
+  var mediaFiles = document.querySelectorAll("body");
+  var percents = document.querySelector(".percents");
+  var i = 0;
+  mediaFiles.forEach(function (file) {
+    file.onload = function () {
+      i++;
+      percents.innerHTML = (i * 100 / mediaFiles.length).toFixed(1);
 
+      if (i === mediaFiles.length) {
+        preloader.classList.add("preloader--hide");
+        percents.innerHTML = 100;
+      }
+    };
+  });
+});
 
 /***/ }),
 
