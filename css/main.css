@@ -80,7 +80,7 @@ a {
 
 @media (max-width: 576px) {
   .site-container {
-    background-size: cover;
+    background-size: contain;
   }
 }
 .is-hidden {
