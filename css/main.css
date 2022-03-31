@@ -352,7 +352,7 @@ a {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    padding: 50px 30px;
+    padding: 50px;
     overflow: auto;
     height: 100vh;
   }
@@ -366,7 +366,7 @@ a {
     content: "";
     position: absolute;
     top: 0;
-    left: -10px;
+    left: -15px;
     width: 2px;
     height: 100%;
     z-index: 10000;
@@ -376,13 +376,13 @@ a {
     content: "";
     position: absolute;
     bottom: 30px;
-    left: -10px;
+    left: -15px;
     width: 2px;
     height: 100%;
     background-color: #bdb76b;
   }
-  .nav__link::after:last-child {
-    content: "33";
+  .nav__link:first-child::after {
+    display: none;
   }
   .nav__link-icon {
     display: block;
