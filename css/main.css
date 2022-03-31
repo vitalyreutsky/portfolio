@@ -75,7 +75,6 @@ a {
   background-repeat: no-repeat;
   background-position: 90% bottom;
   background-attachment: fixed;
-  background-size: auto 100%;
 }
 
 @media (max-width: 576px) {
