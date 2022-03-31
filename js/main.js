@@ -153,9 +153,9 @@ burgerBtn.addEventListener("click", function (event) {
   event.preventDefault();
 
   if (navMenu.classList.contains("menu--active")) {
-    btnDownload.style.position = "static";
+    btnDownload.classList.add("hide-elements");
   } else {
-    btnDownload.style.position = "relative";
+    btnDownload.classList.remove("hide-elements");
   }
 });
 
@@ -351,21 +351,12 @@ da.init();
   \************************************/
 /***/ (() => {
 
-//const typed = new Typed(".my-info__title span", {
-//  strings: [
-//    "Виталий Реутский.",
-//    "Фронтенд-разработчик.",
-//    "Виталий Реутский.",
-//    "Фронтенд-разработчик.",
-//    "Виталий Реутский.",
-//    "Фронтенд-разработчик.",
-//    "Виталий Реутский.",
-//    "Фронтенд-разработчик.",
-//  ],
-//  typeSpeed: 80,
-//  backSpeed: 70,
-//  loop: true,
-//});
+var typed = new Typed(".my-info__title span", {
+  strings: ["Виталий Реутский.", "Фронтенд-разработчик.", "Виталий Реутский.", "Фронтенд-разработчик.", "Виталий Реутский.", "Фронтенд-разработчик.", "Виталий Реутский.", "Фронтенд-разработчик."],
+  typeSpeed: 80,
+  backSpeed: 70,
+  loop: true
+});
 
 /***/ }),
 

@@ -501,6 +501,13 @@ a {
   height: 100%;
 }
 
+.hide-elements {
+  position: static;
+}
+.hide-elements:after, .hide-elements::before {
+  display: none;
+}
+
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
