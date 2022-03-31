@@ -78,11 +78,6 @@ a {
   background-attachment: fixed;
 }
 
-@media (max-width: 576px) {
-  .site-container {
-    background-size: contain;
-  }
-}
 .is-hidden {
   display: none !important;
   /* stylelint-disable-line declaration-no-important */
