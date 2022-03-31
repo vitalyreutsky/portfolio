@@ -80,7 +80,7 @@ a {
 
 @media (max-width: 576px) {
   .site-container {
-    background-size: auto 90%;
+    background-position: top;
   }
 }
 .is-hidden {
@@ -365,6 +365,16 @@ a {
   .nav__link {
     margin-bottom: 30px;
     margin-right: 0;
+    position: relative;
+  }
+  .nav__link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    z-index: 10000;
+    background-color: #bdb76b;
   }
   .nav__link-icon {
     display: block;
