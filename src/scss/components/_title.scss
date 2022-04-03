@@ -1,0 +1,28 @@
+.title {
+  position: relative;
+  margin-bottom: 30px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: $main-color;
+  }
+}
+
+.main-title {
+  padding-left: 15px;
+  font-size: 40px;
+  font-weight: bold;
+}
+.big-title {
+  padding-left: 15px;
+  position: absolute;
+  top: -25px;
+  left: 0;
+  font-size: 60px;
+  font-weight: bold;
+  color: rgba(204, 201, 201, 0.16);
+}

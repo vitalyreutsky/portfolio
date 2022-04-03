@@ -9,7 +9,7 @@ const typed = new Typed(".my-info__title span", {
     "Виталий Реутский.",
     "Фронтенд-разработчик.",
   ],
-  typeSpeed: 60,
-  backSpeed: 50,
+  typeSpeed: 80,
+  backSpeed: 70,
   loop: true,
 });
