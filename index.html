@@ -35,49 +35,41 @@
 
     <div class="site-container">
       <div class="container">
-        <header class="header">
+        <header class="header" id="header">
   <div class="header__container container">
     <div class="toggle-lang">
       <span class="toggle-lang__ru">РУС</span>
       <input type="checkbox" class="toggle-lang__checkbox" />
       <span class="toggle-lang__eng">ENG</span>
     </div>
-    <nav data-menu class="nav-menu">
+    <nav class="nav-menu" id="nav-menu">
       <ul class="nav__list">
-        <li class="nav__link">
-          <svg class="nav__link-icon">
+        <li class="nav__item">
+          <svg class="nav__icon">
             <use xlink:href="img/sprite.svg#home"></use>
           </svg>
-          <a href="#">Главная</a>
+          <a class="nav__link" href="#" data-scroll>Главная</a>
         </li>
-        <li class="nav__link">
-          <svg class="nav__link-icon">
+        <li class="nav__item">
+          <svg class="nav__icon">
             <use xlink:href="img/sprite.svg#about"></use>
           </svg>
-          <a href="#">Обо мне</a>
+          <a class="nav__link" href="#" data-scroll>Обо мне</a>
         </li>
-        <li class="nav__link">
-          <svg class="nav__link-icon">
+        <li class="nav__item">
+          <svg class="nav__icon">
             <use xlink:href="img/sprite.svg#portfolio"></use>
           </svg>
-          <a href="#">Портфолио</a>
+          <a class="nav__link" href="#" data-scroll>Портфолио</a>
         </li>
-        <li class="nav__link">
-          <svg class="nav__link-icon">
+        <li class="nav__item">
+          <svg class="nav__icon">
             <use xlink:href="img/sprite.svg#contacts"></use>
           </svg>
-          <a href="#">Контакты</a>
+          <a class="nav__link" href="#" data-scroll>Контакты</a>
         </li>
       </ul>
     </nav>
-    <button
-      class="burger"
-      aria-label="Открыть меню"
-      aria-expanded="false"
-      data-burger
-    >
-      <span class="burger__line"></span>
-    </button>
   </div>
 </header>
 
@@ -134,13 +126,73 @@
     <a href="#" class="my-info__download-resume"> Скачать мое резюме </a>
   </div>
 </div>
- <div class="about bg-content">
-  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-</div>
+ <section class="about bg-content" data-scroll="about">
+  <div class="container">
+    <div class="about__content">
+      <div class="title">
+        <div class="title">
+          <h2 class="main-title">Обо мне</h2>
+          <span class="big-title">Обо мне</span>
+        </div>
+      </div>
+      <p class="about__text">
+        Привет! Я занимаюсь разработкой сайтов любой сложности и веб-приложений.
+        Также специализируюсь на веб-дизайне. Создаю не только красивый и
+        уникальный продукт, но и продающий. Опыт более 2-х лет. За это время
+        помог реализовать идеи своих клиентов из Украины, Молдовы, Казахстана,
+        Беларуси и России. В своей работе (frontend) использую такие технологии
+        как HTML5, SCSS3, Bootstrap, JavaScript, JQuery, различные библиотеки
+        Slick, Swiper, AOS и многие другие. Также есть опыт с React JS. Есть
+        опыт с backend частью — PHP. И это далеко не все на чем я готов
+        остановиться.
+      </p>
+    </div>
 
-          <div class="skills bg-content">
-  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-</div>
+    <div class="about__skills" id="skills">
+      <div class="title">
+        <h2 class="main-title">Навыки</h2>
+        <span class="big-title">Навыки</span>
+      </div>
+      <div class="about__skills-row">
+        <div class="about__skill">
+          <div class="about__progress">
+            <div class="about__progress-circle">
+              <div class="about__progress-content">
+                <h5 class="about__progress-num" data-count="91">0</h5>
+              </div>
+              <div class="about__progress-bar"></div>
+            </div>
+          </div>
+          <h4 class="about-skill-title">HTML</h4>
+        </div>
+
+        <div class="about__skill">
+          <div class="about__progress">
+            <div class="about__progress-circle">
+              <div class="about__progress-content">
+                <h5 class="about__progress-num" data-count="84">0</h5>
+              </div>
+              <div class="about__progress-bar"></div>
+            </div>
+          </div>
+          <h4 class="about-skill-title">CSS</h4>
+        </div>
+
+        <div class="about__skill">
+          <div class="about__progress">
+            <div class="about__progress-circle">
+              <div class="about__progress-content">
+                <h5 class="about__progress-num" data-count="57">0</h5>
+              </div>
+              <div class="about__progress-bar"></div>
+            </div>
+          </div>
+          <h4 class="about-skill-title">JavaScript</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
         </main>
       </div>
