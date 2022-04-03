@@ -50,23 +50,65 @@ const modal = new GraphModal();
 // });
 
 // Подключение свайпера
-// import Swiper, { Navigation, Pagination } from 'swiper';
-// Swiper.use([Navigation, Pagination]);
-// const swiper = new Swiper(el, {
-//   slidesPerView: 'auto',
-// });
+import Swiper, {
+  Autoplay,
+  EffectFade,
+  EffectFlip,
+  Keyboard,
+  Navigation,
+  Pagination,
+} from "swiper";
+Swiper.use([
+  Navigation,
+  Pagination,
+  Autoplay,
+  EffectFlip,
+  EffectFade,
+  Keyboard,
+]);
+const swiper = new Swiper(".swiper", {
+  slidesPerView: 1,
+  //effect: "flip",
+  //effect: "fade",
+  //fadeEffect: {
+  //  crossFade: true,
+  //},
+  autoHeight: true,
+  //freeMode: true,
+  loop: true,
+  //autoplay: {
+  //  delay: 2000,
+  //  disableOnInteraction: false,
+  //},
+  speed: 1500,
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    pageUpDown: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+});
 
 // Подключение анимаций по скроллу
-// import AOS from 'aos';
-// AOS.init();
+import AOS from "aos";
+import { flip } from "@popperjs/core";
+AOS.init();
 
 // Подключение параллакса блоков при скролле
 // import Rellax from 'rellax';
 // const rellax = new Rellax('.rellax');
 
 // Подключение плавной прокрутки к якорям
- import SmoothScroll from 'smooth-scroll';
- const scroll = new SmoothScroll('a[href*="#"]');
+// import SmoothScroll from 'smooth-scroll';
+// const scroll = new SmoothScroll('a[href*="#"]');
 
 // Подключение событий свайпа на мобильных
 // import 'swiped-events';

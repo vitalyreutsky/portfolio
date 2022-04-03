@@ -13,16 +13,39 @@
 }
 
 .main-title {
+  position: relative;
   padding-left: 15px;
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 700;
 }
 .big-title {
+  display: block;
   padding-left: 15px;
+  font-family: $font-family;
   position: absolute;
   top: -25px;
   left: 0;
   font-size: 60px;
-  font-weight: bold;
-  color: rgba(204, 201, 201, 0.16);
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+@include mobile {
+  .main-title {
+    font-size: 30px;
+  }
+  .big-title {
+    font-size: 37px;
+    top: -15px;
+  }
+}
+
+@media (max-width: 300px) {
+  .main-title {
+    font-size: 25px;
+  }
+  .big-title {
+    font-size: 30px;
+    top: -15px;
+  }
 }

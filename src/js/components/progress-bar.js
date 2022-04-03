@@ -1,5 +1,5 @@
-const progNum = document.querySelectorAll(".about__progress-num");
-const progress = document.querySelectorAll(".about__progress-bar");
+const progNum = document.querySelectorAll(".skills__progress-num");
+const progress = document.querySelectorAll(".skills__progress-bar");
 const skills = document.querySelector(".about__skills");
 let bol = false;
 
@@ -18,7 +18,7 @@ window.addEventListener("scroll", () => {
         if (count < target) {
           count++;
           progNum[i].innerText = count;
-          setTimeout(updateCount, 20);
+          setTimeout(updateCount, 50);
         } else {
           progNum[i].innerText = target + "%";
         }
