@@ -9,7 +9,7 @@
   <title></title>
   <link
     rel="preload"
-    href="fonts/fjPlatzGroteske-Regular.woff2"
+    href="fonts/MullerRegular.woff2"
     as="font"
     type="font/woff2"
     crossorigin
@@ -83,8 +83,10 @@
 
         <main class="main">
           <div class="my-info">
-  <div class="my-info__content">
-    <h3 class="my-info__subtitle">Привет!</h3>
+  <div class="my-info__content" data-aos="fade-up" data-aos-duration="1500">
+    <h3 class="my-info__subtitle">
+      Привет!
+    </h3>
     <h1 class="my-info__title">
       Я <span class="for-typed">Виталий Реутский</span>
     </h1>
@@ -135,7 +137,7 @@
   </div>
 </div>
  <section class="about bg-content">
-  <div class="about__content">
+  <div class="about__content" data-aos="fade-up" data-aos-duration="1000">
     <div class="title">
       <div class="title">
         <h2 class="main-title">Обо мне</h2>
@@ -155,51 +157,7 @@
     </p>
   </div>
 
-  <div class="about__skills">
-    <div class="title">
-      <h2 class="main-title">Навыки</h2>
-      <span class="big-title">Навыки</span>
-    </div>
-    <div class="skills__row">
-      <div class="skills__item">
-        <div class="skills__progress">
-          <div class="skills__progress-circle">
-            <div class="skills__progress-content">
-              <h5 class="skills__progress-num" data-count="91">0</h5>
-            </div>
-            <div class="skills__progress-bar"></div>
-          </div>
-        </div>
-        <h4 class="skills__title">HTML</h4>
-      </div>
-
-      <div class="skills__item">
-        <div class="skills__progress">
-          <div class="skills__progress-circle">
-            <div class="skills__progress-content">
-              <h5 class="skills__progress-num" data-count="83">0</h5>
-            </div>
-            <div class="skills__progress-bar"></div>
-          </div>
-        </div>
-        <h4 class="skills__title">SCSS</h4>
-      </div>
-
-      <div class="skills__item">
-        <div class="skills__progress">
-          <div class="skills__progress-circle">
-            <div class="skills__progress-content">
-              <h5 class="skills__progress-num" data-count="62">0</h5>
-            </div>
-            <div class="skills__progress-bar"></div>
-          </div>
-        </div>
-        <h4 class="skills__title">JavaScript</h4>
-      </div>
-    </div>
-  </div>
-
-  <div class="about__priorities">
+  <div class="about__priorities" data-aos="fade-up" data-aos-duration="1500">
     <div class="title">
       <h2 class="main-title">Приоритеты</h2>
       <span class="big-title">Приоритеты</span>
@@ -243,6 +201,143 @@
           </p>
         </div>
       </div>
+    </div>
+  </div>
+
+  <div class="about__skills" data-aos="fade-up" data-aos-duration="1500">
+    <div class="title">
+      <h2 class="main-title">Навыки</h2>
+      <span class="big-title">Навыки</span>
+    </div>
+    <div class="skills__row">
+      <div class="skills__item">
+        <div class="skills__progress">
+          <div class="skills__progress-circle">
+            <div class="skills__progress-content">
+              <h5 class="skills__progress-num" data-count="91">0</h5>
+            </div>
+            <div class="skills__progress-bar"></div>
+          </div>
+        </div>
+        <h4 class="skills__title">HTML</h4>
+      </div>
+
+      <div class="skills__item">
+        <div class="skills__progress">
+          <div class="skills__progress-circle">
+            <div class="skills__progress-content">
+              <h5 class="skills__progress-num" data-count="83">0</h5>
+            </div>
+            <div class="skills__progress-bar"></div>
+          </div>
+        </div>
+        <h4 class="skills__title">SCSS</h4>
+      </div>
+
+      <div class="skills__item">
+        <div class="skills__progress">
+          <div class="skills__progress-circle">
+            <div class="skills__progress-content">
+              <h5 class="skills__progress-num" data-count="62">0</h5>
+            </div>
+            <div class="skills__progress-bar"></div>
+          </div>
+        </div>
+        <h4 class="skills__title">JavaScript</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="about__reviews" data-aos="fade-up" data-aos-duration="1500">
+    <div class="title">
+      <h2 class="main-title">Отзывы</h2>
+      <span class="big-title">Отзывы</span>
+    </div>
+    <div class="swiper reviews">
+      <div class="swiper-wrapper reviews__wrapper">
+        <div class="swiper-slide reviews__slide">
+          <div class="reviews__item">
+            <!--<svg class="reviews__icon">
+              <use xlink:href="img/sprite.svg#reviews"></use>
+            </svg>-->
+            <p class="reviews__text">
+              «Все сделано быстро и отлично! Однозначно рекомендую Виталия как
+              отличного исполнителя!»
+            </p>
+            <h4 class="reviews__author">Роман Довгаль</h4>
+          </div>
+        </div>
+
+        <div class="swiper-slide reviews__slide">
+          <div class="reviews__item">
+            <!--<svg class="reviews__icon">
+              <use xlink:href="img/sprite.svg#reviews"></use>
+            </svg>-->
+            <p class="reviews__text">
+              «Отличный исполнитель!!! Очень приятный человек и очень
+              качественно всё сделал!!! Рекомендую!!!»
+            </p>
+            <h4 class="reviews__author">Ярослав Бурлевич</h4>
+          </div>
+        </div>
+
+        <div class="swiper-slide reviews__slide">
+          <div class="reviews__item">
+            <!--<svg class="reviews__icon">
+              <use xlink:href="img/sprite.svg#reviews"></use>
+            </svg>-->
+            <p class="reviews__text">
+              «Работа была выполнена хорошо, приятно иметь дело с таким
+              специалистом!»
+            </p>
+            <h4 class="reviews__author">Максим Журавлев</h4>
+          </div>
+        </div>
+
+        <div class="swiper-slide reviews__slide">
+          <div class="reviews__item">
+            <!--<svg class="reviews__icon">
+              <use xlink:href="img/sprite.svg#reviews"></use>
+            </svg>-->
+            <p class="reviews__text">
+              «Всегда на связи, если есть какие-то моменты — всегда
+              предупреждает заранее. Работу выполнил хорошо.»
+            </p>
+            <h4 class="reviews__author">Павел Арнутов</h4>
+          </div>
+        </div>
+
+        <div class="swiper-slide reviews__slide">
+          <div class="reviews__item">
+            <!--<svg class="reviews__icon">
+              <use xlink:href="img/sprite.svg#reviews"></use>
+            </svg>-->
+            <p class="reviews__text">
+              «Обратился к Виталию с проектом на SCSS. Проект был согласован и
+              выполнен очень быстро (а это очень важно когда сроки поджимают).
+              Качеством доволен, код был написан грамотно и структурированно.
+              Рекомендую.»
+            </p>
+            <h4 class="reviews__author">Мурат Ташенев</h4>
+          </div>
+        </div>
+
+        <div class="swiper-slide reviews__slide">
+          <div class="reviews__item">
+            <!--<svg class="reviews__icon">
+              <use xlink:href="img/sprite.svg#reviews"></use>
+            </svg>-->
+            <p class="reviews__text">
+              «Сделано день в день! Очень доволен сотрудничеством! Качественный
+              исполнитель!»
+            </p>
+            <h4 class="reviews__author">Роман Довгаль</h4>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
     </div>
   </div>
 </section>

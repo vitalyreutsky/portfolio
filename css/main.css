@@ -471,7 +471,7 @@ a {
 .my-info__subtitle {
   font-weight: bold;
   margin-bottom: 20px;
-  font-size: 21px;
+  font-size: 23px;
   font-weight: 700;
 }
 .my-info__title {
@@ -576,11 +576,12 @@ a {
     padding: 0px 0px 100px;
   }
   .my-info__title {
-    font-size: 19px;
+    font-size: 23px;
   }
   .my-info__content {
     text-align: center;
     width: 100%;
+    padding: 30px 0px;
   }
 
   .social {
@@ -702,13 +703,18 @@ a {
   margin-bottom: 100px;
 }
 .about__text {
-  line-height: 1.4;
-  font-size: 20px;
+  text-indent: 30px;
+  line-height: 1.6;
+  font-size: 19px;
   margin: 0;
 }
 .about__skills {
   margin-bottom: 100px;
 }
+.about__priorities {
+  margin-bottom: 100px;
+}
+
 .skills__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -839,11 +845,49 @@ a {
   margin: 10px 0px 0px;
 }
 
+.reviews__wrapper {
+  padding-bottom: 30px;
+}
+.reviews__item {
+  padding: 10px;
+  max-width: 70%;
+  margin: 0 auto;
+}
+.reviews__text {
+  margin: 0;
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+.reviews__author {
+  font-size: 19px;
+  color: #918888;
+}
+.reviews .swiper-button-next::after,
+.reviews .swiper-button-prev::after {
+  color: #bdb76b;
+  font-size: 31px;
+  font-weight: bold;
+}
+.reviews .swiper-pagination {
+  display: none;
+}
+.reviews .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+}
+.reviews .swiper-pagination-bullet-active {
+  background-color: #bdb76b;
+}
+
 @media (max-width: 576px) {
   .about__content {
     margin-bottom: 70px;
   }
   .about__skills {
+    margin-bottom: 70px;
+  }
+  .about__priorities {
     margin-bottom: 70px;
   }
 
@@ -866,6 +910,17 @@ a {
   }
   .priorities__text {
     font-size: 17px;
+  }
+
+  .reviews__item {
+    max-width: 100%;
+  }
+  .reviews .swiper-button-next,
+.reviews .swiper-button-prev {
+    display: none;
+  }
+  .reviews .swiper-pagination {
+    display: block;
   }
 }
 @media (max-width: 400px) {
@@ -910,7 +965,7 @@ a {
   left: 0;
   font-size: 60px;
   font-weight: 700;
-  color: rgba(204, 201, 201, 0.16);
+  color: rgba(255, 255, 255, 0.1);
 }
 
 @media (max-width: 576px) {
