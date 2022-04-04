@@ -100,12 +100,12 @@ var swiper = new swiper__WEBPACK_IMPORTED_MODULE_3__["default"](".swiper", {
   //  crossFade: true,
   //},
   autoHeight: true,
-  //freeMode: true,
+  freeMode: true,
   loop: true,
-  //autoplay: {
-  //  delay: 2000,
-  //  disableOnInteraction: false,
-  //},
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false
+  },
   speed: 1500,
   keyboard: {
     enabled: true,
