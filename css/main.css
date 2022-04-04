@@ -18,22 +18,36 @@
 /* stylelint-disable */
 /* stylelint-disable */
 @font-face {
-  font-family: "Rex-light";
-  src: url("../fonts/../fonts/Rex-Light.woff2") format("woff2");
+  font-family: "Mont-light";
+  src: url("../fonts/../fonts/Mont-Light.woff2") format("woff2");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: "Rex-Bold";
-  src: url("../fonts/../fonts/Rex-Bold.woff2") format("woff2");
+  font-family: "Mont-regular";
+  src: url("../fonts/../fonts/Mont-Regular.woff2") format("woff2");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: "Rex-Bold-Inline";
-  src: url("../fonts/../fonts/Rex-BoldInline.woff2") format("woff2");
+  font-family: "Mont-bold";
+  src: url("../fonts/../fonts/Mont-Bold.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mont-Heavy-bold";
+  src: url("../fonts/../fonts/Mont-Heavy.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mont-Semi-bold";
+  src: url("../fonts/../fonts/Mont-SemiBold.woff2") format("woff2");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
@@ -62,7 +76,7 @@ h6 {
 
 .page {
   height: 100%;
-  font-family: "Rex-light", sans-serif, sans-serif;
+  font-family: "Mont-regular", sans-serif, sans-serif;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -110,6 +124,7 @@ a {
 }
 
 .bg-content {
+  margin-bottom: 100px;
   padding: 50px 30px;
   background-color: rgba(0, 0, 0, 0.8);
 }
@@ -240,8 +255,42 @@ a {
 }
 
 .nav__link {
+  position: relative;
+  color: #bdb76b;
+  font-family: "Mont-bold", sans-serif;
   color: #fff;
   font-size: 21px;
+  -webkit-transition: color 0.4s;
+  -o-transition: color 0.4s;
+  transition: color 0.4s;
+}
+.nav__link:hover {
+  color: #bdb76b;
+}
+.nav__link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  -webkit-transform: translateX(-50%) scaleX(0);
+  -ms-transform: translateX(-50%) scaleX(0);
+  transform: translateX(-50%) scaleX(0);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  width: 100%;
+  height: 3px;
+  background-color: #bdb76b;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  -o-transition: transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+.nav__link:hover::after {
+  -webkit-transform: translateX(-50%) scaleX(1);
+  -ms-transform: translateX(-50%) scaleX(1);
+  transform: translateX(-50%) scaleX(1);
 }
 
 .nav__icon {
@@ -405,7 +454,7 @@ a {
   }
 
   .nav__link {
-    padding-left: 20px;
+    margin-left: 20px;
   }
 }
 @media (max-width: 576px) {
@@ -414,7 +463,8 @@ a {
   }
 }
 .toggle-lang {
-  font-size: 10px;
+  font-family: "Mont-bold", sans-serif;
+  font-size: 13px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -423,7 +473,6 @@ a {
   align-items: center;
   color: #fff;
   font-weight: 700;
-  font-family: "Pol";
   letter-spacing: 2px;
 }
 .toggle-lang__checkbox {
@@ -444,6 +493,8 @@ a {
   width: 50px;
   height: 25px;
   background-color: #bdb76b;
+  -webkit-box-shadow: inset 1px 0px 3px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 1px 0px 3px 2px rgba(0, 0, 0, 0.4);
   border-radius: 25px;
 }
 .toggle-lang__checkbox:checked::before {
@@ -454,7 +505,7 @@ a {
   position: absolute;
   width: 25px;
   height: 25px;
-  background-color: #918888;
+  background-color: #000;
   border-radius: 25px;
   -webkit-transition: 0.25s;
   -o-transition: 0.25s;
@@ -483,14 +534,14 @@ a {
   padding: 30px;
 }
 .my-info__subtitle {
-  font-weight: bold;
+  font-family: "Mont-bold", sans-serif;
   margin-bottom: 20px;
   font-size: 23px;
   font-weight: 700;
 }
 .my-info__title {
-  font-family: "Rex-Bold", sans-serif, sans-serif;
-  font-size: 57px;
+  font-family: "Mont-Heavy-bold", sans-serif;
+  font-size: 53px;
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 20px;
@@ -575,7 +626,7 @@ a {
     margin-bottom: 10px;
   }
   .my-info__title {
-    font-size: 27px;
+    font-size: 23px;
     margin-bottom: 10px;
   }
 
@@ -589,9 +640,6 @@ a {
     -ms-flex-align: end;
     align-items: flex-end;
     padding: 0px 0px 100px;
-  }
-  .my-info__title {
-    font-size: 23px;
   }
   .my-info__content {
     text-align: center;
@@ -808,13 +856,8 @@ a {
 }
 
 .priorities__columns {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  max-width: 100%;
+  margin: 0 auto;
 }
 .priorities__item {
   display: -webkit-box;
@@ -823,9 +866,6 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   margin-bottom: 50px;
 }
 .priorities__item:last-child {
@@ -951,6 +991,7 @@ a {
   }
 }
 .title {
+  font-family: "Mont-bold", sans-serif;
   position: relative;
   margin-bottom: 30px;
 }
@@ -965,7 +1006,6 @@ a {
 }
 
 .main-title {
-  font-family: "Rex-Bold-Inline", sans-serif, sans-serif;
   position: relative;
   padding-left: 15px;
   font-size: 40px;
@@ -973,7 +1013,7 @@ a {
 }
 
 .big-title {
-  font-family: "Rex-Bold-Inline", sans-serif, sans-serif;
+  font-family: "Mont-bold", sans-serif;
   display: block;
   padding-left: 15px;
   position: absolute;
