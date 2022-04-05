@@ -8,14 +8,15 @@
     padding: 30px;
   }
   &__subtitle {
-    font-weight: bold;
+    font-family: $font-family-Bold;
     margin-bottom: 20px;
     font-size: 23px;
     font-weight: 700;
   }
 
   &__title {
-    font-size: 57px;
+    font-family: $font-family-Heavy-Bold;
+    font-size: 53px;
     font-weight: bold;
     line-height: 1.2;
     margin-bottom: 20px;
@@ -62,14 +63,6 @@
   }
 }
 
-.hide-elements {
-  position: static;
-  &:after,
-  &::before {
-    display: none;
-  }
-}
-
 .social {
   display: flex;
   margin-bottom: 50px;
@@ -96,7 +89,7 @@
       margin-bottom: 10px;
     }
     &__title {
-      font-size: 27px;
+      font-size: 23px;
       margin-bottom: 10px;
     }
   }
@@ -111,7 +104,7 @@
     align-items: flex-end;
     padding: 0px 0px 100px;
     &__title {
-      font-size: 23px;
+      font-size: 20px;
     }
     &__content {
       text-align: center;

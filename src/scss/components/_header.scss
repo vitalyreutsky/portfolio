@@ -33,8 +33,30 @@
   }
 }
 .nav__link {
+  position: relative;
+  color: $main-color;
+  font-family: $font-family-Bold;
   color: $white-color;
   font-size: 21px;
+  transition: color 0.4s;
+  &:hover {
+    color: $main-color;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: 50% 50%;
+    width: 100%;
+    height: 3px;
+    background-color: $main-color;
+    transition: transform 0.4s;
+  }
+  &:hover::after {
+    transform: translateX(-50%) scaleX(1);
+  }
 }
 .nav__icon {
   display: none;
@@ -66,7 +88,7 @@
     transform: translateX(0);
   }
   .nav__list {
-    padding-top: 70px;
+    padding: 70px 0px 70px 50px;
     flex-direction: column;
     align-items: flex-start;
     height: 100vh;
@@ -107,7 +129,7 @@
     height: 35px;
   }
   .nav__link {
-    padding-left: 20px;
+    margin-left: 20px;
   }
 }
 
@@ -117,47 +139,48 @@
   }
 }
 
-//toggle-lang
 .toggle-lang {
-  font-size: 10px;
+  font-family: $font-family-Semi-Bold;
+  font-size: 13px;
   display: flex;
   align-items: center;
   color: $white-color;
   font-weight: 700;
-  font-family: "Pol";
   letter-spacing: 2px;
+  &__ru {
+    padding-right: 10px;
+  }
+  &__eng {
+    padding-left: 10px;
+  }
   &__checkbox {
     position: relative;
-    display: flex;
-    align-items: center;
-    margin: 0px 10px;
-    width: 50px;
-    cursor: pointer;
+    width: 45px;
+    height: 20px;
+    appearance: none;
+    background: $bg-color;
+    outline: none;
+    border-radius: 20px;
+    transition: 0.4s;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0.2);
+    &:checked {
+      background: $white-color;
+    }
     &::before {
       content: "";
       position: absolute;
-      width: 50px;
-      height: 25px;
-      background-color: $main-color;
-      border-radius: 25px;
+      width: 20px;
+      height: 20px;
+      border-radius: 20px;
+      top: 0;
+      left: 0;
+      background: $main-color;
+      transform: scale(1.1);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      transition: 0.4s;
     }
     &:checked::before {
-      background: $main-color;
-    }
-    &::after {
-      content: "";
-      position: absolute;
-      width: 25px;
-      height: 25px;
-      background-color: $social-link-color;
-      border-radius: 25px;
-      transition: 0.25s;
-      border: 2px solid $main-color;
-      box-sizing: border-box;
-    }
-    &:checked::after {
       left: 25px;
-      border: 2px solid $main-color;
     }
   }
 }

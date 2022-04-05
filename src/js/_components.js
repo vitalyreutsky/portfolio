@@ -1,5 +1,9 @@
+import "./components/preload";
+import "./components/aos";
+import "./components/smooth-scroll";
 import "./components/typed";
 import "./components/dynamic_adapt";
-import "./components/preload";
-import "./components/particles";
 import "./components/progress-bar";
+import "./components/swiper";
+import "./components/tabs";
+

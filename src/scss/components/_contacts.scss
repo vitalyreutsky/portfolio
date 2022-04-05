@@ -1,0 +1,155 @@
+.contacts {
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__form {
+    max-width: 400px;
+    width: 100%;
+    margin-right: 100px;
+  }
+  &__info {
+  }
+  &__about {
+  }
+  &__connect {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  &__icon {
+    width: 70px;
+    height: 70px;
+    background-color: $black-color;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    svg {
+      width: 40px;
+      height: 40px;
+      fill: $main-color;
+    }
+  }
+  &__phone,
+  &__email {
+    font-size: 21px;
+    color: $white-color;
+    text-decoration: underline;
+    transition: 0.4s;
+    &:hover {
+      color: $main-color;
+    }
+  }
+  &__adress {
+    font-size: 21px;
+  }
+}
+
+//form
+.form {
+  &__title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__group {
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  &__input {
+    font-family: $font-family-Regular;
+    font-size: 20px;
+    width: 100%;
+    padding-bottom: 10px;
+    border: none;
+    border-bottom: 3px solid $white-color;
+    background: transparent;
+    color: $white-color;
+    outline: none;
+    transition: 0.4s;
+    &:focus {
+      border-bottom: 3px solid $main-color;
+      color: $main-color;
+    }
+  }
+  &__input-tel {
+    &:hover::placeholder {
+      font-size: 0;
+    }
+  }
+  &__textarea {
+    resize: none;
+    padding-bottom: 0;
+  }
+
+  &__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    color: $white-color;
+    transition: 0.4s;
+  }
+
+  &__btn {
+    font-family: $font-family-Semi-Bold;
+    padding: 10px 20px;
+    background-color: $main-color;
+    width: 100%;
+    color: $white-color;
+    font-size: 20px;
+    transition: 0.4s;
+    &:focus,
+    &:hover {
+      background-color: $black-color;
+    }
+  }
+}
+
+.form__input:focus ~ .form__label,
+.form__input:not(:placeholder-shown) ~ .form__label {
+  top: -18px;
+  font-size: 13px;
+  color: $main-color;
+}
+
+@include small-tablet {
+  .contacts {
+    &__content {
+      flex-direction: column;
+    }
+    &__form {
+      margin: 0 0 50px 0;
+    }
+  }
+}
+
+@include mobile {
+  .contacts {
+    &__phone,
+    &__email,
+    &__adress {
+      font-size: 17px;
+    }
+  }
+}
+
+@include mobile-mini {
+  .contacts {
+    &__icon {
+      width: 50px;
+      height: 50px;
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    &__form {
+      margin-bottom: 30px;
+    }
+  }
+}

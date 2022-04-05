@@ -1,7 +1,13 @@
 // если вы хотите использовать sass-переменные - удалите root
 // colors
 
-$font-family: "Pol", sans-serif;
+$font-family-light: "Mont-light", sans-serif;
+$font-family-Regular: "Mont-regular", sans-serif;
+$font-family-Bold: "Mont-bold", sans-serif;
+$font-family-Semi-Bold: "Mont-Semi-bold", sans-serif;
+$font-family-Heavy-Bold: "Mont-Heavy-bold", sans-serif;
+
+
 $content-width: 1170px;
 $container-offset: 15px;
 $container-width: calc(($content-width) + ($container-offset) * 2);

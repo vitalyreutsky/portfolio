@@ -1,6 +1,7 @@
 .title {
+  font-family: $font-family-Bold;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   &::before {
     content: "";
     position: absolute;
@@ -19,14 +20,14 @@
   font-weight: 700;
 }
 .big-title {
+  font-family: $font-family-Bold;
   display: block;
   padding-left: 15px;
-  font-family: $font-family;
   position: absolute;
   top: -25px;
   left: 0;
+  font-weight: bold;
   font-size: 60px;
-  font-weight: 700;
   color: rgba(255, 255, 255, 0.1);
 }
 

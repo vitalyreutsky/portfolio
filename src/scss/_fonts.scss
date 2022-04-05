@@ -1,2 +1,34 @@
-//@include font-face("Muller", "../fonts/MullerRegular", 400, normal);
-@include font-face("Pol", "../fonts/fjPlatzGroteske-Regular", 400, normal);
+@include font-face(
+  "Mont-light",
+  "../fonts/Mont-Light",
+  400,
+  normal
+);
+
+@include font-face(
+  "Mont-regular",
+  "../fonts/Mont-Regular",
+  400,
+  normal
+);
+
+@include font-face(
+  "Mont-bold",
+  "../fonts/Mont-Bold",
+  400,
+  normal
+);
+
+@include font-face(
+  "Mont-Heavy-bold",
+  "../fonts/Mont-Heavy",
+  400,
+  normal
+);
+
+@include font-face(
+  "Mont-Semi-bold",
+  "../fonts/Mont-SemiBold",
+  400,
+  normal
+);
