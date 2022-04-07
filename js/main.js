@@ -21,17 +21,22 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_preload__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/preload */ "./src/js/components/preload.js");
 /* harmony import */ var _components_preload__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_preload__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_aos__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/aos */ "./src/js/components/aos.js");
-/* harmony import */ var _components_smooth_scroll__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/smooth-scroll */ "./src/js/components/smooth-scroll.js");
-/* harmony import */ var _components_smooth_scroll__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_smooth_scroll__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_typed__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/typed */ "./src/js/components/typed.js");
-/* harmony import */ var _components_typed__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_typed__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _components_dynamic_adapt__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/dynamic_adapt */ "./src/js/components/dynamic_adapt.js");
-/* harmony import */ var _components_dynamic_adapt__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_components_dynamic_adapt__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _components_progress_bar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/progress-bar */ "./src/js/components/progress-bar.js");
-/* harmony import */ var _components_progress_bar__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_progress_bar__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _components_swiper__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/swiper */ "./src/js/components/swiper.js");
-/* harmony import */ var _components_tabs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/tabs */ "./src/js/components/tabs.js");
+/* harmony import */ var _components_scrollToTop__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/scrollToTop */ "./src/js/components/scrollToTop.js");
+/* harmony import */ var _components_scrollToTop__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_scrollToTop__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_scroll__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/scroll */ "./src/js/components/scroll.js");
+/* harmony import */ var _components_burger__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/burger */ "./src/js/components/burger.js");
+/* harmony import */ var _components_aos__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/aos */ "./src/js/components/aos.js");
+/* harmony import */ var _components_smooth_scroll__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/smooth-scroll */ "./src/js/components/smooth-scroll.js");
+/* harmony import */ var _components_smooth_scroll__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_smooth_scroll__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _components_typed__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/typed */ "./src/js/components/typed.js");
+/* harmony import */ var _components_typed__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_components_typed__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _components_dynamic_adapt__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/dynamic_adapt */ "./src/js/components/dynamic_adapt.js");
+/* harmony import */ var _components_dynamic_adapt__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_components_dynamic_adapt__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _components_progress_bar__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/progress-bar */ "./src/js/components/progress-bar.js");
+/* harmony import */ var _components_progress_bar__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_components_progress_bar__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _components_swiper__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/swiper */ "./src/js/components/swiper.js");
+/* harmony import */ var _components_tabs__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/tabs */ "./src/js/components/tabs.js");
+/* harmony import */ var _components_validate_form__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/validate-form */ "./src/js/components/validate-form.js");
 
 
 
@@ -41,58 +46,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/***/ }),
-
-/***/ "./src/js/_functions.js":
-/*!******************************!*\
-  !*** ./src/js/_functions.js ***!
-  \******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _functions_disable_scroll__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./functions/disable-scroll */ "./src/js/functions/disable-scroll.js");
-/* harmony import */ var _functions_burger__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./functions/burger */ "./src/js/functions/burger.js");
-/* harmony import */ var _functions_validate_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./functions/validate-forms */ "./src/js/functions/validate-forms.js");
-// Реализация остановки скролла
- // Реализация включения скролла
-
- // Реализация бургер-меню
-
- //Валидация формы
 
 
 
-var afterForm = function afterForm() {
-  console.log("Произошла отправка, тут можно писать любые действия");
-};
-
-var rules = [{
-  ruleSelector: ".form__input-name",
-  rules: [{
-    rule: "customRegexp",
-    value: /^[A-zА-яЁё]+$/,
-    errorMessage: "Введи только буквы"
-  }, {
-    rule: "minLength",
-    value: 3,
-    errorMessage: "Введи минимум 3 символов"
-  }, {
-    rule: "required",
-    value: true,
-    errorMessage: "Заполни имя!"
-  }]
-}, {
-  ruleSelector: ".form__input-tel",
-  tel: true,
-  telError: "Введи корректный телефон",
-  rules: [{
-    rule: "required",
-    value: true,
-    errorMessage: "Заполни телефон!"
-  }]
-}];
-(0,_functions_validate_forms__WEBPACK_IMPORTED_MODULE_2__.validateForms)(".form", rules, afterForm);
 
 /***/ }),
 
@@ -144,6 +100,20 @@ __webpack_require__.r(__webpack_exports__);
 
 
 aos__WEBPACK_IMPORTED_MODULE_0___default().init();
+
+/***/ }),
+
+/***/ "./src/js/components/burger.js":
+/*!*************************************!*\
+  !*** ./src/js/components/burger.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _functions_burger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../functions/burger */ "./src/js/functions/burger.js");
+// Реализация бургер-меню
+
 
 /***/ }),
 
@@ -388,6 +358,78 @@ window.addEventListener("scroll", function () {
 
 /***/ }),
 
+/***/ "./src/js/components/scroll.js":
+/*!*************************************!*\
+  !*** ./src/js/components/scroll.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _functions_disable_scroll__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../functions/disable-scroll */ "./src/js/functions/disable-scroll.js");
+// Реализация остановки скролла
+ // Реализация включения скролла
+
+
+
+/***/ }),
+
+/***/ "./src/js/components/scrollToTop.js":
+/*!******************************************!*\
+  !*** ./src/js/components/scrollToTop.js ***!
+  \******************************************/
+/***/ (() => {
+
+var btnScrollToTop = document.querySelector(".scroll-btn");
+window.addEventListener("scroll", checkHeight);
+
+function checkHeight() {
+  if (window.pageYOffset > 300) {
+    // Show backToTopButton
+    if (!btnScrollToTop.classList.contains("btnEntrance")) {
+      btnScrollToTop.classList.remove("btnExit");
+      btnScrollToTop.classList.add("btnEntrance");
+      btnScrollToTop.style.display = "block";
+    }
+  } else {
+    // Hide backToTopButton
+    if (btnScrollToTop.classList.contains("btnEntrance")) {
+      btnScrollToTop.classList.remove("btnEntrance");
+      btnScrollToTop.classList.add("btnExit");
+      setTimeout(function () {
+        btnScrollToTop.style.display = "none";
+      }, 250);
+    }
+  }
+}
+
+btnScrollToTop.addEventListener("click", smoothScrollBackToTop);
+
+function smoothScrollBackToTop() {
+  var targetPosition = 0;
+  var startPosition = window.pageYOffset;
+  var distance = targetPosition - startPosition;
+  var duration = 750;
+  var start = null;
+  window.requestAnimationFrame(step);
+
+  function step(timestamp) {
+    if (!start) start = timestamp;
+    var progress = timestamp - start;
+    window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
+    if (progress < duration) window.requestAnimationFrame(step);
+  }
+}
+
+function easeInOutCubic(t, b, c, d) {
+  t /= d / 2;
+  if (t < 1) return c / 2 * t * t * t + b;
+  t -= 2;
+  return c / 2 * (t * t * t + 2) + b;
+}
+
+/***/ }),
+
 /***/ "./src/js/components/smooth-scroll.js":
 /*!********************************************!*\
   !*** ./src/js/components/smooth-scroll.js ***!
@@ -395,8 +437,27 @@ window.addEventListener("scroll", function () {
 /***/ (() => {
 
 // Подключение плавной прокрутки к якорям
-// import SmoothScroll from 'smooth-scroll';
-// const scroll = new SmoothScroll('a[href*="#"]');
+var menuLinks = document.querySelectorAll(".nav__link[data-goto]");
+
+if (menuLinks.length > 0) {
+  menuLinks.forEach(function (menuLink) {
+    menuLink.addEventListener("click", onMenuLinkClick);
+  });
+
+  function onMenuLinkClick(e) {
+    var menuLink = e.target;
+
+    if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+      var goToBlock = document.querySelector(menuLink.dataset.goto);
+      var goToBlockValue = goToBlock.getBoundingClientRect().top + pageYOffset - document.querySelector(".header").offsetHeight;
+      window.scrollTo({
+        top: goToBlockValue,
+        behavior: "smooth"
+      });
+      e.preventDefault();
+    }
+  }
+}
 
 /***/ }),
 
@@ -422,10 +483,10 @@ var swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper", {
   autoHeight: true,
   freeMode: true,
   loop: true,
-  //autoplay: {
-  //  delay: 3000,
-  //  disableOnInteraction: false,
-  //},
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false
+  },
   speed: 1500,
   keyboard: {
     enabled: true,
@@ -475,6 +536,51 @@ var typed = new Typed(".my-info__title span", {
 
 /***/ }),
 
+/***/ "./src/js/components/validate-form.js":
+/*!********************************************!*\
+  !*** ./src/js/components/validate-form.js ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _functions_validate_forms__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../functions/validate-forms */ "./src/js/functions/validate-forms.js");
+//Валидация формы
+
+
+var afterForm = function afterForm() {
+  console.log("Произошла отправка, тут можно писать любые действия");
+};
+
+var rules = [{
+  ruleSelector: ".form__input-name",
+  rules: [{
+    rule: "customRegexp",
+    value: /^[A-zА-яЁё]+$/,
+    errorMessage: "Введи только буквы"
+  }, {
+    rule: "minLength",
+    value: 3,
+    errorMessage: "Введи минимум 3 символов"
+  }, {
+    rule: "required",
+    value: true,
+    errorMessage: "Заполни имя!"
+  }]
+}, {
+  ruleSelector: ".form__input-tel",
+  tel: true,
+  telError: "Введи корректный телефон",
+  rules: [{
+    rule: "required",
+    value: true,
+    errorMessage: "Заполни телефон!"
+  }]
+}];
+(0,_functions_validate_forms__WEBPACK_IMPORTED_MODULE_0__.validateForms)(".form", rules, afterForm);
+
+/***/ }),
+
 /***/ "./src/js/functions/burger.js":
 /*!************************************!*\
   !*** ./src/js/functions/burger.js ***!
@@ -491,37 +597,44 @@ __webpack_require__.r(__webpack_exports__);
 (function () {
   var _document, _document2, _document3, _document4;
 
-  var burger = (_document = document) === null || _document === void 0 ? void 0 : _document.querySelector('[data-burger]');
-  var menu = (_document2 = document) === null || _document2 === void 0 ? void 0 : _document2.querySelector('[data-menu]');
-  var menuItems = (_document3 = document) === null || _document3 === void 0 ? void 0 : _document3.querySelectorAll('[data-menu-item]');
-  var overlay = (_document4 = document) === null || _document4 === void 0 ? void 0 : _document4.querySelector('[data-menu-overlay]');
-  burger === null || burger === void 0 ? void 0 : burger.addEventListener('click', function (e) {
-    burger === null || burger === void 0 ? void 0 : burger.classList.toggle('burger--active');
-    menu === null || menu === void 0 ? void 0 : menu.classList.toggle('menu--active');
+  var burger = (_document = document) === null || _document === void 0 ? void 0 : _document.querySelector("[data-burger]");
+  var menu = (_document2 = document) === null || _document2 === void 0 ? void 0 : _document2.querySelector("[data-menu]");
+  var menuItems = (_document3 = document) === null || _document3 === void 0 ? void 0 : _document3.querySelectorAll("[data-menu-item]");
+  var overlay = (_document4 = document) === null || _document4 === void 0 ? void 0 : _document4.querySelector("[data-menu-overlay]");
+  burger === null || burger === void 0 ? void 0 : burger.addEventListener("click", function (e) {
+    e.preventDefault();
+    burger === null || burger === void 0 ? void 0 : burger.classList.toggle("burger--active");
+    menu === null || menu === void 0 ? void 0 : menu.classList.toggle("menu--active");
 
-    if (menu !== null && menu !== void 0 && menu.classList.contains('menu--active')) {
-      burger === null || burger === void 0 ? void 0 : burger.setAttribute('aria-expanded', 'true');
-      burger === null || burger === void 0 ? void 0 : burger.setAttribute('aria-label', 'Закрыть меню');
-      (0,_functions_disable_scroll__WEBPACK_IMPORTED_MODULE_0__.disableScroll)();
+    if (menu !== null && menu !== void 0 && menu.classList.contains("menu--active")) {
+      burger === null || burger === void 0 ? void 0 : burger.setAttribute("aria-expanded", "true");
+      burger === null || burger === void 0 ? void 0 : burger.setAttribute("aria-label", "Закрыть меню");
+      var menuLinks = document.querySelectorAll(".nav__link[data-goto]");
+      menuLinks.forEach(function (menuLink) {
+        menuLink.addEventListener("click", function () {
+          burger === null || burger === void 0 ? void 0 : burger.classList.remove("burger--active");
+          menu === null || menu === void 0 ? void 0 : menu.classList.remove("menu--active");
+        });
+      }); //disableScroll();
     } else {
-      burger === null || burger === void 0 ? void 0 : burger.setAttribute('aria-expanded', 'false');
-      burger === null || burger === void 0 ? void 0 : burger.setAttribute('aria-label', 'Открыть меню');
+      burger === null || burger === void 0 ? void 0 : burger.setAttribute("aria-expanded", "false");
+      burger === null || burger === void 0 ? void 0 : burger.setAttribute("aria-label", "Открыть меню");
       (0,_functions_enable_scroll__WEBPACK_IMPORTED_MODULE_1__.enableScroll)();
     }
   });
-  overlay === null || overlay === void 0 ? void 0 : overlay.addEventListener('click', function () {
-    burger === null || burger === void 0 ? void 0 : burger.setAttribute('aria-expanded', 'false');
-    burger === null || burger === void 0 ? void 0 : burger.setAttribute('aria-label', 'Открыть меню');
-    burger.classList.remove('burger--active');
-    menu.classList.remove('menu--active');
+  overlay === null || overlay === void 0 ? void 0 : overlay.addEventListener("click", function () {
+    burger === null || burger === void 0 ? void 0 : burger.setAttribute("aria-expanded", "false");
+    burger === null || burger === void 0 ? void 0 : burger.setAttribute("aria-label", "Открыть меню");
+    burger.classList.remove("burger--active");
+    menu.classList.remove("menu--active");
     (0,_functions_enable_scroll__WEBPACK_IMPORTED_MODULE_1__.enableScroll)();
   });
   menuItems === null || menuItems === void 0 ? void 0 : menuItems.forEach(function (el) {
-    el.addEventListener('click', function () {
-      burger === null || burger === void 0 ? void 0 : burger.setAttribute('aria-expanded', 'false');
-      burger === null || burger === void 0 ? void 0 : burger.setAttribute('aria-label', 'Открыть меню');
-      burger.classList.remove('burger--active');
-      menu.classList.remove('menu--active');
+    el.addEventListener("click", function () {
+      burger === null || burger === void 0 ? void 0 : burger.setAttribute("aria-expanded", "false");
+      burger === null || burger === void 0 ? void 0 : burger.setAttribute("aria-label", "Открыть меню");
+      burger.classList.remove("burger--active");
+      menu.classList.remove("menu--active");
       (0,_functions_enable_scroll__WEBPACK_IMPORTED_MODULE_1__.enableScroll)();
     });
   });
@@ -17968,9 +18081,7 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vendor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_vendor */ "./src/js/_vendor.js");
 /* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_vars */ "./src/js/_vars.js");
-/* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./_functions */ "./src/js/_functions.js");
-/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./_components */ "./src/js/_components.js");
-
+/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./_components */ "./src/js/_components.js");
 
 
 

@@ -32,6 +32,11 @@
     <span class="preloader__percents"> <span class="percents">0</span>% </span>
   </div>
 </div>
+ <button class="btn-reset scroll-btn">
+   <svg class="icon-scroll">
+     <use xlink:href="img/sprite.svg#scrollTop"></use>
+   </svg>
+</button>
 
     <div class="site-container">
       <div class="container">
@@ -48,25 +53,25 @@
           <svg class="nav__icon">
             <use xlink:href="img/sprite.svg#home"></use>
           </svg>
-          <a class="nav__link" href="#">Главная</a>
+          <a class="nav__link" href="#" data-goto=".main-scroll">Главная</a>
         </li>
         <li class="nav__item">
           <svg class="nav__icon">
             <use xlink:href="img/sprite.svg#about"></use>
           </svg>
-          <a class="nav__link" href="#">Обо мне</a>
+          <a class="nav__link" href="#" data-goto=".about-scroll">Обо мне</a>
         </li>
         <li class="nav__item">
           <svg class="nav__icon">
             <use xlink:href="img/sprite.svg#portfolio"></use>
           </svg>
-          <a class="nav__link" href="#">Портфолио</a>
+          <a class="nav__link" href="#" data-goto=".portfolio-scroll">Портфолио</a>
         </li>
         <li class="nav__item">
           <svg class="nav__icon">
             <use xlink:href="img/sprite.svg#contacts"></use>
           </svg>
-          <a class="nav__link" href="#">Контакты</a>
+          <a class="nav__link" href="#" data-goto=".contacts-scroll">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -82,8 +87,8 @@
 </header>
 
         <main class="main">
-          <div class="my-info">
-  <div class="my-info__content" data-aos="fade-up" data-aos-duration="1500">
+          <div class="my-info main-scroll" data-aos="fade-up" data-aos-duration="1500">
+  <div class="my-info__content">
     <h3 class="my-info__subtitle">Привет!</h3>
     <h1 class="my-info__title">
       Я <span class="for-typed">Виталий Реутский</span>
@@ -134,8 +139,8 @@
     <a href="#" class="my-info__download-resume">Скачать мое резюме </a>
   </div>
 </div>
- <section class="about bg-content">
-  <div class="about__content" data-aos="fade-up" data-aos-duration="1000">
+ <section class="about bg-content about-scroll">
+  <div class="about__content" data-aos="fade-up" data-aos-duration="1500">
     <div class="title">
       <div class="title">
         <h2 class="main-title">Обо мне</h2>
@@ -255,9 +260,6 @@
       <div class="swiper-wrapper reviews__wrapper">
         <div class="swiper-slide reviews__slide">
           <div class="reviews__item">
-            <!--<svg class="reviews__icon">
-              <use xlink:href="img/sprite.svg#reviews"></use>
-            </svg>-->
             <p class="reviews__text">
               «Все сделано быстро и отлично! Однозначно рекомендую Виталия как
               отличного исполнителя!»
@@ -268,9 +270,6 @@
 
         <div class="swiper-slide reviews__slide">
           <div class="reviews__item">
-            <!--<svg class="reviews__icon">
-              <use xlink:href="img/sprite.svg#reviews"></use>
-            </svg>-->
             <p class="reviews__text">
               «Работа была выполнена хорошо, приятно иметь дело с таким
               специалистом!»
@@ -281,9 +280,6 @@
 
         <div class="swiper-slide reviews__slide">
           <div class="reviews__item">
-            <!--<svg class="reviews__icon">
-              <use xlink:href="img/sprite.svg#reviews"></use>
-            </svg>-->
             <p class="reviews__text">
               «Всегда на связи, если есть какие-то моменты — всегда
               предупреждает заранее. Работу выполнил хорошо.»
@@ -294,9 +290,6 @@
 
         <div class="swiper-slide reviews__slide">
           <div class="reviews__item">
-            <!--<svg class="reviews__icon">
-              <use xlink:href="img/sprite.svg#reviews"></use>
-            </svg>-->
             <p class="reviews__text">
               «Обратился к Виталию с проектом на SCSS. Проект был согласован и
               выполнен очень быстро (а это очень важно когда сроки поджимают).
@@ -309,27 +302,21 @@
 
         <div class="swiper-slide reviews__slide">
           <div class="reviews__item">
-            <!--<svg class="reviews__icon">
-              <use xlink:href="img/sprite.svg#reviews"></use>
-            </svg>-->
-            <p class="reviews__text">
-              «Отличный исполнитель!!! Очень приятный человек и очень
-              качественно всё сделал!!! Рекомендую!!!»
-            </p>
-            <h4 class="reviews__author">Ярослав Бурлевич</h4>
-          </div>
-        </div>
-
-        <div class="swiper-slide reviews__slide">
-          <div class="reviews__item">
-            <!--<svg class="reviews__icon">
-              <use xlink:href="img/sprite.svg#reviews"></use>
-            </svg>-->
             <p class="reviews__text">
               «Сделано день в день! Очень доволен сотрудничеством! Качественный
               исполнитель!»
             </p>
             <h4 class="reviews__author">Роман Довгаль</h4>
+          </div>
+        </div>
+
+        <div class="swiper-slide reviews__slide">
+          <div class="reviews__item">
+            <p class="reviews__text">
+              «Отличный исполнитель!!! Очень приятный человек и очень
+              качественно всё сделал!!! Рекомендую!!!»
+            </p>
+            <h4 class="reviews__author">Ярослав Бурлевич</h4>
           </div>
         </div>
       </div>
@@ -340,14 +327,15 @@
   </div>
 </section>
 
-          <div class="portfolio bg-content" data-aos="fade-up" data-aos-duration="1500">
-  <div class="title">
+          <section class="portfolio bg-content portfolio-scroll">
+  <div class="portfolio__content" data-aos="fade-up" data-aos-duration="1500">
     <div class="title">
-      <h2 class="main-title">Портфолио</h2>
-      <span class="big-title">Портфолио</span>
+      <div class="title">
+        <h2 class="main-title">Портфолио</h2>
+        <span class="big-title">Портфолио</span>
+      </div>
     </div>
-  </div>
-  <div class="portfolio__content">
+
     <div class="tabs" data-tabs="portfolio">
       <ul class="tabs__nav">
         <li class="tabs__nav-item">
@@ -486,15 +474,15 @@
       </div>
     </div>
   </div>
-</div>
- <section class="contacts bg-content">
+</section>
+ <section class="contacts bg-content contacts-scroll">
   <div class="title">
     <div class="title">
       <h2 class="main-title">Контакты</h2>
       <span class="big-title">Контакты</span>
     </div>
   </div>
-  <div class="contacts__content">
+  <div class="contacts__content" data-aos="fade-up" data-aos-duration="1500">
     <div class="contacts__form">
       <form action="#" class="form">
         <h2 class="form__title">Напиши мне</h2>
@@ -565,7 +553,56 @@
 
         </main>
       </div>
-      <footer class="footer"></footer>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__content">
+      <div class="social">
+        <a
+          class="social__link"
+          href="https://www.linkedin.com/in/vitaly-reutsky-a1b953209/"
+          target="blank"
+        >
+          <svg class="linkedin">
+            <use xlink:href="img/sprite.svg#link"></use>
+          </svg>
+        </a>
+
+        <a
+          class="social__link"
+          href="https://github.com/vitalyreutsky"
+          target="blank"
+        >
+          <svg class="github">
+            <use xlink:href="img/sprite.svg#gh"></use>
+          </svg>
+        </a>
+
+        <a class="social__link" href="https://t.me/vreutsky" target="blank">
+          <svg class="telegram">
+            <use xlink:href="img/sprite.svg#telegram"></use>
+          </svg>
+        </a>
+
+        <a
+          class="social__link"
+          href="https://www.instagram.com/vreutsky"
+          target="blank"
+        >
+          <svg class="instagram">
+            <use xlink:href="img/sprite.svg#insta"></use>
+          </svg>
+        </a>
+
+        <a class="social__link" href="https://vk.com/vreutsky77" target="blank">
+          <svg class="vkontakte">
+            <use xlink:href="img/sprite.svg#vk"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="footer__copyright">Все права защищены ©</div>
+    </div>
+  </div>
+</footer>
 
     </div>
   </body>
