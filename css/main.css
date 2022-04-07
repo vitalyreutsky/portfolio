@@ -90,9 +90,7 @@ h6 {
 .page__body::after {
   content: "";
   position: fixed;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(80%, rgba(245, 236, 236, 0)), to(rgba(0, 0, 0, 0.85))), url("../img/bg.png");
-  background-image: -o-linear-gradient(left, rgba(245, 236, 236, 0) 80%, rgba(0, 0, 0, 0.85)), url("../img/bg.png");
-  background-image: linear-gradient(to right, rgba(245, 236, 236, 0) 80%, rgba(0, 0, 0, 0.85)), url("../img/bg.png");
+  background-image: url("../img/bg.png");
   background-size: auto 100%;
   background-position: right bottom;
   background-repeat: no-repeat;
@@ -954,9 +952,9 @@ a {
   width: 100px;
   height: 100px;
   background-color: #bdb76b;
-  -webkit-transition: bottom 2s;
-  -o-transition: bottom 2s;
-  transition: bottom 2s;
+  -webkit-transition: bottom 4s;
+  -o-transition: bottom 4s;
+  transition: bottom 4s;
 }
 .skills__title {
   font-size: 20px;
@@ -1295,7 +1293,7 @@ a {
     font-size: 21px;
   }
 }
-.contacts__content {
+.contacts__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1446,7 +1444,7 @@ a {
 }
 
 @media (max-width: 768px) {
-  .contacts__content {
+  .contacts__inner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;

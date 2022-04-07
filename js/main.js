@@ -340,7 +340,7 @@ window.addEventListener("scroll", function () {
         if (count < target) {
           count++;
           progNum[i].innerText = count;
-          setTimeout(updateCount, 50);
+          setTimeout(updateCount, 70);
         } else {
           progNum[i].innerText = target + "%";
         }
@@ -449,7 +449,7 @@ if (menuLinks.length > 0) {
 
     if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
       var goToBlock = document.querySelector(menuLink.dataset.goto);
-      var goToBlockValue = goToBlock.getBoundingClientRect().top + pageYOffset - document.querySelector(".header").offsetHeight;
+      var goToBlockValue = goToBlock.getBoundingClientRect().top + pageYOffset - document.querySelector(".header").offsetHeight - 30;
       window.scrollTo({
         top: goToBlockValue,
         behavior: "smooth"
