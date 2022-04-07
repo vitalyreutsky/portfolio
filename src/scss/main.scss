@@ -5,6 +5,7 @@
 @import "settings";
 
 // подключения компонентов страницы
+@import "./components/scrollToTop";
 @import "./components/header";
 @import "./components/my-info";
 @import "./components/modal";
@@ -14,3 +15,4 @@
 @import "./components/priorities";
 @import "./components/portfolio";
 @import "./components/contacts";
+@import "./components/footer";

@@ -1,0 +1,26 @@
+.footer {
+  padding: 15px 0px;
+  background-color: rgba(0, 0, 0, 0.9);
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .social {
+    margin-bottom: 10px;
+    &__link {
+      margin-right: 10px;
+      &:last-child {
+        margin: 0;
+      }
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  &__copyright {
+  }
+}

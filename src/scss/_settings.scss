@@ -33,13 +33,12 @@ h6 {
   &::after {
     content: "";
     position: fixed;
-    //background-image: linear-gradient(
-    //    to right,
-    //    rgba(245, 236, 236, 0) 60%,
-    //    rgba(0, 0, 0, 0.85) 90%
-    //  ),
-    //  url("../img/bg.png");
-    background-image: url("../img/bg.png");
+    background-image: linear-gradient(
+        to right,
+        rgba(245, 236, 236, 0) 80%,
+        rgba(0, 0, 0, 0.85)
+      ),
+      url("../img/bg.png");
     background-size: auto 100%;
     background-position: right bottom;
     background-repeat: no-repeat;
@@ -83,6 +82,12 @@ a {
 @include small-tablet {
   .bg-content {
     padding: 30px 20px;
+  }
+}
+
+@include mobile {
+  .bg-content {
+    margin-bottom: 50px;
   }
 }
 

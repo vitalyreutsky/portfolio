@@ -32,6 +32,9 @@
 }
 
 @include mobile {
+  .title {
+    margin-bottom: 30px;
+  }
   .main-title {
     font-size: 30px;
   }

@@ -114,9 +114,6 @@
     bottom: 30px;
     right: -30px;
   }
-  .tabs__nav-btn {
-    font-size: 23px;
-  }
 }
 @include mobile-mini {
   .image-iphone {
@@ -124,6 +121,6 @@
     right: 0;
   }
   .tabs__nav-btn {
-    font-size: 17px;
+    font-size: 21px;
   }
 }
