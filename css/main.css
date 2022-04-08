@@ -232,8 +232,6 @@ a {
   width: 50px;
   height: 50px;
   fill: #bdb76b;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
 @media (max-width: 576px) {
@@ -765,6 +763,8 @@ a {
 .preloader {
   position: absolute;
   left: 0;
+  right: 0;
+  bottom: 0;
   top: 0;
   width: 100%;
   height: 100%;
@@ -1044,6 +1044,9 @@ a {
 }
 
 @media (max-width: 576px) {
+  .about__text {
+    font-size: 17px;
+  }
   .about__content {
     margin-bottom: 70px;
   }
@@ -1163,10 +1166,7 @@ a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-}
-.portfolio__images {
-  position: relative;
-  display: inline-block;
+  margin-top: 70px;
 }
 
 .tabs__nav {
@@ -1225,16 +1225,6 @@ a {
 .tabs__content {
   border: none;
 }
-.image-macbook {
-  position: relative;
-}
-
-.image-iphone {
-  position: absolute;
-  bottom: 70px;
-  right: 0px;
-}
-
 @media (max-width: 1024px) {
   .portfolio__item {
     -ms-flex-wrap: wrap;
@@ -1277,18 +1267,11 @@ a {
   }
 }
 @media (max-width: 576px) {
-  .image-iphone {
-    width: 150px;
-    bottom: 30px;
-    right: -30px;
+  .portfolio__item {
+    margin-top: 30px;
   }
 }
-@media (max-width: 400px) {
-  .image-iphone {
-    width: 130px;
-    right: 0;
-  }
-
+@media (max-width: 576px) {
   .tabs__nav-btn {
     font-size: 21px;
   }
@@ -1452,6 +1435,9 @@ a {
   }
   .contacts__form {
     margin: 0 0 50px 0;
+  }
+  .contacts__connect {
+    margin-bottom: 15px;
   }
 }
 @media (max-width: 576px) {
