@@ -35,7 +35,7 @@
 .nav__link {
   position: relative;
   color: $main-color;
-  font-family: $font-family-Bold;
+  font-weight: 700;
   color: $white-color;
   font-size: 21px;
   transition: color 0.4s;
@@ -140,7 +140,7 @@
 }
 
 .toggle-lang {
-  font-family: $font-family-Semi-Bold;
+  font-weight: 600;
   font-size: 13px;
   display: flex;
   align-items: center;

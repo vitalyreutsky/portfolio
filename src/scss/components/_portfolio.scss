@@ -1,15 +1,8 @@
 .portfolio {
-  &__content {
-  }
-
   &__item {
     display: flex;
     justify-content: space-between;
-  }
-
-  &__images {
-    position: relative;
-    display: inline-block;
+    margin-top: 70px;
   }
 }
 .tabs {
@@ -28,7 +21,7 @@
   &__nav-btn {
     position: relative;
     color: $white-color;
-    font-family: $font-family-Semi-Bold;
+    font-weight: 600;
     font-size: 27px;
     transition: color 0.4s;
     &::after {
@@ -60,14 +53,6 @@
 
   &__panel {
   }
-}
-.image-macbook {
-  position: relative;
-}
-.image-iphone {
-  position: absolute;
-  bottom: 70px;
-  right: 0px;
 }
 
 @include tablet {
@@ -109,17 +94,14 @@
 }
 
 @include mobile {
-  .image-iphone {
-    width: 150px;
-    bottom: 30px;
-    right: -30px;
+  .portfolio {
+    &__item {
+      margin-top: 30px;
+    }
   }
 }
-@include mobile-mini {
-  .image-iphone {
-    width: 130px;
-    right: 0;
-  }
+
+@include mobile {
   .tabs__nav-btn {
     font-size: 21px;
   }

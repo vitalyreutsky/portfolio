@@ -1,5 +1,5 @@
 .title {
-  font-family: $font-family-Bold;
+  font-weight: 700;
   position: relative;
   margin-bottom: 50px;
   &::before {
@@ -20,7 +20,7 @@
   font-weight: 700;
 }
 .big-title {
-  font-family: $font-family-Bold;
+  font-weight: 700;
   display: block;
   padding-left: 15px;
   position: absolute;

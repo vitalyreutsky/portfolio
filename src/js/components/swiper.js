@@ -25,10 +25,10 @@ const swiper = new Swiper(".swiper", {
   autoHeight: true,
   freeMode: true,
   loop: true,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
+  //autoplay: {
+  //  delay: 3000,
+  //  disableOnInteraction: false,
+  //},
   speed: 1500,
   keyboard: {
     enabled: true,

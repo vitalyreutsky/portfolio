@@ -1,0 +1,20 @@
+.graph-modal__content {
+  text-align: center;
+  color: $main-color;
+  font-size: 21px;
+  padding: 20px 20px 30px;
+  font-weight: 700;
+}
+
+.graph-modal__close {
+  position: static;
+}
+
+.modal-close {
+  fill: $main-color;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}

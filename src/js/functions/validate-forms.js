@@ -8,7 +8,6 @@ export const validateForms = (selector, rules, afterSend) => {
   if (!form) {
     return false;
   }
-
   if (!rules) {
     return false;
   }
