@@ -18,37 +18,30 @@
 /* stylelint-disable */
 /* stylelint-disable */
 @font-face {
-  font-family: "Mont-light";
-  src: url("../fonts/../fonts/Mont-Light.woff2") format("woff2");
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Mont-regular";
+  font-family: "Mont";
   src: url("../fonts/../fonts/Mont-Regular.woff2") format("woff2");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: "Mont-bold";
-  src: url("../fonts/../fonts/Mont-Bold.woff2") format("woff2");
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Mont-Heavy-bold";
-  src: url("../fonts/../fonts/Mont-Heavy.woff2") format("woff2");
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Mont-Semi-bold";
+  font-family: "Mont";
   src: url("../fonts/../fonts/Mont-SemiBold.woff2") format("woff2");
-  font-weight: 400;
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mont";
+  src: url("../fonts/../fonts/Mont-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mont";
+  src: url("../fonts/../fonts/Mont-Heavy.woff2") format("woff2");
+  font-weight: 900;
   font-display: swap;
   font-style: normal;
 }
@@ -76,7 +69,7 @@ h6 {
 
 .page {
   height: 100%;
-  font-family: "Mont-regular", sans-serif, sans-serif;
+  font-family: "Mont", sans-serif, sans-serif;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -361,7 +354,7 @@ a {
 .nav__link {
   position: relative;
   color: #bdb76b;
-  font-family: "Mont-bold", sans-serif;
+  font-weight: 700;
   color: #fff;
   font-size: 21px;
   -webkit-transition: color 0.4s;
@@ -567,7 +560,7 @@ a {
   }
 }
 .toggle-lang {
-  font-family: "Mont-Semi-bold", sans-serif;
+  font-weight: 600;
   font-size: 13px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -641,13 +634,13 @@ a {
   padding: 30px;
 }
 .my-info__subtitle {
-  font-family: "Mont-bold", sans-serif;
+  font-weight: 700;
   margin-bottom: 20px;
   font-size: 23px;
   font-weight: 700;
 }
 .my-info__title {
-  font-family: "Mont-Heavy-bold", sans-serif;
+  font-weight: 900;
   font-size: 53px;
   font-weight: bold;
   line-height: 1.2;
@@ -760,6 +753,27 @@ a {
     height: 30px;
   }
 }
+.graph-modal__content {
+  text-align: center;
+  color: #bdb76b;
+  font-size: 21px;
+  padding: 20px 20px 30px;
+  font-weight: 700;
+}
+
+.graph-modal__close {
+  position: static;
+}
+
+.modal-close {
+  fill: #bdb76b;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
 .preloader {
   position: absolute;
   left: 0;
@@ -1102,7 +1116,7 @@ a {
   }
 }
 .title {
-  font-family: "Mont-bold", sans-serif;
+  font-weight: 700;
   position: relative;
   margin-bottom: 50px;
 }
@@ -1124,7 +1138,7 @@ a {
 }
 
 .big-title {
-  font-family: "Mont-bold", sans-serif;
+  font-weight: 700;
   display: block;
   padding-left: 15px;
   position: absolute;
@@ -1184,7 +1198,7 @@ a {
 .tabs__nav-btn {
   position: relative;
   color: #fff;
-  font-family: "Mont-Semi-bold", sans-serif;
+  font-weight: 600;
   font-size: 27px;
   -webkit-transition: color 0.4s;
   -o-transition: color 0.4s;
@@ -1346,7 +1360,7 @@ a {
   margin-bottom: 30px;
 }
 .form__input {
-  font-family: "Mont-regular", sans-serif;
+  font-weight: 400;
   font-size: 20px;
   width: 100%;
   padding-bottom: 10px;
@@ -1393,7 +1407,7 @@ a {
   transition: 0.4s;
 }
 .form__btn {
-  font-family: "Mont-Semi-bold", sans-serif;
+  font-weight: 600;
   padding: 10px 20px;
   background-color: #bdb76b;
   width: 100%;
