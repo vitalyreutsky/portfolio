@@ -69,15 +69,22 @@ h6 {
 
 .page {
   height: 100%;
+  height: 100%;
   font-family: "Mont", sans-serif, sans-serif;
   -webkit-text-size-adjust: 100%;
 }
 
+.simplebar-track.simplebar-vertical {
+  background: #bdb76b;
+}
+
 .page__body {
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(rgb(5, 5, 5)), to(rgba(7, 7, 7, 0.852)));
+  background: -o-linear-gradient(left, rgb(5, 5, 5), rgba(7, 7, 7, 0.852));
+  background: linear-gradient(to right, rgb(5, 5, 5), rgba(7, 7, 7, 0.852));
   color: #fff;
   font-size: 16px;
-  height: 100%;
-  background-color: #252323;
   position: relative;
 }
 .page__body::after {
@@ -482,6 +489,34 @@ a {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
+.choices__inner {
+  display: none;
+}
+
+.choices__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+}
+
+.choices__item {
+  font-family: "Mont", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.choices__item:first-child {
+  margin: 0;
+}
+.choices__item:hover {
+  color: #bdb76b;
+}
+
+.is-selected {
+  color: #bdb76b;
+}
+
 @media (max-width: 768px) {
   .burger {
     display: block;
@@ -603,44 +638,10 @@ a {
   color: #bdb76b;
 }
 .my-info__download-resume {
-  position: relative;
   display: inline-block;
   padding: 10px 20px;
   color: #fff;
-}
-.my-info__download-resume::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 30px;
-  height: 30px;
-  border-top: 2px solid #bdb76b;
-  border-left: 2px solid #bdb76b;
-  -webkit-transition: 0.6s;
-  -o-transition: 0.6s;
-  transition: 0.6s;
-}
-.my-info__download-resume::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 30px;
-  height: 30px;
-  border-bottom: 2px solid #bdb76b;
-  border-right: 2px solid #bdb76b;
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
-}
-.my-info__download-resume:hover::before {
-  width: 100%;
-  height: 100%;
-}
-.my-info__download-resume:hover::after {
-  width: 100%;
-  height: 100%;
+  border: 2px solid #bdb76b;
 }
 
 .social {
@@ -956,10 +957,6 @@ a {
   font-size: 20px;
 }
 
-.priorities__columns {
-  max-width: 100%;
-  margin: 0 auto;
-}
 .priorities__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -967,9 +964,6 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   margin-bottom: 50px;
 }
 .priorities__item:last-child {
