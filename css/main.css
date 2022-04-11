@@ -83,6 +83,7 @@ h6 {
   background: -webkit-gradient(linear, left top, right top, from(rgb(5, 5, 5)), to(rgba(7, 7, 7, 0.852)));
   background: -o-linear-gradient(left, rgb(5, 5, 5), rgba(7, 7, 7, 0.852));
   background: linear-gradient(to right, rgb(5, 5, 5), rgba(7, 7, 7, 0.852));
+  background-color: #252323;
   color: #fff;
   font-size: 16px;
   position: relative;
@@ -497,7 +498,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .choices__item {
