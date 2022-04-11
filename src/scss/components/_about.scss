@@ -1,4 +1,6 @@
 .about {
+  position: relative;
+  z-index: 2;
   &__content {
     margin-bottom: 100px;
   }
@@ -78,14 +80,11 @@
 //priorities
 .priorities {
   &__columns {
-    max-width: 100%;
-    margin: 0 auto;
   }
 
   &__item {
     display: flex;
     align-items: center;
-    justify-content: center;
     margin-bottom: 50px;
     &:last-child {
       margin: 0;

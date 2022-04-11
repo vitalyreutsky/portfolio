@@ -1,4 +1,6 @@
 .contacts {
+  position: relative;
+  z-index: 2;
   &__inner {
     display: flex;
     align-items: center;

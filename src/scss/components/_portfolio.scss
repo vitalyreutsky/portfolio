@@ -1,4 +1,6 @@
 .portfolio {
+  position: relative;
+  z-index: 2;
   &__item {
     display: flex;
     justify-content: space-between;

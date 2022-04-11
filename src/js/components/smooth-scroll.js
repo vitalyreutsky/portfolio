@@ -15,7 +15,8 @@ if (menuLinks.length > 0) {
       const goToBlockValue =
         goToBlock.getBoundingClientRect().top +
         pageYOffset -
-        document.querySelector(".header").offsetHeight - 30;
+        document.querySelector(".header").offsetHeight -
+        30;
 
       window.scrollTo({
         top: goToBlockValue,
