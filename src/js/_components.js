@@ -1,4 +1,5 @@
 import "./components/preload";
+import "./components/lang";
 import "./components/scrollToTop";
 import "./components/scroll";
 import "./components/burger";

@@ -1,35 +1,51 @@
 <header class="header">
   <div class="header__container container">
-    <div class="toggle-lang">
-      <span class="toggle-lang__ru">РУС</span>
-      <input type="checkbox" class="toggle-lang__checkbox" />
-      <span class="toggle-lang__eng">ENG</span>
-    </div>
+    <select class="change-lang">
+      <option value="ru" selected>РУС</option>
+      <option value="en">EN</option>
+    </select>
+
     <nav class="nav-menu" data-menu>
       <ul class="nav__list">
         <li class="nav__item">
           <svg class="nav__icon">
             <use xlink:href="img/sprite.svg#home"></use>
           </svg>
-          <a class="nav__link" href="#" data-goto=".main-scroll">Главная</a>
+          <a class="nav__link" href="#" lng-navMain data-goto=".main-scroll"
+            >Главная</a
+          >
         </li>
         <li class="nav__item">
           <svg class="nav__icon">
             <use xlink:href="img/sprite.svg#about"></use>
           </svg>
-          <a class="nav__link" href="#" data-goto=".about-scroll">Обо мне</a>
+          <a class="nav__link" href="#" lng-navAbout data-goto=".about-scroll"
+            >Обо мне</a
+          >
         </li>
         <li class="nav__item">
           <svg class="nav__icon">
             <use xlink:href="img/sprite.svg#portfolio"></use>
           </svg>
-          <a class="nav__link" href="#" data-goto=".portfolio-scroll">Портфолио</a>
+          <a
+            class="nav__link"
+            href="#"
+            lng-navPortfolio
+            data-goto=".portfolio-scroll"
+            >Портфолио</a
+          >
         </li>
         <li class="nav__item">
           <svg class="nav__icon">
             <use xlink:href="img/sprite.svg#contacts"></use>
           </svg>
-          <a class="nav__link" href="#" data-goto=".contacts-scroll">Контакты</a>
+          <a
+            class="nav__link"
+            href="#"
+            lng-navContacts
+            data-goto=".contacts-scroll"
+            >Контакты</a
+          >
         </li>
       </ul>
     </nav>
