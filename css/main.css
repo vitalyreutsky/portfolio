@@ -671,6 +671,11 @@ a {
   fill: #bdb76b;
 }
 
+.typed-cursor {
+  color: #bdb76b;
+  font-weight: 900;
+}
+
 @media (max-width: 1024px) {
   .my-info__title {
     font-size: 31px;
@@ -684,7 +689,7 @@ a {
     font-size: 11px;
   }
   .my-info__title {
-    font-size: 19px;
+    font-size: 22px;
   }
 
   .social {
