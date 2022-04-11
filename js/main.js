@@ -21,22 +21,25 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_preload__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/preload */ "./src/js/components/preload.js");
 /* harmony import */ var _components_preload__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_preload__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_scrollToTop__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/scrollToTop */ "./src/js/components/scrollToTop.js");
-/* harmony import */ var _components_scrollToTop__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_scrollToTop__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_scroll__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/scroll */ "./src/js/components/scroll.js");
-/* harmony import */ var _components_burger__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/burger */ "./src/js/components/burger.js");
-/* harmony import */ var _components_aos__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/aos */ "./src/js/components/aos.js");
-/* harmony import */ var _components_smooth_scroll__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/smooth-scroll */ "./src/js/components/smooth-scroll.js");
-/* harmony import */ var _components_smooth_scroll__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_smooth_scroll__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _components_typed__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/typed */ "./src/js/components/typed.js");
-/* harmony import */ var _components_typed__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_components_typed__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _components_dynamic_adapt__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/dynamic_adapt */ "./src/js/components/dynamic_adapt.js");
-/* harmony import */ var _components_dynamic_adapt__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_components_dynamic_adapt__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _components_progress_bar__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/progress-bar */ "./src/js/components/progress-bar.js");
-/* harmony import */ var _components_progress_bar__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_components_progress_bar__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _components_swiper__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/swiper */ "./src/js/components/swiper.js");
-/* harmony import */ var _components_tabs__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/tabs */ "./src/js/components/tabs.js");
-/* harmony import */ var _components_validate_form__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/validate-form */ "./src/js/components/validate-form.js");
+/* harmony import */ var _components_lang__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/lang */ "./src/js/components/lang.js");
+/* harmony import */ var _components_lang__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_lang__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_scrollToTop__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/scrollToTop */ "./src/js/components/scrollToTop.js");
+/* harmony import */ var _components_scrollToTop__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_scrollToTop__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_scroll__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/scroll */ "./src/js/components/scroll.js");
+/* harmony import */ var _components_burger__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/burger */ "./src/js/components/burger.js");
+/* harmony import */ var _components_aos__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/aos */ "./src/js/components/aos.js");
+/* harmony import */ var _components_smooth_scroll__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/smooth-scroll */ "./src/js/components/smooth-scroll.js");
+/* harmony import */ var _components_smooth_scroll__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_components_smooth_scroll__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _components_typed__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/typed */ "./src/js/components/typed.js");
+/* harmony import */ var _components_typed__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_components_typed__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _components_dynamic_adapt__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/dynamic_adapt */ "./src/js/components/dynamic_adapt.js");
+/* harmony import */ var _components_dynamic_adapt__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_components_dynamic_adapt__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _components_progress_bar__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/progress-bar */ "./src/js/components/progress-bar.js");
+/* harmony import */ var _components_progress_bar__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_components_progress_bar__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _components_swiper__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/swiper */ "./src/js/components/swiper.js");
+/* harmony import */ var _components_tabs__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/tabs */ "./src/js/components/tabs.js");
+/* harmony import */ var _components_validate_form__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/validate-form */ "./src/js/components/validate-form.js");
+
 
 
 
@@ -291,6 +294,85 @@ da.init();
 
 /***/ }),
 
+/***/ "./src/js/components/lang.js":
+/*!***********************************!*\
+  !*** ./src/js/components/lang.js ***!
+  \***********************************/
+/***/ (() => {
+
+var langArr = {
+  title: {
+    ru: "Портфолио",
+    en: "Portfolio"
+  },
+  navMain: {
+    ru: "Главная",
+    en: "Main"
+  },
+  navAbout: {
+    ru: "Обо мне",
+    en: "About"
+  },
+  navPortfolio: {
+    ru: "Портфолио",
+    en: "Portfolio"
+  },
+  navContacts: {
+    ru: "Контакты",
+    en: "Contacts"
+  },
+  hello: {
+    ru: "Привет",
+    en: "Hello"
+  },
+  myName: {
+    ru: "Виталий Реутский",
+    en: "Vitaly Reutsky"
+  },
+  im: {
+    ru: "Я",
+    en: "I'm"
+  },
+  download: {
+    ru: "Скачать мое резюме",
+    en: "Download my resume"
+  }
+};
+var select = document.querySelector(".change-lang");
+var allLang = ["ru", "en"];
+select.addEventListener("change", changeURLLanguage);
+
+function changeURLLanguage() {
+  var lang = select.value;
+  location.href = window.location.pathname + "#" + lang;
+  location.reload();
+}
+
+function changeLanguage() {
+  var hash = window.location.hash;
+  hash = hash.substr(1);
+
+  if (!allLang.includes(hash)) {
+    location.href = window.location.pathname + "#ru";
+    location.reload();
+  }
+
+  select.value = hash;
+  document.querySelector("title").innerHTML = langArr["title"][hash];
+
+  for (var key in langArr) {
+    var elem = document.querySelector("[lng-".concat(key, "]"));
+
+    if (elem) {
+      elem.innerHTML = langArr[key][hash];
+    }
+  }
+}
+
+changeLanguage();
+
+/***/ }),
+
 /***/ "./src/js/components/preload.js":
 /*!**************************************!*\
   !*** ./src/js/components/preload.js ***!
@@ -527,12 +609,21 @@ var tabs = new graph_tabs__WEBPACK_IMPORTED_MODULE_0__["default"]("portfolio");
   \************************************/
 /***/ (() => {
 
-var typed = new Typed(".my-info__title span", {
-  strings: ["Виталий Реутский.", "Фронтенд-разработчик.", "Виталий Реутский.", "Фронтенд-разработчик.", "Виталий Реутский.", "Фронтенд-разработчик.", "Виталий Реутский.", "Фронтенд-разработчик."],
-  typeSpeed: 80,
-  backSpeed: 70,
-  loop: true
-});
+if (window.location.hash === "#ru") {
+  var typed = new Typed(".my-info__title", {
+    strings: ["Виталий Реутский.", "Фронтенд-разработчик.", "Виталий Реутский.", "Фронтенд-разработчик.", "Виталий Реутский.", "Фронтенд-разработчик.", "Виталий Реутский.", "Фронтенд-разработчик."],
+    typeSpeed: 80,
+    backSpeed: 70,
+    loop: true
+  });
+} else {
+  var _typed = new Typed(".my-info__title", {
+    strings: ["Vitaly Reutsky.", "Frontend-developer.", "Vitaly Reutsky.", "Frontend-developer.", "Vitaly Reutsky.", "Frontend-developer.", "Vitaly Reutsky.", "Frontend-developer."],
+    typeSpeed: 80,
+    backSpeed: 70,
+    loop: true
+  });
+}
 
 /***/ }),
 

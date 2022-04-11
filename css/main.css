@@ -74,6 +74,10 @@ h6 {
 }
 
 .page__body {
+  background-image: url("../img/main-bg.png");
+  /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
+  background-image: -webkit-image-set("../img/main-bg.avif" type("image/avif"), "../img/main-bg.webp" type("image/webp"), "../img/main-bg.jpg" type("image/jpg"));
+  background-image: image-set("../img/main-bg.avif" type("image/avif"), "../img/main-bg.webp" type("image/webp"), "../img/main-bg.jpg" type("image/jpg"));
   color: #fff;
   font-size: 16px;
   height: 100%;
@@ -84,6 +88,9 @@ h6 {
   content: "";
   position: fixed;
   background-image: url("../img/bg.png");
+  /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
+  background-image: -webkit-image-set("../img/bg.avif" type("image/avif"), "../img/bg.webp" type("image/webp"), "../img/bg.jpg" type("image/jpg"));
+  background-image: image-set("../img/bg.avif" type("image/avif"), "../img/bg.webp" type("image/webp"), "../img/bg.jpg" type("image/jpg"));
   background-size: auto 100%;
   background-position: right bottom;
   background-repeat: no-repeat;
@@ -559,66 +566,6 @@ a {
     margin-right: 10px;
   }
 }
-.toggle-lang {
-  font-weight: 600;
-  font-size: 13px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  color: #fff;
-  font-weight: 700;
-  letter-spacing: 2px;
-}
-.toggle-lang__ru {
-  padding-right: 10px;
-}
-.toggle-lang__eng {
-  padding-left: 10px;
-}
-.toggle-lang__checkbox {
-  position: relative;
-  width: 45px;
-  height: 20px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: #252323;
-  outline: none;
-  border-radius: 20px;
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
-  -webkit-box-shadow: inset 0 0 4px black;
-  box-shadow: inset 0 0 4px black;
-}
-.toggle-lang__checkbox:checked {
-  background: #fff;
-}
-.toggle-lang__checkbox::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border-radius: 20px;
-  top: 0;
-  left: 0;
-  background: #bdb76b;
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
-}
-.toggle-lang__checkbox:checked::before {
-  left: 25px;
-}
-
 .my-info {
   height: 100vh;
   display: -webkit-box;
@@ -639,14 +586,24 @@ a {
   font-size: 23px;
   font-weight: 700;
 }
-.my-info__title {
-  font-weight: 900;
-  font-size: 53px;
-  font-weight: bold;
-  line-height: 1.2;
+.my-info__typed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 23px;
   margin-bottom: 20px;
+  height: 100%;
 }
-.my-info__title span {
+.my-info__im {
+  padding-right: 10px;
+}
+.my-info__title {
+  padding: 0;
+  margin: 0;
+  font-size: 45px;
   color: #bdb76b;
 }
 .my-info__download-resume {
@@ -714,13 +671,20 @@ a {
   fill: #bdb76b;
 }
 
+@media (max-width: 1024px) {
+  .my-info__title {
+    font-size: 31px;
+  }
+}
 @media (max-width: 768px) {
   .my-info__subtitle {
     margin-bottom: 10px;
   }
+  .my-info__typed {
+    font-size: 11px;
+  }
   .my-info__title {
-    font-size: 23px;
-    margin-bottom: 10px;
+    font-size: 19px;
   }
 
   .social {
@@ -734,11 +698,20 @@ a {
     align-items: flex-end;
     padding: 0px 0px 100px;
   }
-  .my-info__title {
-    font-size: 20px;
+  .my-info__im {
+    padding-right: 5px;
   }
   .my-info__content {
-    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     width: 100%;
     padding: 30px 0px;
   }
@@ -751,6 +724,14 @@ a {
   .social .social__link svg {
     width: 30px;
     height: 30px;
+  }
+}
+@media (max-width: 300px) {
+  .my-info__typed {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 .graph-modal__content {

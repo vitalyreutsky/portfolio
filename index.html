@@ -6,7 +6,7 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="theme-color" content="#111111" />
-  <title>Portfolio</title>
+  <title>Портфолио</title>
   <link
     rel="preload"
     href="fonts/Mont-Regular.woff2"
@@ -61,36 +61,52 @@
       <div class="container">
         <header class="header">
   <div class="header__container container">
-    <div class="toggle-lang">
-      <span class="toggle-lang__ru">РУС</span>
-      <input type="checkbox" class="toggle-lang__checkbox" />
-      <span class="toggle-lang__eng">ENG</span>
-    </div>
+    <select class="change-lang">
+      <option value="ru">РУС</option>
+      <option value="en" selected>EN</option>
+    </select>
+
     <nav class="nav-menu" data-menu>
       <ul class="nav__list">
         <li class="nav__item">
           <svg class="nav__icon">
             <use xlink:href="img/sprite.svg#home"></use>
           </svg>
-          <a class="nav__link" href="#" data-goto=".main-scroll">Главная</a>
+          <a class="nav__link" href="#" lng-navMain data-goto=".main-scroll"
+            >Главная</a
+          >
         </li>
         <li class="nav__item">
           <svg class="nav__icon">
             <use xlink:href="img/sprite.svg#about"></use>
           </svg>
-          <a class="nav__link" href="#" data-goto=".about-scroll">Обо мне</a>
+          <a class="nav__link" href="#" lng-navAbout data-goto=".about-scroll"
+            >Обо мне</a
+          >
         </li>
         <li class="nav__item">
           <svg class="nav__icon">
             <use xlink:href="img/sprite.svg#portfolio"></use>
           </svg>
-          <a class="nav__link" href="#" data-goto=".portfolio-scroll">Портфолио</a>
+          <a
+            class="nav__link"
+            href="#"
+            lng-navPortfolio
+            data-goto=".portfolio-scroll"
+            >Портфолио</a
+          >
         </li>
         <li class="nav__item">
           <svg class="nav__icon">
             <use xlink:href="img/sprite.svg#contacts"></use>
           </svg>
-          <a class="nav__link" href="#" data-goto=".contacts-scroll">Контакты</a>
+          <a
+            class="nav__link"
+            href="#"
+            lng-navContacts
+            data-goto=".contacts-scroll"
+            >Контакты</a
+          >
         </li>
       </ul>
     </nav>
@@ -113,10 +129,13 @@
   data-aos-once="true"
 >
   <div class="my-info__content">
-    <h3 class="my-info__subtitle">Привет!</h3>
-    <h1 class="my-info__title">
-      Я <span class="for-typed">Виталий Реутский</span>
-    </h1>
+    <h3 class="my-info__subtitle" lng-hello>Привет!</h3>
+
+    <div class="my-info__typed">
+      <h1 class="my-info__im" lng-im></h1>
+      <h2 class="my-info__title" lng-myName></h2>
+    </div>
+
     <div class="social">
       <a
         class="social__link"
@@ -160,7 +179,9 @@
         </svg>
       </a>
     </div>
-    <a href="#" class="my-info__download-resume">Скачать мое резюме </a>
+    <a href="#" class="my-info__download-resume" lng-download
+      >Скачать мое резюме
+    </a>
   </div>
 </div>
  <section class="about bg-content about-scroll">
@@ -447,7 +468,12 @@
     </div>
     <div class="contacts__inner">
       <div class="contacts__form">
-        <form action="#" class="form">
+        <form
+          action="#"
+          class="form"
+          method="POST"
+          enctype="multipart/form-data"
+        >
           <h2 class="form__title">Оставь заявку</h2>
           <div class="form__group">
             <input
