@@ -80,7 +80,7 @@ h6 {
 
 .page__body {
   height: 100%;
-  background-color: #252323;
+  background-color: #181616;
   color: #fff;
   font-size: 16px;
   position: relative;
@@ -97,12 +97,18 @@ h6 {
   background-repeat: no-repeat;
   height: 100vh;
   top: 0;
-  left: 0;
+  left: 30%;
   right: 0;
   bottom: 0;
-  z-index: -1;
+  z-index: 1;
 }
 
+@media (max-width: 768px) {
+  .page__body::after {
+    left: 0;
+    z-index: -1;
+  }
+}
 @media (max-width: 576px) {
   .page__body::after {
     background-size: cover;
@@ -185,7 +191,7 @@ a {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1200px;
+  max-width: 1260px;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
@@ -502,10 +508,23 @@ a {
   font-family: "Mont", sans-serif;
   font-weight: 700;
   cursor: pointer;
-  margin-left: 20px;
+  padding-left: 15px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .choices__item:first-child {
-  margin: 0;
+  padding: 0px 15px 0px 0px;
+  position: relative;
+}
+.choices__item:first-child::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: #fff;
 }
 .choices__item:hover {
   color: #bdb76b;
@@ -596,6 +615,7 @@ a {
   }
 }
 .my-info {
+  width: 100%;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -605,7 +625,9 @@ a {
   align-items: center;
 }
 .my-info__content {
-  width: 70%;
+  position: relative;
+  z-index: 100;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   padding: 30px;
 }
@@ -763,7 +785,7 @@ a {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #252323;
+  background-color: #181616;
   z-index: 100000;
   -webkit-transition: all 0.7s ease-out;
   -o-transition: all 0.7s ease-out;
@@ -833,7 +855,7 @@ a {
   height: 163px;
   display: inline-block;
   overflow: hidden;
-  background: #252323;
+  background: #181616;
 }
 
 .ldio-6u3plm6m91y {
@@ -862,6 +884,10 @@ a {
   z-index: -1;
 }
 
+.about {
+  position: relative;
+  z-index: 2;
+}
 .about__content {
   margin-bottom: 100px;
 }
@@ -1147,6 +1173,10 @@ a {
     top: -15px;
   }
 }
+.portfolio {
+  position: relative;
+  z-index: 2;
+}
 .portfolio__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1263,6 +1293,10 @@ a {
   .tabs__nav-btn {
     font-size: 21px;
   }
+}
+.contacts {
+  position: relative;
+  z-index: 2;
 }
 .contacts__inner {
   display: -webkit-box;
@@ -1447,6 +1481,8 @@ a {
   }
 }
 .footer {
+  position: relative;
+  z-index: 2;
   padding: 15px 0px;
   background-color: rgba(0, 0, 0, 0.9);
 }
