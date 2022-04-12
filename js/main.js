@@ -1791,7 +1791,7 @@ var afterForm = function afterForm() {
   modal.open("modal");
 };
 
-var rules = [{
+var rulesRus = [{
   ruleSelector: ".form__input-name",
   rules: [{
     rule: "customRegexp",
@@ -1816,7 +1816,39 @@ var rules = [{
     errorMessage: "Заполни телефон!"
   }]
 }];
-(0,_functions_validate_forms__WEBPACK_IMPORTED_MODULE_0__.validateForms)(".form", rules, afterForm);
+var rulesEng = [{
+  ruleSelector: ".form__input-name",
+  rules: [{
+    rule: "customRegexp",
+    value: /^[A-zА-яЁё]+$/,
+    errorMessage: "Enter only letters"
+  }, {
+    rule: "minLength",
+    value: 3,
+    errorMessage: "Enter at least 3 characters"
+  }, {
+    rule: "required",
+    value: true,
+    errorMessage: "Fill in the name!"
+  }]
+}, {
+  ruleSelector: ".form__input-tel",
+  tel: true,
+  telError: "Enter the correct phone number",
+  rules: [{
+    rule: "required",
+    value: true,
+    errorMessage: "Fill out the phone!"
+  }]
+}];
+
+if (window.location.hash === "#ru") {
+  (0,_functions_validate_forms__WEBPACK_IMPORTED_MODULE_0__.validateForms)(".form", rulesRus, afterForm);
+}
+
+if (window.location.hash === "#en") {
+  (0,_functions_validate_forms__WEBPACK_IMPORTED_MODULE_0__.validateForms)(".form", rulesEng, afterForm);
+}
 
 /***/ }),
 
