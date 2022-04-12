@@ -9,7 +9,7 @@ const afterForm = () => {
   modal.open("modal");
 };
 
-const rules = [
+const rulesRus = [
   {
     ruleSelector: ".form__input-name",
     rules: [
@@ -44,4 +44,44 @@ const rules = [
   },
 ];
 
-validateForms(".form", rules, afterForm);
+const rulesEng = [
+  {
+    ruleSelector: ".form__input-name",
+    rules: [
+      {
+        rule: "customRegexp",
+        value: /^[A-zА-яЁё]+$/,
+        errorMessage: "Enter only letters",
+      },
+      {
+        rule: "minLength",
+        value: 3,
+        errorMessage: "Enter at least 3 characters",
+      },
+      {
+        rule: "required",
+        value: true,
+        errorMessage: "Fill in the name!",
+      },
+    ],
+  },
+  {
+    ruleSelector: ".form__input-tel",
+    tel: true,
+    telError: "Enter the correct phone number",
+    rules: [
+      {
+        rule: "required",
+        value: true,
+        errorMessage: "Fill out the phone!",
+      },
+    ],
+  },
+];
+
+if (window.location.hash === "#ru") {
+  validateForms(".form", rulesRus, afterForm);
+}
+if (window.location.hash === "#en") {
+  validateForms(".form", rulesEng, afterForm);
+}
