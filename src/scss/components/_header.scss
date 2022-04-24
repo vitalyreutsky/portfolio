@@ -39,7 +39,14 @@
   color: $white-color;
   font-size: 21px;
   transition: color 0.4s;
-  &:hover {
+
+  @include for-desktop {
+    &:hover {
+      color: $main-color;
+    }
+  }
+
+  &:focus {
     color: $main-color;
   }
   &::after {
@@ -54,7 +61,14 @@
     background-color: $main-color;
     transition: transform 0.4s;
   }
-  &:hover::after {
+
+  @include for-desktop {
+    &:hover::after {
+      transform: translateX(-50%) scaleX(1);
+    }
+  }
+
+  &:focus::after {
     transform: translateX(-50%) scaleX(1);
   }
 }
@@ -97,8 +111,11 @@
       background: $white-color;
     }
   }
-  &:hover {
-    color: $main-color;
+
+  @include for-desktop {
+    &:hover {
+      color: $main-color;
+    }
   }
 }
 .is-selected {

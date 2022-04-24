@@ -96,48 +96,48 @@ const langArr = {
     en: "Reviews",
   },
   review1: {
-    ru: "Все сделано быстро и отлично! Однозначно рекомендую Виталия как отличного исполнителя!",
-    en: "Everything was done quickly and perfectly! I definitely recommend Vitaly as an excellent performer!",
+    ru: `"Все сделано быстро и отлично! Однозначно рекомендую Виталия как отличного исполнителя!"`,
+    en: `"Everything was done quickly and perfectly! I definitely recommend Vitaly as an excellent performer!"`,
   },
   reviewAuthor1: {
     ru: "Роман Довгаль",
     en: "Roman Dovgal",
   },
   review2: {
-    ru: "Работа была выполнена хорошо, приятно иметь дело с таким специалистом!",
-    en: "Job well done, a pleasure to deal with specialist!",
+    ru: `"Работа была выполнена хорошо, приятно иметь дело с таким специалистом!"`,
+    en: `"Job well done, a pleasure to deal with specialist!"`,
   },
   reviewAuthor2: {
     ru: "Максим Журавлев",
     en: "Maxim Zhuravlev",
   },
   review3: {
-    ru: "Всегда на связи, если есть какие то моменты - всегда предупреждает заранее. Работу выполнил хорошо.",
-    en: "Always in touch, if there are any moments - always warns in advance. Did the job well",
+    ru: `"Всегда на связи, если есть какие то моменты - всегда предупреждает заранее. Работу выполнил хорошо."`,
+    en: `"Always in touch, if there are any moments - always warns in advance. Did the job well"`,
   },
   reviewAuthor3: {
     ru: "Павел Арнутов",
     en: "Pavel Arnutov",
   },
   review4: {
-    ru: "Обратился к Виталию с проектом на SCSS. Проект был согласован и выполнен очень быстро (а это очень важно когда сроки поджимают).структурированно. Рекомендую.",
-    en: "I contacted Vitaly with a SCSS project. The project was agreed and completed very quickly (and this is very important when the deadlines are running out). Structured. Recommend.",
+    ru: `"Обратился к Виталию с проектом на SCSS. Проект был согласован и выполнен очень быстро (а это очень важно когда сроки поджимают).структурированно. Рекомендую."`,
+    en: `"I contacted Vitaly with a SCSS project. The project was agreed and completed very quickly (and this is very important when the deadlines are running out). Structured. Recommend."`,
   },
   reviewAuthor4: {
     ru: "Мурат Ташенев",
     en: "Murat Tashenov",
   },
   review5: {
-    ru: "Сделано день в день! Очень доволен сотрудничеством! Качественный исполнитель!",
-    en: "Made to the day! Very pleased with the cooperation! Quality performer!",
+    ru: `"Сделано день в день! Очень доволен сотрудничеством! Качественный исполнитель!"`,
+    en: `"Made to the day! Very pleased with the cooperation! Quality performer!"`,
   },
   reviewAuthor5: {
     ru: "Роман Довгаль",
     en: "Roman Dovgal",
   },
   review6: {
-    ru: "Отличный исполнитель!!! Очень приятный человек и очень качественно всё сделал!!! Рекомендую!!!",
-    en: "Great performer!!! Very nice person and did a great job! Recommend!!!",
+    ru: `"Отличный исполнитель!!! Очень приятный человек и очень качественно всё сделал!!! Рекомендую!!!"`,
+    en: `"Great performer!!! Very nice person and did a great job! Recommend!!!"`,
   },
   reviewAuthor6: {
     ru: "Ярослав Бурлевич",

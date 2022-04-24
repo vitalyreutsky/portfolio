@@ -41,8 +41,11 @@
     color: $white-color;
     text-decoration: underline;
     transition: 0.4s;
-    &:hover {
-      color: $main-color;
+
+    @include for-desktop {
+      &:hover {
+        color: $main-color;
+      }
     }
   }
   &__adress {
@@ -79,8 +82,10 @@
     }
   }
   &__input-tel {
-    &:hover::placeholder {
-      font-size: 0;
+    @include for-desktop {
+      &:hover::placeholder {
+        font-size: 0;
+      }
     }
   }
   &__textarea {
@@ -105,8 +110,14 @@
     color: $white-color;
     font-size: 20px;
     transition: 0.4s;
-    &:focus,
-    &:hover {
+    @include for-desktop {
+      &:focus,
+      &:hover {
+        background-color: $black-color;
+      }
+    }
+
+    &:focus {
       background-color: $black-color;
     }
   }

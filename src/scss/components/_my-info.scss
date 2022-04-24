@@ -3,6 +3,7 @@
   height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   &__content {
     position: relative;
     z-index: 100;
@@ -54,8 +55,11 @@
       height: 35px;
       fill: $social-link-color;
       transition: ease-in-out 0.3s;
-      &:hover {
-        fill: $main-color;
+
+      @include for-desktop {
+        &:hover {
+          fill: $main-color;
+        }
       }
     }
   }
