@@ -30,6 +30,7 @@ h6 {
 }
 
 .page__body {
+  position: inherit !important;
   height: 100%;
   background-color: $bg-color;
   color: $white-color;

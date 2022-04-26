@@ -1,20 +1,41 @@
+.graph-modal__container {
+  background-color: $bg-color;
+  border: 1px solid grey;
+}
+
 .graph-modal__content {
   text-align: center;
-  color: $main-color;
-  font-size: 21px;
-  padding: 20px 20px 30px;
-  font-weight: 700;
+  color: $white-color;
+  font-size: 17px;
+}
+
+.graph-modal__portfolio {
+  text-align: left;
 }
 
 .graph-modal__close {
   position: static;
+  width: 0;
+  height: 0;
 }
 
 .modal-close {
-  fill: $main-color;
+  fill: $white-color;
   width: 30px;
   height: 30px;
   position: absolute;
   top: 10px;
   right: 10px;
+}
+
+.graph-modal__descr {
+  text-align: left;
+  margin: 0;
+  margin-bottom: 10px;
+  line-height: 100%;
+}
+
+.graph-modal__link {
+  color: $white-color;
+  text-decoration: underline;
 }
