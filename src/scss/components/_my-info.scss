@@ -9,6 +9,9 @@
     z-index: 100;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: 0px 0px 23px 5px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 23px 5px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 23px 5px rgba(34, 60, 80, 0.2);
     padding: 30px;
   }
   &__subtitle {
@@ -122,7 +125,7 @@
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 340px) {
   .my-info {
     &__typed {
       flex-direction: column;

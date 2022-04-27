@@ -80,14 +80,13 @@ a {
   text-decoration: none;
 }
 
-.site-container {
-  min-height: 100%;
-}
-
 .bg-content {
   margin-bottom: 100px;
   padding: 50px 30px;
   background-color: rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0px 0px 23px 5px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 23px 5px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 23px 5px rgba(34, 60, 80, 0.2);
 }
 @include small-tablet {
   .bg-content {

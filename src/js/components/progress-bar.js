@@ -12,7 +12,7 @@ window.addEventListener("scroll", () => {
       progress[i].style.bottom = "100%";
       progress[i].style.bottom = progNum[i].dataset.count - 100 + "%";
 
-      function updateCount() {
+      function updateCount() {z
         target = parseInt(progNum[i].dataset.count);
 
         if (count < target) {

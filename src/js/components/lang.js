@@ -120,7 +120,7 @@ const langArr = {
     en: "Pavel Arnutov",
   },
   review4: {
-    ru: `"Обратился к Виталию с проектом на SCSS. Проект был согласован и выполнен очень быстро (а это очень важно когда сроки поджимают).структурированно. Рекомендую."`,
+    ru: `"Обратился к Виталию с проектом на SCSS. Проект был согласован и выполнен очень быстро (а это очень важно когда сроки поджимают), структурированно. Рекомендую."`,
     en: `"I contacted Vitaly with a SCSS project. The project was agreed and completed very quickly (and this is very important when the deadlines are running out). Structured. Recommend."`,
   },
   reviewAuthor4: {

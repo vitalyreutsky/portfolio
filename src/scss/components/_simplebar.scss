@@ -1,0 +1,21 @@
+.simplebar-scrollbar {
+  z-index: -1;
+}
+
+.simplebar-track.simplebar-vertical {
+  right: 5px;
+  top: 20px;
+  bottom: 20px;
+  border-radius: 5px;
+  width: 5px;
+  background: rgba(77, 77, 77, 0.1);
+}
+
+.simplebar-scrollbar::before {
+  left: 0;
+  right: auto;
+  border-radius: 5px;
+  width: 5px;
+  background: $main-color;
+  opacity: 1;
+}
