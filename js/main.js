@@ -1559,7 +1559,6 @@ window.addEventListener("scroll", function () {
       progress[i].style.bottom = progNum[i].dataset.count - 100 + "%";
 
       function updateCount() {
-        z;
         target = parseInt(progNum[i].dataset.count);
 
         if (count < target) {

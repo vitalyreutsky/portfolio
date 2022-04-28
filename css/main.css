@@ -81,7 +81,7 @@ h6 {
 .page__body {
   position: inherit !important;
   height: 100%;
-  background-color: #020609;
+  background-color: #1e1c1c;
   color: #fff;
   font-size: 16px;
   position: relative;
@@ -89,7 +89,9 @@ h6 {
 .page__body::after {
   content: "";
   position: fixed;
-  background-image: url("../img/bg.png");
+  background-image: -webkit-gradient(linear, right top, left top, from(rgb(0, 0, 0)), color-stop(70%, rgba(4, 4, 4, 0.097))), url("../img/bg.png");
+  background-image: -o-linear-gradient(right, rgb(0, 0, 0), rgba(4, 4, 4, 0.097) 70%), url("../img/bg.png");
+  background-image: linear-gradient(to left, rgb(0, 0, 0), rgba(4, 4, 4, 0.097) 70%), url("../img/bg.png");
   /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
   background-image: -webkit-image-set("../img/bg.avif" type("image/avif"), "../img/bg.webp" type("image/webp"), "../img/bg.jpg" type("image/jpg"));
   background-image: image-set("../img/bg.avif" type("image/avif"), "../img/bg.webp" type("image/webp"), "../img/bg.jpg" type("image/jpg"));
@@ -131,8 +133,8 @@ a {
   margin-bottom: 100px;
   padding: 50px 30px;
   background-color: rgba(0, 0, 0, 0.8);
-  -webkit-box-shadow: 0px 0px 23px 5px rgba(34, 60, 80, 0.2);
-  box-shadow: 0px 0px 23px 5px rgba(34, 60, 80, 0.2);
+  -webkit-box-shadow: 0px 5px 20px 3px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 20px 14px rgba(34, 60, 80, 0.2);
 }
 
 @media (max-width: 768px) {
@@ -220,7 +222,7 @@ a {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #020609;
+  background-color: #1e1c1c;
   z-index: 100000;
   -webkit-transition: all 0.7s ease-out;
   -o-transition: all 0.7s ease-out;
@@ -290,7 +292,7 @@ a {
   height: 163px;
   display: inline-block;
   overflow: hidden;
-  background: #020609;
+  background: #1e1c1c;
 }
 
 .ldio-6u3plm6m91y {
@@ -320,7 +322,7 @@ a {
 }
 
 .graph-modal__container {
-  background-color: #020609;
+  background-color: #1e1c1c;
   border: 1px solid grey;
   border-radius: 0;
 }
@@ -839,8 +841,8 @@ a {
   z-index: 100;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
-  -webkit-box-shadow: 0px 0px 23px 5px rgba(34, 60, 80, 0.2);
-  box-shadow: 0px 0px 23px 5px rgba(34, 60, 80, 0.2);
+  -webkit-box-shadow: 0px 5px 20px 3px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 20px 14px rgba(34, 60, 80, 0.2);
   padding: 30px;
 }
 .my-info__subtitle {
