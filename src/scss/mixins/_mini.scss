@@ -38,12 +38,24 @@ $browser-context: 16; // Default
   @return #{$pixels/$context}rem;
 }
 
-@mixin image-set($pathToImage) {
+@mixin image-set-mobile($pathToImage) {
+  background-image: linear-gradient(100deg, rgba(2, 2, 2, 0), rgb(0, 0, 0) 80%),
+    url("#{$pathToImage}.png");
+  /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
+  background-image: image-set(
+    /* stylelint-disable-next-line function-comma-newline-after */
+      "#{$pathToImage}.avif"type("image/avif"),
+    "#{$pathToImage}.webp"type("image/webp"),
+    "#{$pathToImage}.jpg"type("image/jpg")
+  );
+}
+
+@mixin image-set-main($pathToImage) {
   background-image: url("#{$pathToImage}.png");
   /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
   background-image: image-set(
     /* stylelint-disable-next-line function-comma-newline-after */
-    "#{$pathToImage}.avif"type("image/avif"),
+      "#{$pathToImage}.avif"type("image/avif"),
     "#{$pathToImage}.webp"type("image/webp"),
     "#{$pathToImage}.jpg"type("image/jpg")
   );

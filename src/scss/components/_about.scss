@@ -5,11 +5,21 @@
     margin-bottom: 100px;
   }
 
+  &__image {
+    height: 400px;
+    img {
+      display: block;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
   &__text {
     text-indent: 30px;
     line-height: 1.6;
     font-size: 19px;
     margin: 0;
+    margin-bottom: 50px;
   }
   &__skills {
     margin-bottom: 100px;
@@ -81,7 +91,6 @@
 .priorities {
   &__item {
     display: flex;
-    align-items: center;
     margin-bottom: 50px;
     &:last-child {
       margin: 0;
@@ -163,8 +172,16 @@
 
 @include mobile {
   .about {
+    &__image {
+      height: auto;
+      width: 100%;
+      img {
+        object-fit: contain;
+      }
+    }
     &__text {
       font-size: 17px;
+      margin-bottom: 20px;
     }
     &__content {
       margin-bottom: 70px;

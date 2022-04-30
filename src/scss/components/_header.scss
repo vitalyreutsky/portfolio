@@ -122,7 +122,24 @@
 @include small-tablet {
   .burger {
     display: block;
+    width: 35px;
+    height: 31px;
     color: $white-color;
+
+    &__line {
+      height: 3px;
+      border-radius: 3px;
+    }
+
+    &::after {
+      height: 3px;
+      border-radius: 3px;
+    }
+
+    &::before {
+      height: 3px;
+      border-radius: 3px;
+    }
   }
   .nav-menu {
     transform: translateX(100%);
@@ -142,6 +159,7 @@
     height: 100vh;
     overflow-y: auto;
     padding: 0;
+    transform: translateY(-50px);
   }
 
   .nav__item {
