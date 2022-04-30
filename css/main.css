@@ -106,9 +106,9 @@ h6 {
 
 @media (max-width: 768px) {
   .page__body::after {
-    background-image: -webkit-gradient(linear, right top, left top, from(rgb(7, 0, 0)), color-stop(70%, rgba(0, 0, 0, 0.055))), url("../img/bg.png");
-    background-image: -o-linear-gradient(right, rgb(7, 0, 0), rgba(0, 0, 0, 0.055) 70%), url("../img/bg.png");
-    background-image: linear-gradient(to left, rgb(7, 0, 0), rgba(0, 0, 0, 0.055) 70%), url("../img/bg.png");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(2, 2, 2, 0)), color-stop(80%, rgb(0, 0, 0))), url("../img/bg.png");
+    background-image: -o-linear-gradient(left, rgba(2, 2, 2, 0), rgb(0, 0, 0) 80%), url("../img/bg.png");
+    background-image: linear-gradient(90deg, rgba(2, 2, 2, 0), rgb(0, 0, 0) 80%), url("../img/bg.png");
     /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
     background-image: -webkit-image-set("../img/bg.avif" type("image/avif"), "../img/bg.webp" type("image/webp"), "../img/bg.jpg" type("image/jpg"));
     background-image: image-set("../img/bg.avif" type("image/avif"), "../img/bg.webp" type("image/webp"), "../img/bg.jpg" type("image/jpg"));
@@ -137,8 +137,8 @@ a {
   margin-bottom: 100px;
   padding: 50px 30px;
   background-color: rgba(0, 0, 0, 0.8);
-  -webkit-box-shadow: 0px 5px 17px 10px rgba(221, 231, 238, 0.12);
-  box-shadow: 0px 5px 17px 10px rgba(221, 231, 238, 0.12);
+  -webkit-box-shadow: 0px 0px 23px 21px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 23px 21px rgba(34, 60, 80, 0.2);
 }
 
 @media (max-width: 768px) {
@@ -519,7 +519,7 @@ a {
   left: 0;
   font-weight: bold;
   font-size: 60px;
-  color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.23);
 }
 
 @media (max-width: 576px) {
@@ -554,8 +554,8 @@ a {
   padding: 15px 0px;
   z-index: 1000;
   background: rgba(0, 0, 0, 0.9);
-  -webkit-box-shadow: 0px 5px 17px 10px rgba(221, 231, 238, 0.12);
-  box-shadow: 0px 5px 17px 10px rgba(221, 231, 238, 0.12);
+  -webkit-box-shadow: 1px 10px 15px -2px rgba(34, 60, 80, 0.2);
+  box-shadow: 1px 10px 15px -2px rgba(34, 60, 80, 0.2);
 }
 .header__container {
   display: -webkit-box;
@@ -781,7 +781,21 @@ a {
 @media (max-width: 768px) {
   .burger {
     display: block;
+    width: 35px;
+    height: 31px;
     color: #fff;
+  }
+  .burger__line {
+    height: 3px;
+    border-radius: 3px;
+  }
+  .burger::after {
+    height: 3px;
+    border-radius: 3px;
+  }
+  .burger::before {
+    height: 3px;
+    border-radius: 3px;
   }
 
   .nav-menu {
@@ -813,6 +827,9 @@ a {
     height: 100vh;
     overflow-y: auto;
     padding: 0;
+    -webkit-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+    transform: translateY(-50px);
   }
 
   .nav__item {
@@ -845,8 +862,8 @@ a {
   z-index: 100;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
-  -webkit-box-shadow: 0px 5px 17px 10px rgba(221, 231, 238, 0.12);
-  box-shadow: 0px 5px 17px 10px rgba(221, 231, 238, 0.12);
+  -webkit-box-shadow: 0px 0px 23px 21px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 23px 21px rgba(34, 60, 80, 0.2);
   padding: 30px;
 }
 .my-info__subtitle {
@@ -1077,9 +1094,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   margin-bottom: 50px;
 }
 .priorities__item:last-child {
@@ -1357,6 +1371,10 @@ a {
   }
 }
 @media (max-width: 768px) {
+  .portfolio__item {
+    margin-top: 30px;
+  }
+
   .tabs__nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1374,11 +1392,6 @@ a {
   }
   .tabs__nav-btn {
     font-size: 30px;
-  }
-}
-@media (max-width: 576px) {
-  .portfolio__item {
-    margin-top: 30px;
   }
 }
 @media (max-width: 576px) {
