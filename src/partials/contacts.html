@@ -20,27 +20,33 @@
           enctype="multipart/form-data"
         >
           <h2 class="form__title" lng-contactsRequest>Оставь заявку</h2>
-          <input
-            type="text"
-            name="Имя"
-            class="input-reset form__input form__input-name"
-            lng-contactsInputName
-            placeholder="Имя"
-          />
+          <div class="form__group">
+            <input
+              type="text"
+              name="Имя"
+              class="input-reset form__input form__input-name"
+              lng-contactsInputName
+              placeholder="Имя"
+            />
+          </div>
 
-          <input
-            type="tel"
-            name="Телефон"
-            class="input-reset form__input form__input-tel"
-            lng-contactsInputPhone
-            placeholder="Номер телефона"
-          />
+          <div class="form__group">
+            <input
+              type="tel"
+              name="Телефон"
+              class="input-reset form__input form__input-tel"
+              lng-contactsInputPhone
+              placeholder="Номер телефона"
+            />
+          </div>
 
-          <textarea
-            name="Сообщение"
-            class="input-reset form__input form__textarea"
-            placeholder="Сообщение"
-          ></textarea>
+          <div class="form__group">
+            <textarea
+              name="Сообщение"
+              class="input-reset form__input form__textarea"
+              placeholder="Сообщение"
+            ></textarea>
+          </div>
           <button class="btn-reset form__btn" lng-contactsSend>
             Отправить
           </button>

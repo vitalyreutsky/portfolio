@@ -17,18 +17,9 @@ Swiper.use([
 ]);
 const swiper = new Swiper(".swiper", {
   slidesPerView: 1,
-  //effect: "flip",
-  //effect: "fade",
-  //fadeEffect: {
-  //  crossFade: true,
-  //},
   autoHeight: true,
   freeMode: true,
   loop: true,
-  //autoplay: {
-  //  delay: 3000,
-  //  disableOnInteraction: false,
-  //},
   speed: 1500,
   keyboard: {
     enabled: true,

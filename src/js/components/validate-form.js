@@ -80,8 +80,24 @@ const rulesEng = [
 ];
 
 if (window.location.hash === "#ru") {
+  const inputName = document.querySelector(".form__input-name");
+  const inputTel = document.querySelector(".form__input-tel");
+  const inputMessage = document.querySelector(".form__textarea");
+
+  inputName.placeholder = "Имя";
+  inputTel.placeholder = "Номер телефона";
+  inputMessage.placeholder = "Сообщение";
+
   validateForms(".form", rulesRus, afterForm);
 }
 if (window.location.hash === "#en") {
+  const inputName = document.querySelector(".form__input-name");
+  const inputTel = document.querySelector(".form__input-tel");
+  const inputMessage = document.querySelector(".form__textarea");
+
+  inputName.placeholder = "Name";
+  inputTel.placeholder = "Phone";
+  inputMessage.placeholder = "Message";
+
   validateForms(".form", rulesEng, afterForm);
 }

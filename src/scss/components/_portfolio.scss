@@ -3,7 +3,7 @@
   z-index: 2;
 
   &__item {
-    width: 300px;
+    width: 400px;
     height: 200px;
     margin-bottom: 50px;
 
@@ -25,11 +25,15 @@
     text-decoration: underline;
     z-index: 10;
   }
+
+  &__descr {
+  }
 }
 .tabs {
   &__panel-inner {
     display: flex;
     margin-top: 50px;
+    margin-bottom: 30px;
   }
 
   &__nav {
@@ -127,6 +131,13 @@
 }
 
 @include mobile {
+  .portfolio {
+    &__item {
+      width: 100%;
+      height: auto;
+      margin-bottom: 0;
+    }
+  }
   .tabs__nav-btn {
     font-size: 21px;
   }

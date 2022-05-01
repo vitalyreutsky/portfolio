@@ -39,13 +39,7 @@ $browser-context: 16; // Default
 }
 
 @mixin image-set-mobile($pathToImage) {
-  background-image: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0) 10%,
-      rgba(0, 0, 0, 0) 50%,
-      rgba(9, 9, 9, 1) 73%
-    ),
-    url("#{$pathToImage}.png");
+  background-image: url("#{$pathToImage}.jpg");
   /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
   background-image: image-set(
     /* stylelint-disable-next-line function-comma-newline-after */

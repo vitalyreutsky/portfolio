@@ -207,6 +207,10 @@ const langArr = {
     ru: "Подробнее",
     en: "More",
   },
+  portfolioDescr: {
+    ru: "* большую часть работ можно посмотреть на github",
+    en: "* most of the work can be viewed on github",
+  },
   contactsTitle: {
     ru: "Контакты",
     en: "Contacts",

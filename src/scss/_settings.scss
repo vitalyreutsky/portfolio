@@ -52,17 +52,10 @@ h6 {
   }
 }
 
-@include small-tablet {
-  .page__body {
-    &::after {
-      @include image-set-mobile("../img/bg");
-    }
-  }
-}
-
 @include mobile {
   .page__body {
     &::after {
+      @include image-set-mobile("../img/bg");
       background-position: center bottom;
       left: 0;
       z-index: -1;
@@ -70,7 +63,7 @@ h6 {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .page__body {
     &::after {
       background-size: cover;
@@ -92,9 +85,9 @@ a {
   margin-bottom: 100px;
   padding: 50px 30px;
   background-color: rgba(0, 0, 0, 0.8);
-  -webkit-box-shadow: 0px 0px 16px 7px rgba(34, 60, 80, 0.36);
-  -moz-box-shadow: 0px 0px 16px 7px rgba(34, 60, 80, 0.36);
-  box-shadow: 0px 0px 16px 7px rgba(34, 60, 80, 0.36);
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 15px 0px rgba(34, 60, 80, 0.2);
 }
 @include small-tablet {
   .bg-content {
