@@ -997,12 +997,6 @@ a {
 .about__image {
   height: auto;
 }
-.about__image img {
-  display: block;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
 .about__text {
   text-indent: 30px;
   line-height: 1.6;
@@ -1169,7 +1163,6 @@ a {
 
 @media (max-width: 576px) {
   .about__image {
-    height: auto;
     width: 100%;
   }
   .about__image img {
