@@ -106,9 +106,9 @@ h6 {
 
 @media (max-width: 768px) {
   .page__body::after {
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(15%, rgba(0, 0, 0, 0.225)), color-stop(80%, rgb(0, 0, 0))), url("../img/bg.png");
-    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.225) 15%, rgb(0, 0, 0) 80%), url("../img/bg.png");
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.225) 15%, rgb(0, 0, 0) 80%), url("../img/bg.png");
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(15%, rgba(0, 0, 0, 0.225)), color-stop(77%, rgb(0, 0, 0))), url("../img/bg.png");
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.225) 15%, rgb(0, 0, 0) 77%), url("../img/bg.png");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.225) 15%, rgb(0, 0, 0) 77%), url("../img/bg.png");
     /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
     background-image: -webkit-image-set("../img/bg.avif" type("image/avif"), "../img/bg.webp" type("image/webp"), "../img/bg.jpg" type("image/jpg"));
     background-image: image-set("../img/bg.avif" type("image/avif"), "../img/bg.webp" type("image/webp"), "../img/bg.jpg" type("image/jpg"));
@@ -1247,6 +1247,18 @@ a {
   }
   .reviews .swiper-pagination {
     display: block;
+  }
+  .reviews .swiper-pagination-bullet {
+    height: 15px;
+    width: 15px;
+  }
+  .reviews .swiper-pagination-bullet-active {
+    width: 30px;
+    height: 10px;
+    border-radius: 5px;
+    -webkit-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px);
   }
 }
 @media (max-width: 400px) {

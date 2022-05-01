@@ -1731,18 +1731,9 @@ __webpack_require__.r(__webpack_exports__);
 swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_0__.Autoplay, swiper__WEBPACK_IMPORTED_MODULE_0__.EffectFlip, swiper__WEBPACK_IMPORTED_MODULE_0__.EffectFade, swiper__WEBPACK_IMPORTED_MODULE_0__.Keyboard]);
 var swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper", {
   slidesPerView: 1,
-  //effect: "flip",
-  //effect: "fade",
-  //fadeEffect: {
-  //  crossFade: true,
-  //},
   autoHeight: true,
   freeMode: true,
   loop: true,
-  //autoplay: {
-  //  delay: 3000,
-  //  disableOnInteraction: false,
-  //},
   speed: 1500,
   keyboard: {
     enabled: true,
