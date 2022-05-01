@@ -20,36 +20,31 @@
           enctype="multipart/form-data"
         >
           <h2 class="form__title" lng-contactsRequest>Оставь заявку</h2>
-          <div class="form__group">
-            <input
-              type="text"
-              name="Имя"
-              class="input-reset form__input form__input-name"
-              placeholder=" "
-            />
-            <label class="form__label" lng-contactsInputName>Имя</label>
-          </div>
-          <div class="form__group">
-            <input
-              type="tel"
-              name="Телефон"
-              class="input-reset form__input form__input-tel"
-              placeholder=" "
-            />
-            <label class="form__label" lng-contactsInputPhone>Телефон</label>
-          </div>
+          <input
+            type="text"
+            name="Имя"
+            class="input-reset form__input form__input-name"
+            lng-contactsInputName
+            placeholder="Имя"
+          />
 
-          <div class="form__group">
-            <textarea
-              name="Сообщение"
-              class="input-reset form__input form__textarea"
-              placeholder=" "
-            ></textarea>
-            <label class="form__label" lng-contactsInputMessage
-              >Сообщение</label
-            >
-          </div>
-          <button class="btn-reset form__btn" lng-contactsSend>Отправить</button>
+          <input
+            type="tel"
+            name="Телефон"
+            class="input-reset form__input form__input-tel"
+            lng-contactsInputPhone
+            placeholder="Номер телефона"
+          />
+
+          <textarea
+            name="Сообщение"
+            class="input-reset form__input form__textarea"
+            lng-contactsInputMessage
+            placeholder="Сообщение"
+          ></textarea>
+          <button class="btn-reset form__btn" lng-contactsSend>
+            Отправить
+          </button>
         </form>
       </div>
       <div class="contacts__info">
@@ -80,7 +75,9 @@
                 <use xlink:href="img/sprite.svg#adress"></use>
               </svg>
             </div>
-            <h3 class="contacts__adress" lng-contactsAdress>Беларусь, г. Минск</h3>
+            <h3 class="contacts__adress" lng-contactsAdress>
+              Беларусь, г. Минск
+            </h3>
           </div>
         </div>
       </div>

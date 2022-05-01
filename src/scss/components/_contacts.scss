@@ -60,47 +60,27 @@
     margin-bottom: 20px;
   }
 
-  &__group {
-    position: relative;
-    margin-bottom: 30px;
-  }
-
   &__input {
     font-weight: 400;
     font-size: 20px;
     width: 100%;
+    margin-bottom: 30px;
     padding-bottom: 10px;
     border: none;
     border-bottom: 2px solid $white-color;
     background: transparent;
-    color: $white-color;
     outline: none;
-    transition: 0.4s;
 
     &:focus {
       border-bottom: 2px solid $main-color;
       color: $main-color;
     }
   }
-  &__input-tel {
-    @include for-desktop {
-      &:hover::placeholder {
-        font-size: 0;
-      }
-    }
-  }
+
   &__textarea {
+    color: $social-link-color;
     resize: none;
     padding-bottom: 0;
-  }
-
-  &__label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    color: $white-color;
-    transition: 0.4s;
   }
 
   &__btn {
@@ -112,7 +92,6 @@
     font-size: 20px;
     transition: 0.4s;
     @include for-desktop {
-      &:focus,
       &:hover {
         background-color: $black-color;
       }
@@ -122,13 +101,6 @@
       background-color: $black-color;
     }
   }
-}
-
-.form__input:focus ~ .form__label,
-.form__input:not(:placeholder-shown) ~ .form__label {
-  top: -18px;
-  font-size: 13px;
-  color: $main-color;
 }
 
 @include small-tablet {
