@@ -6,12 +6,7 @@
   }
 
   &__image {
-    height: 400px;
-    img {
-      display: block;
-      height: 100%;
-      object-fit: cover;
-    }
+    height: auto;
   }
 
   &__text {
@@ -173,7 +168,6 @@
 @include mobile {
   .about {
     &__image {
-      height: auto;
       width: 100%;
       img {
         object-fit: contain;

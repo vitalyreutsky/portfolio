@@ -159,6 +159,54 @@ const langArr = {
     ru: "Интернет-магазины",
     en: "Online stores",
   },
+  portfolioMoreWS: {
+    ru: "Подробнее",
+    en: "More",
+  },
+  modalTextWS: {
+    ru: "Сайт для стоматологической клиники White Story.",
+    en: "Website for the White Story dental clinic.",
+  },
+  modalLinkWS: {
+    ru: "Перейти",
+    en: "Link",
+  },
+  portfolioMoreSS: {
+    ru: "Подробнее",
+    en: "More",
+  },
+  modalTextSS: {
+    ru: "Интернет-магазин мужской спортивной обуви.",
+    en: "Online store for men's sports shoes.",
+  },
+  modalLinkSS: {
+    ru: "Перейти",
+    en: "Link",
+  },
+  modalTextCh: {
+    ru: "Страница для молдавского сайта Chisinau Visit.",
+    en: "Page for Moldovan site Chisinau Visit.",
+  },
+  modalLinkCh: {
+    ru: "Перейти",
+    en: "Link",
+  },
+  modalTextST: {
+    ru: "Сайт для услуги космического туризма.",
+    en: "Site for space tourism service.",
+  },
+  modalLinkST: {
+    ru: "Перейти",
+    en: "Link",
+  },
+  portfolioMoreCh: {
+    ru: "Подробнее",
+    en: "More",
+  },
+  portfolioMoreST: {
+    ru: "Подробнее",
+    en: "More",
+  },
   contactsTitle: {
     ru: "Контакты",
     en: "Contacts",
