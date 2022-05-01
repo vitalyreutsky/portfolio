@@ -1,5 +1,3 @@
-deployment:
-  tasks:
-    - export REPOPATH=/vitalyreutsky/portfolio/app*
-    - export SITEPATH=/vitalyreutsky/portfolio/app/
+- export REPOPATH=/home/vreutsky/vreutsky.by/*
+    - export SITEPATH=/home/vreutsky/public_html/
     - /bin/rsync -rav --exclude '.git' --exclude '.cpanel.yml' --del $REPOPATH $SITEPATH
