@@ -995,7 +995,7 @@ a {
   margin-bottom: 100px;
 }
 .about__image {
-  height: 400px;
+  height: auto;
 }
 .about__image img {
   display: block;
