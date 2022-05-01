@@ -1,3 +1,3 @@
-- export REPOPATH=/home/vreutsky/repositories/portfolio/*
+- export REPOPATH=/home/vreutsky/repositories/portfolio/app/*
     - export SITEPATH=/home/vreutsky/public_html/
     - /bin/rsync -rav --exclude '.git' --exclude '.cpanel.yml' --del $REPOPATH $SITEPATH
