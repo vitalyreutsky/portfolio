@@ -1496,6 +1496,7 @@ a {
   border-bottom: 2px solid #fff;
   background: transparent;
   outline: none;
+  color: #bdb76b;
 }
 .form__input:focus {
   border-bottom: 2px solid #bdb76b;
