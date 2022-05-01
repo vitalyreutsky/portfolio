@@ -55,7 +55,7 @@ h6 {
 @include small-tablet {
   .page__body {
     &::after {
-      //@include image-set-mobile("../img/bg");
+      @include image-set-mobile("../img/bg");
     }
   }
 }
