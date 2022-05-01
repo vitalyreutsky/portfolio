@@ -106,9 +106,7 @@ h6 {
 
 @media (max-width: 576px) {
   .page__body::after {
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(15%, rgba(0, 0, 0, 0)), color-stop(73%, rgb(0, 0, 0))), url("../img/bg.png");
-    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 15%, rgb(0, 0, 0) 73%), url("../img/bg.png");
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 15%, rgb(0, 0, 0) 73%), url("../img/bg.png");
+    background-image: url("../img/bg.jpg");
     /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
     background-image: -webkit-image-set("../img/bg.avif" type("image/avif"), "../img/bg.webp" type("image/webp"), "../img/bg.jpg" type("image/jpg"));
     background-image: image-set("../img/bg.avif" type("image/avif"), "../img/bg.webp" type("image/webp"), "../img/bg.jpg" type("image/jpg"));
