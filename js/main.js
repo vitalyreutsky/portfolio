@@ -1873,10 +1873,25 @@ var rulesEng = [{
 }];
 
 if (window.location.hash === "#ru") {
+  var inputName = document.querySelector(".form__input-name");
+  var inputTel = document.querySelector(".form__input-tel");
+  var inputMessage = document.querySelector(".form__textarea");
+  inputName.placeholder = "Имя";
+  inputTel.placeholder = "Номер телефона";
+  inputMessage.placeholder = "Сообщение";
   (0,_functions_validate_forms__WEBPACK_IMPORTED_MODULE_0__.validateForms)(".form", rulesRus, afterForm);
 }
 
 if (window.location.hash === "#en") {
+  var _inputName = document.querySelector(".form__input-name");
+
+  var _inputTel = document.querySelector(".form__input-tel");
+
+  var _inputMessage = document.querySelector(".form__textarea");
+
+  _inputName.placeholder = "Name";
+  _inputTel.placeholder = "Phone";
+  _inputMessage.placeholder = "Message";
   (0,_functions_validate_forms__WEBPACK_IMPORTED_MODULE_0__.validateForms)(".form", rulesEng, afterForm);
 }
 

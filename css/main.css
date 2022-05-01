@@ -106,9 +106,9 @@ h6 {
 
 @media (max-width: 768px) {
   .page__body::after {
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(10%, rgba(0, 0, 0, 0)), color-stop(50%, rgba(0, 0, 0, 0)), color-stop(73%, rgb(9, 9, 9))), url("../img/bg.png");
-    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 50%, rgb(9, 9, 9) 73%), url("../img/bg.png");
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 50%, rgb(9, 9, 9) 73%), url("../img/bg.png");
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(15%, rgba(0, 0, 0, 0.225)), color-stop(97%, rgb(0, 0, 0))), url("../img/bg.png");
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.225) 15%, rgb(0, 0, 0) 97%), url("../img/bg.png");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.225) 15%, rgb(0, 0, 0) 97%), url("../img/bg.png");
     /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
     background-image: -webkit-image-set("../img/bg.avif" type("image/avif"), "../img/bg.webp" type("image/webp"), "../img/bg.jpg" type("image/jpg"));
     background-image: image-set("../img/bg.avif" type("image/avif"), "../img/bg.webp" type("image/webp"), "../img/bg.jpg" type("image/jpg"));
@@ -1186,10 +1186,7 @@ a {
 @media (max-width: 576px) {
   .about__image {
     width: 100%;
-  }
-  .about__image img {
-    -o-object-fit: contain;
-    object-fit: contain;
+    height: auto;
   }
   .about__text {
     font-size: 17px;
@@ -1269,7 +1266,7 @@ a {
   z-index: 2;
 }
 .portfolio__item {
-  width: 300px;
+  width: 400px;
   height: 200px;
   margin-bottom: 50px;
 }
@@ -1411,6 +1408,12 @@ a {
   }
 }
 @media (max-width: 576px) {
+  .portfolio__item {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+  }
+
   .tabs__nav-btn {
     font-size: 21px;
   }
@@ -1486,23 +1489,27 @@ a {
   text-align: center;
   margin-bottom: 20px;
 }
+.form__group {
+  margin-bottom: 30px;
+}
 .form__input {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 17px;
   width: 100%;
-  margin-bottom: 30px;
   padding-bottom: 10px;
+  margin-bottom: 5px;
   border: none;
   border-bottom: 2px solid #fff;
   background: transparent;
   outline: none;
+  color: #bdb76b;
 }
 .form__input:focus {
   border-bottom: 2px solid #bdb76b;
   color: #bdb76b;
 }
 .form__textarea {
-  color: #918888;
+  color: #bdb76b;
   resize: none;
   padding-bottom: 0;
 }
