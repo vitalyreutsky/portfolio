@@ -1574,7 +1574,7 @@ changeLanguage();
 /***/ (() => {
 
 document.addEventListener("DOMContentLoaded", function () {
-  var mediaFiles = document.querySelectorAll("img");
+  var mediaFiles = document.querySelectorAll("body");
   var percents = document.querySelector(".percents");
   var i = 0;
   mediaFiles.forEach(function (file) {
@@ -1603,7 +1603,7 @@ var progress = document.querySelectorAll(".skills__progress-bar");
 var skills = document.querySelector(".about__skills");
 var bol = false;
 window.addEventListener("scroll", function () {
-  if (pageYOffset > skills.offsetTop - 600 && bol === false) {
+  if (pageYOffset > skills.offsetTop - 6 && bol === false) {
     var _loop = function _loop(i) {
       progNum[i].innerText = 0;
       count = 0;
