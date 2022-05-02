@@ -5,8 +5,12 @@ import { validateForms } from "../functions/validate-forms";
 import GraphModal from "graph-modal";
 const modal = new GraphModal();
 
-const afterForm = () => {
-  modal.open("modal");
+const afterFormRus = () => {
+  modal.open("modal-rus");
+};
+
+const afterFormEn = () => {
+  modal.open("modal-en");
 };
 
 const rulesRus = [
@@ -88,7 +92,7 @@ if (window.location.hash === "#ru") {
   inputTel.placeholder = "Номер телефона";
   inputMessage.placeholder = "Сообщение";
 
-  validateForms(".form", rulesRus, afterForm);
+  validateForms(".form", rulesRus, afterFormRus);
 }
 if (window.location.hash === "#en") {
   const inputName = document.querySelector(".form__input-name");
@@ -99,5 +103,5 @@ if (window.location.hash === "#en") {
   inputTel.placeholder = "Phone";
   inputMessage.placeholder = "Message";
 
-  validateForms(".form", rulesEng, afterForm);
+  validateForms(".form", rulesEng, afterFormEn);
 }
