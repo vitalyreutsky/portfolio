@@ -18,7 +18,7 @@ window.addEventListener("scroll", () => {
         if (count < target) {
           count++;
           progNum[i].innerText = count;
-          setTimeout(updateCount, 100);
+          setTimeout(updateCount, 70);
         } else {
           progNum[i].innerText = target + "%";
         }
