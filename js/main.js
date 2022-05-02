@@ -656,7 +656,7 @@ window.addEventListener("scroll", function () {
         if (count < target) {
           count++;
           progNum[i].innerText = count;
-          setTimeout(updateCount, 100);
+          setTimeout(updateCount, 70);
         } else {
           progNum[i].innerText = target + "%";
         }
@@ -852,8 +852,12 @@ __webpack_require__.r(__webpack_exports__);
 
 var modal = new graph_modal__WEBPACK_IMPORTED_MODULE_1__["default"]();
 
-var afterForm = function afterForm() {
-  modal.open("modal");
+var afterFormRus = function afterFormRus() {
+  modal.open("modal-rus");
+};
+
+var afterFormEn = function afterFormEn() {
+  modal.open("modal-en");
 };
 
 var rulesRus = [{
@@ -914,7 +918,7 @@ if (window.location.hash === "#ru") {
   inputName.placeholder = "Имя";
   inputTel.placeholder = "Номер телефона";
   inputMessage.placeholder = "Сообщение";
-  (0,_functions_validate_forms__WEBPACK_IMPORTED_MODULE_0__.validateForms)(".form", rulesRus, afterForm);
+  (0,_functions_validate_forms__WEBPACK_IMPORTED_MODULE_0__.validateForms)(".form", rulesRus, afterFormRus);
 }
 
 if (window.location.hash === "#en") {
@@ -927,7 +931,7 @@ if (window.location.hash === "#en") {
   _inputName.placeholder = "Name";
   _inputTel.placeholder = "Phone";
   _inputMessage.placeholder = "Message";
-  (0,_functions_validate_forms__WEBPACK_IMPORTED_MODULE_0__.validateForms)(".form", rulesEng, afterForm);
+  (0,_functions_validate_forms__WEBPACK_IMPORTED_MODULE_0__.validateForms)(".form", rulesEng, afterFormEn);
 }
 
 /***/ }),

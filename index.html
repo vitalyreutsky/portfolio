@@ -44,7 +44,7 @@
     class="graph-modal__container"
     role="dialog"
     aria-modal="true"
-    data-graph-target="modal"
+    data-graph-target="modal-rus"
   >
     <button
       class="btn-reset graph-modal__close"
@@ -55,6 +55,23 @@
       </svg>
     </button>
     <div class="graph-modal__content">Спасибо! Скоро свяжусь с тобой.</div>
+  </div>
+
+  <div
+    class="graph-modal__container"
+    role="dialog"
+    aria-modal="true"
+    data-graph-target="modal-en"
+  >
+    <button
+      class="btn-reset graph-modal__close"
+      aria-label="Закрыть модальное окно"
+    >
+      <svg class="modal-close">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="graph-modal__content">Thank you! I will contact you soon.</div>
   </div>
 
   <div
@@ -237,8 +254,8 @@
         <main class="main">
           <div
   class="my-info main-scroll"
-  data-aos="fade-in"
-  data-aos-duration="2000"
+  data-aos="fade-in-out"
+  data-aos-duration="3000"
   data-aos-once="true"
 >
   <div class="my-info__content">
