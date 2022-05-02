@@ -115,7 +115,7 @@ h6 {
     z-index: -1;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .page__body::after {
     background-size: cover;
   }
@@ -217,7 +217,7 @@ a {
 }
 
 .preloader {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
