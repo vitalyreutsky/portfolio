@@ -1,5 +1,4 @@
 import "./components/preload";
-import "./components/custom-scroll";
 import "./components/lang";
 import "./components/custom-select";
 import "./components/scrollToTop";

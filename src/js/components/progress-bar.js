@@ -4,7 +4,7 @@ const skills = document.querySelector(".about__skills");
 let bol = false;
 
 window.addEventListener("scroll", () => {
-  if (pageYOffset > skills.offsetTop - 600 && bol === false) {
+  if (pageYOffset > skills.offsetTop && bol === false) {
     for (let i = 0; i < progNum.length; i++) {
       progNum[i].innerText = 0;
       count = 0;
@@ -18,7 +18,7 @@ window.addEventListener("scroll", () => {
         if (count < target) {
           count++;
           progNum[i].innerText = count;
-          setTimeout(updateCount, 70);
+          setTimeout(updateCount, 100);
         } else {
           progNum[i].innerText = target + "%";
         }
