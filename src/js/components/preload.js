@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const mediaFiles = document.querySelectorAll("img");
+  const mediaFiles = document.querySelectorAll("body");
   const percents = document.querySelector(".percents");
   let i = 0;
 
