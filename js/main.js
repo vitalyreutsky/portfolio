@@ -591,8 +591,7 @@ function changeLanguage() {
     location.reload();
   }
 
-  select.value = hash;
-  document.querySelector("title").innerHTML = langArr["title"][hash];
+  select.value = hash; //document.querySelector("title").innerHTML = langArr["title"][hash];
 
   for (var key in langArr) {
     var elem = document.querySelector("[lng-".concat(key, "]"));

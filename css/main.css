@@ -331,6 +331,42 @@ a {
   text-align: left;
 }
 
+.graph-modal__ws {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9))), url("../img/ws.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.9)), url("../img/ws.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.9)), url("../img/ws.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.graph-modal__sh {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9))), url("../img/sneaker-shop.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.9)), url("../img/sneaker-shop.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.9)), url("../img/sneaker-shop.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.graph-modal__ch {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9))), url("../img/chisinau.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.9)), url("../img/chisinau.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.9)), url("../img/chisinau.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.graph-modal__st {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9))), url("../img/space-tourism.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.9)), url("../img/space-tourism.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.9)), url("../img/space-tourism.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .graph-modal__close {
   position: static;
   width: 0;
