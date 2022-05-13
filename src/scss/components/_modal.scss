@@ -15,6 +15,37 @@
   text-align: left;
 }
 
+.graph-modal__ws {
+  background: linear-gradient(rgba(0, 0, 0, 0.9)), url(('../img/ws.jpg'));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.graph-modal__sh {
+  background: linear-gradient(rgba(0, 0, 0, 0.9)),
+    url(('../img/sneaker-shop.jpg'));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.graph-modal__ch {
+  background: linear-gradient(rgba(0, 0, 0, 0.9)),
+    url(('../img/chisinau.jpg'));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.graph-modal__st {
+  background: linear-gradient(rgba(0, 0, 0, 0.9)),
+    url(('../img/space-tourism.jpg'));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .graph-modal__close {
   position: static;
   width: 0;

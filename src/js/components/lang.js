@@ -1,7 +1,7 @@
 const langArr = {
   title: {
-    ru: "Портфолио",
-    en: "Portfolio",
+    ru: "Виталий Реутский",
+    en: "Vitaly Reutsky",
   },
   navMain: {
     ru: "Главная",
@@ -270,7 +270,7 @@ function changeLanguage() {
     location.reload();
   }
   select.value = hash;
-  //document.querySelector("title").innerHTML = langArr["title"][hash];
+  document.querySelector("title").innerHTML = langArr["title"][hash];
 
   for (let key in langArr) {
     let elem = document.querySelector(`[lng-${key}]`);
