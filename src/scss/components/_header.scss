@@ -125,6 +125,7 @@
     width: 35px;
     height: 31px;
     color: $white-color;
+    z-index: 4;
 
     &__line {
       height: 3px;
@@ -149,6 +150,7 @@
     min-height: 100%;
     width: 100%;
     background: rgba(0, 0, 0, 0.9);
+    z-index: 4;
   }
   .menu--active {
     transform: translateX(0);
