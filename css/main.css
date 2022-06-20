@@ -335,45 +335,45 @@ a {
 }
 
 .graph-modal__ws {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75))), url("../img/ws.jpg");
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.75)), url("../img/ws.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.75)), url("../img/ws.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9))), url("../img/ws.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.9)), url("../img/ws.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.9)), url("../img/ws.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .graph-modal__sh {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75))), url("../img/sneaker-shop.jpg");
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.75)), url("../img/sneaker-shop.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.75)), url("../img/sneaker-shop.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9))), url("../img/sneaker-shop.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.9)), url("../img/sneaker-shop.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.9)), url("../img/sneaker-shop.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .graph-modal__ch {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75))), url("../img/chisinau.jpg");
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.75)), url("../img/chisinau.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.75)), url("../img/chisinau.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9))), url("../img/chisinau.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.9)), url("../img/chisinau.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.9)), url("../img/chisinau.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .graph-modal__st {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75))), url("../img/space-tourism.jpg");
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.75)), url("../img/space-tourism.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.75)), url("../img/space-tourism.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9))), url("../img/space-tourism.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.9)), url("../img/space-tourism.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.9)), url("../img/space-tourism.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .graph-modal__sinotec {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75))), url("../img/sinotec.jpg");
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.75)), url("../img/sinotec.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.75)), url("../img/sinotec.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9))), url("../img/sinotec.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.9)), url("../img/sinotec.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.9)), url("../img/sinotec.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -794,16 +794,14 @@ a {
   font-family: "Mont", sans-serif;
   font-weight: 700;
   cursor: pointer;
-  padding-left: 15px;
+  padding-right: 15px;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-}
-.choices__item:first-child {
-  padding: 0px 15px 0px 0px;
+  padding: 0px 15px 0px 15px;
   position: relative;
 }
-.choices__item:first-child::after {
+.choices__item::after {
   content: "";
   position: absolute;
   top: 0;
@@ -811,6 +809,15 @@ a {
   width: 2px;
   height: 100%;
   background: #fff;
+}
+.choices__item:first-child {
+  padding-left: 0;
+}
+.choices__item:last-child {
+  padding-right: 0;
+}
+.choices__item:last-child::after {
+  display: none;
 }
 @media (min-width: 1025px) {
   .choices__item:hover {
