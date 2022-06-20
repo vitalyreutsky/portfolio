@@ -82,6 +82,7 @@
 }
 
 //choice-select
+
 .choices__inner {
   display: none;
 }
@@ -93,19 +94,28 @@
   font-family: $font-family;
   font-weight: 700;
   cursor: pointer;
-  padding-left: 15px;
+  padding-right: 15px;
   transition: all 0.3s;
+  padding: 0px 15px 0px 15px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: $white-color;
+  }
+
   &:first-child {
-    padding: 0px 15px 0px 0px;
-    position: relative;
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
     &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 2px;
-      height: 100%;
-      background: $white-color;
+      display: none;
     }
   }
 

@@ -262,7 +262,7 @@ const langArr = {
 };
 
 const select = document.querySelector(".change-lang");
-const allLang = ["ru", "en"];
+const allLang = ["en", "ru"];
 
 select.addEventListener("change", changeURLLanguage);
 
@@ -278,7 +278,7 @@ function changeLanguage() {
 
   hash = hash.substr(1);
   if (!allLang.includes(hash)) {
-    location.href = window.location.pathname + "#ru";
+    location.href = window.location.pathname + "#en";
     location.reload();
   }
   select.value = hash;
