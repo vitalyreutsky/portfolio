@@ -11,6 +11,10 @@ const langArr = {
     ru: "Обо мне",
     en: "About",
   },
+  navReviews: {
+    ru: "Отзывы",
+    en: "Reviews",
+  },
   navPortfolio: {
     ru: "Портфолио",
     en: "Portfolio",
@@ -95,7 +99,7 @@ const langArr = {
     ru: "Отзывы",
     en: "Reviews",
   },
-  
+
   review1: {
     ru: `"Все сделано быстро и отлично! Однозначно рекомендую Виталия как отличного исполнителя!"`,
     en: `"Everything was done quickly and perfectly! I definitely recommend Vitaly as an excellent performer!"`,
