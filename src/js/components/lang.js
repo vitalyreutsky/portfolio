@@ -95,6 +95,7 @@ const langArr = {
     ru: "Отзывы",
     en: "Reviews",
   },
+  
   review1: {
     ru: `"Все сделано быстро и отлично! Однозначно рекомендую Виталия как отличного исполнителя!"`,
     en: `"Everything was done quickly and perfectly! I definitely recommend Vitaly as an excellent performer!"`,
@@ -142,6 +143,33 @@ const langArr = {
   reviewAuthor6: {
     ru: "Ярослав Бурлевич",
     en: "Yaroslav Burlevich",
+  },
+  review7: {
+    ru: `"С удовольствием порекомендую и хочу высказать свою признательность Реутскому Виталию за
+оперативную и, важно, качественную работу! Виталий разработал замечательный лэндинг, при
+этом, хочу выделить отдельно, он:
+- выдвигал свои идеи и обосновывал почему это лучше;
+- всегда внимательно относился к моим предложениям;
+- любые «помарки» исправлял очень быстро, вносил коррективы чётко в срок;
+- тестировал, экспериментировал, подсказывал.
+Благодаря профессиональному подходу удалось создать современный лэндинг как с точки зрения
+дизайна, так и маркетинга. Отличные решения и прекрасная работа! А сроки – это, на мой взгляд,
+бонус от Виталия – 5 дней от начала техзадания до завершения! В планах, при содействии Виталия, запустить еще 2 проекта на основе лэндинга"`,
+    en: `"I would be happy to recommend and would like to express my gratitude to Vitaly Reutsky for
+Prompt and, importantly, high-quality work! Vitaly developed a great website, and at the same time
+At the same time, I want to point out separately, he:
+- put forward his ideas and justified why it was better;
+- Always attentive to my suggestions;
+- any "flaws" corrected very quickly, making adjustments in time;
+- tested, experimented, suggested.
+Thanks to a professional approach we were able to create a modern landing, both in terms of
+both in terms of design and marketing. Great solutions and great work! And the timing is, in my opinion,
+a bonus from Vitaly - 5 days from the beginning of the terms of reference to completion! The plan, with the assistance of Vitaly
+Vitaly, I have two more projects based on the branding"`,
+  },
+  reviewAuthor7: {
+    ru: "В.А. Герасим",
+    en: "V.A. Gerasim",
   },
   portfolioTitle: {
     ru: "Портфолио",
