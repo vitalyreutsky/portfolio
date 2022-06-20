@@ -199,11 +199,23 @@ const langArr = {
     ru: "Перейти",
     en: "Link",
   },
+  modalLinkSinotec: {
+    ru: "Перейти",
+    en: "Link",
+  },
+  modalTextSinotec: {
+    ru: "Сайт для компании по управлению рисками при импорте товаров из Китая.",
+    en: "Site for a risk management company when importing goods from China.",
+  },
   portfolioMoreCh: {
     ru: "Подробнее",
     en: "More",
   },
   portfolioMoreST: {
+    ru: "Подробнее",
+    en: "More",
+  },
+  portfolioMoreSinotec: {
     ru: "Подробнее",
     en: "More",
   },

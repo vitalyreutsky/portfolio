@@ -1,7 +1,9 @@
 .graph-modal__container {
+  max-width: 500px;
+  height: 200px;
   background-color: $bg-color;
   padding: 50px 30px;
-  border: 1px solid grey;
+  border: 3px solid $main-color;
   border-radius: 0;
 }
 
@@ -13,6 +15,7 @@
 
 .graph-modal__portfolio {
   text-align: left;
+  font-size: 18px;
 }
 
 .graph-modal__ws {
@@ -31,8 +34,7 @@
 }
 
 .graph-modal__ch {
-  background: linear-gradient(rgba(0, 0, 0, 0.9)),
-    url(('../img/chisinau.jpg'));
+  background: linear-gradient(rgba(0, 0, 0, 0.9)), url(('../img/chisinau.jpg'));
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -41,6 +43,13 @@
 .graph-modal__st {
   background: linear-gradient(rgba(0, 0, 0, 0.9)),
     url(('../img/space-tourism.jpg'));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.graph-modal__sinotec {
+  background: linear-gradient(rgba(0, 0, 0, 0.9)), url(('../img/sinotec.jpg'));
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
