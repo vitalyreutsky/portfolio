@@ -100,6 +100,7 @@ const langArr = {
     en: "Reviews",
   },
 
+  //review1
   review1: {
     ru: `"Все сделано быстро и отлично! Однозначно рекомендую Виталия как отличного исполнителя!"`,
     en: `"Everything was done quickly and perfectly! I definitely recommend Vitaly as an excellent performer!"`,
@@ -108,6 +109,7 @@ const langArr = {
     ru: "Роман Довгаль",
     en: "Roman Dovgal",
   },
+  //review2
   review2: {
     ru: `"Работа была выполнена хорошо, приятно иметь дело с таким специалистом!"`,
     en: `"Job well done, a pleasure to deal with specialist!"`,
@@ -116,6 +118,7 @@ const langArr = {
     ru: "Максим Журавлев",
     en: "Maxim Zhuravlev",
   },
+  //review3
   review3: {
     ru: `"Всегда на связи, если есть какие то моменты - всегда предупреждает заранее. Работу выполнил хорошо."`,
     en: `"Always in touch, if there are any moments - always warns in advance. Did the job well"`,
@@ -124,6 +127,7 @@ const langArr = {
     ru: "Павел Арнутов",
     en: "Pavel Arnutov",
   },
+  //review4
   review4: {
     ru: `"Обратился к Виталию с проектом на SCSS. Проект был согласован и выполнен очень быстро (а это очень важно когда сроки поджимают), структурированно. Рекомендую."`,
     en: `"I contacted Vitaly with a SCSS project. The project was agreed and completed very quickly (and this is very important when the deadlines are running out). Structured. Recommend."`,
@@ -132,6 +136,7 @@ const langArr = {
     ru: "Мурат Ташенев",
     en: "Murat Tashenov",
   },
+  //review5
   review5: {
     ru: `"Сделано день в день! Очень доволен сотрудничеством! Качественный исполнитель!"`,
     en: `"Made to the day! Very pleased with the cooperation! Quality performer!"`,
@@ -140,6 +145,7 @@ const langArr = {
     ru: "Роман Довгаль",
     en: "Roman Dovgal",
   },
+  //review6
   review6: {
     ru: `"Отличный исполнитель!!! Очень приятный человек и очень качественно всё сделал!!! Рекомендую!!!"`,
     en: `"Great performer!!! Very nice person and did a great job! Recommend!!!"`,
@@ -148,6 +154,7 @@ const langArr = {
     ru: "Ярослав Бурлевич",
     en: "Yaroslav Burlevich",
   },
+  //review7
   review7: {
     ru: `"С удовольствием порекомендую и хочу высказать свою признательность Реутскому Виталию за
 оперативную и, важно, качественную работу! Виталий разработал замечательный лэндинг, при
@@ -158,7 +165,7 @@ const langArr = {
 - тестировал, экспериментировал, подсказывал.
 Благодаря профессиональному подходу удалось создать современный лэндинг как с точки зрения
 дизайна, так и маркетинга. Отличные решения и прекрасная работа! А сроки – это, на мой взгляд,
-бонус от Виталия – 5 дней от начала техзадания до завершения! В планах, при содействии Виталия, запустить еще 2 проекта на основе лэндинга"`,
+бонус от Виталия – 3 дня от начала техзадания до завершения! В планах, при содействии Виталия, запустить еще 2 проекта на основе лэндинга"`,
     en: `"I would be happy to recommend and would like to express my gratitude to Vitaly Reutsky for
 Prompt and, importantly, high-quality work! Vitaly developed a great website, and at the same time
 At the same time, I want to point out separately, he:
@@ -168,7 +175,7 @@ At the same time, I want to point out separately, he:
 - tested, experimented, suggested.
 Thanks to a professional approach we were able to create a modern landing, both in terms of
 both in terms of design and marketing. Great solutions and great work! And the timing is, in my opinion,
-a bonus from Vitaly - 5 days from the beginning of the terms of reference to completion! The plan, with the assistance of Vitaly
+a bonus from Vitaly - 3 days from the beginning of the terms of reference to completion! The plan, with the assistance of Vitaly
 Vitaly, I have two more projects based on the branding"`,
   },
   reviewAuthor7: {
@@ -191,66 +198,85 @@ Vitaly, I have two more projects based on the branding"`,
     ru: "Интернет-магазины",
     en: "Online stores",
   },
-  portfolioMoreWS: {
-    ru: "Подробнее",
-    en: "More",
-  },
+  //white-story
   modalTextWS: {
     ru: "Сайт для стоматологической клиники White Story.",
     en: "Website for the White Story dental clinic.",
+  },
+  portfolioMoreWS: {
+    ru: "Подробнее",
+    en: "More",
   },
   modalLinkWS: {
     ru: "Перейти",
     en: "Link",
   },
-  portfolioMoreSS: {
-    ru: "Подробнее",
-    en: "More",
-  },
+  //sneaker-shop
   modalTextSS: {
     ru: "Интернет-магазин мужской спортивной обуви.",
     en: "Online store for men's sports shoes.",
+  },
+  portfolioMoreSS: {
+    ru: "Подробнее",
+    en: "More",
   },
   modalLinkSS: {
     ru: "Перейти",
     en: "Link",
   },
+  //chisinau
   modalTextCh: {
     ru: "Страница для молдавского сайта Chisinau Visit.",
     en: "Page for Moldovan site Chisinau Visit.",
-  },
-  modalLinkCh: {
-    ru: "Перейти",
-    en: "Link",
-  },
-  modalTextST: {
-    ru: "Сайт для услуги космического туризма.",
-    en: "Site for space tourism service.",
-  },
-  modalLinkST: {
-    ru: "Перейти",
-    en: "Link",
-  },
-  modalLinkSinotec: {
-    ru: "Перейти",
-    en: "Link",
-  },
-  modalTextSinotec: {
-    ru: "Сайт для компании по управлению рисками при импорте товаров из Китая.",
-    en: "Site for a risk management company when importing goods from China.",
   },
   portfolioMoreCh: {
     ru: "Подробнее",
     en: "More",
   },
+  modalLinkCh: {
+    ru: "Перейти",
+    en: "Link",
+  },
+  //space-tourism
+  modalTextST: {
+    ru: "Сайт для услуги космического туризма.",
+    en: "Site for space tourism service.",
+  },
   portfolioMoreST: {
     ru: "Подробнее",
     en: "More",
+  },
+  modalLinkST: {
+    ru: "Перейти",
+    en: "Link",
+  },
+  //sinotec
+  modalTextSinotec: {
+    ru: "Сайт для компании по управлению рисками при импорте товаров из Китая.",
+    en: "Site for a risk management company when importing goods from China.",
   },
   portfolioMoreSinotec: {
     ru: "Подробнее",
     en: "More",
   },
+  modalLinkSinotec: {
+    ru: "Перейти",
+    en: "Link",
+  },
+  //roofing-academy
+  modalTextRoof: {
+    ru: "Продажа кровельных материалов в Тюмени и Тюменской области.",
+    en: "Sales of roofing materials in Tyumen and Tyumen region.",
+  },
+  portfolioMoreRoof: {
+    ru: "Подробнее",
+    en: "More",
+  },
+  modalLinkRoof: {
+    ru: "Перейти",
+    en: "Link",
+  },
+
   portfolioDescr: {
     ru: "* большую часть работ можно посмотреть на github",
     en: "* most of the work can be viewed on github",

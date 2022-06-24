@@ -79,10 +79,21 @@
 .burger {
   @include burger;
   display: none;
+  --burger-width: 20px;
+  --burger-height: 20px;
+  --burger-line-height: 4px;
+  &__line {
+    border-radius: 4px;
+  }
+  &::after {
+    border-radius: 4px;
+  }
+  &::before {
+    border-radius: 4px;
+  }
 }
 
 //choice-select
-
 .choices__inner {
   display: none;
 }
@@ -136,21 +147,6 @@
     height: 31px;
     color: $white-color;
     z-index: 4;
-
-    &__line {
-      height: 3px;
-      border-radius: 3px;
-    }
-
-    &::after {
-      height: 3px;
-      border-radius: 3px;
-    }
-
-    &::before {
-      height: 3px;
-      border-radius: 3px;
-    }
   }
   .nav-menu {
     transform: translateX(100%);
