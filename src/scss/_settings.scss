@@ -30,6 +30,10 @@ h6 {
   background-color: $bg-color;
   color: $white-color;
   font-size: 16px;
+}
+
+.site-container {
+  opacity: 0;
   position: relative;
   &::after {
     content: "";
@@ -48,7 +52,7 @@ h6 {
 }
 
 @include mobile {
-  .page__body {
+  .site-container {
     &::after {
       @include image-set-mobile("../img/bg");
       background-size: cover;
