@@ -20,7 +20,6 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_preload__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/preload */ "./src/js/components/preload.js");
-/* harmony import */ var _components_preload__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_preload__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_lang__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/lang */ "./src/js/components/lang.js");
 /* harmony import */ var _components_lang__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_lang__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_custom_select__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/custom-select */ "./src/js/components/custom-select.js");
@@ -372,8 +371,8 @@ var langArr = {
     en: "About me"
   },
   aboutText: {
-    ru: "Привет! Я занимаюсь разработкой сайтов любой сложности и веб-приложений. Также специализируюсь на веб-дизайне. Создаю не только красивый и уникальный продукт но и продающий. Опыт более 2-х лет. За это время помог реализовать идеи своих клиентов из Украины, Молдовы, Казахстана, Беларуси и России. В своей работе (frontend) использую такие технологии как HTML5, SCSS3, Bootstrap, JavaScript, JQuery, различные библиотеки Slick, Swiper, AOS и многое другое. Автоматизирую свой процесс разработки с помощью Gulp, Webpack. Также есть опыт с React JS. Есть опыт с backend частью - PHP. И это далеко не все на чем я готов остановиться. <br> Для улучшения своих навыков, закончил курсы в школе it-shatle.",
-    en: "Hi! I develop websites of any complexity and web applications. I also specialize in web design. I create not only a beautiful and unique product, but also a selling one. My experience is more than 2 years. During this time, I have helped to realize the ideas of my clients from Ukraine, Moldova, Kazakhstan, Belarus and Russia. In my work (frontend) I use technologies such as HTML5, SCSS3, Bootstrap, JavaScript, JQuery, various libraries Slick, Swiper, AOS and much more. I automate my development process using Gulp, Webpack. Also I have experience with React JS. I have experience with the backend part - PHP. And that's not all I'm ready to cover. <br> To improve my skills, completed a course at the it-shatle school."
+    ru: "Привет! Я занимаюсь разработкой сайтов любой сложности и веб-приложений. Также специализируюсь на веб-дизайне. Создаю не только красивый и уникальный продукт но и продающий. Опыт более 2-х лет. За это время помог реализовать идеи своих клиентов из Украины, Молдовы, Эстонии, Казахстана, Беларуси и России. В своей работе (frontend) использую такие технологии как HTML5, SCSS3, Bootstrap, JavaScript, JQuery, различные библиотеки Slick, Swiper, AOS и многое другое. Автоматизирую свой процесс разработки с помощью Gulp, Webpack. Также есть опыт с React JS. Есть опыт с backend частью - PHP. И это далеко не все на чем я готов остановиться. <br> Для улучшения своих навыков, закончил курсы в школе it-shatle.",
+    en: "Hi! I develop websites of any complexity and web applications. I also specialize in web design. I create not only a beautiful and unique product, but also a selling one. My experience is more than 2 years. During this time, I have helped to realize the ideas of my clients from Ukraine, Moldova, Estonia, Kazakhstan, Belarus and Russia. In my work (frontend) I use technologies such as HTML5, SCSS3, Bootstrap, JavaScript, JQuery, various libraries Slick, Swiper, AOS and much more. I automate my development process using Gulp, Webpack. Also I have experience with React JS. I have experience with the backend part - PHP. And that's not all I'm ready to cover. <br> To improve my skills, completed a course at the it-shatle school."
   },
   prioritiesTitle: {
     ru: "Приоритеты",
@@ -423,6 +422,7 @@ var langArr = {
     ru: "Отзывы",
     en: "Reviews"
   },
+  //review1
   review1: {
     ru: "\"\u0412\u0441\u0435 \u0441\u0434\u0435\u043B\u0430\u043D\u043E \u0431\u044B\u0441\u0442\u0440\u043E \u0438 \u043E\u0442\u043B\u0438\u0447\u043D\u043E! \u041E\u0434\u043D\u043E\u0437\u043D\u0430\u0447\u043D\u043E \u0440\u0435\u043A\u043E\u043C\u0435\u043D\u0434\u0443\u044E \u0412\u0438\u0442\u0430\u043B\u0438\u044F \u043A\u0430\u043A \u043E\u0442\u043B\u0438\u0447\u043D\u043E\u0433\u043E \u0438\u0441\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044F!\"",
     en: "\"Everything was done quickly and perfectly! I definitely recommend Vitaly as an excellent performer!\""
@@ -431,6 +431,7 @@ var langArr = {
     ru: "Роман Довгаль",
     en: "Roman Dovgal"
   },
+  //review2
   review2: {
     ru: "\"\u0420\u0430\u0431\u043E\u0442\u0430 \u0431\u044B\u043B\u0430 \u0432\u044B\u043F\u043E\u043B\u043D\u0435\u043D\u0430 \u0445\u043E\u0440\u043E\u0448\u043E, \u043F\u0440\u0438\u044F\u0442\u043D\u043E \u0438\u043C\u0435\u0442\u044C \u0434\u0435\u043B\u043E \u0441 \u0442\u0430\u043A\u0438\u043C \u0441\u043F\u0435\u0446\u0438\u0430\u043B\u0438\u0441\u0442\u043E\u043C!\"",
     en: "\"Job well done, a pleasure to deal with specialist!\""
@@ -439,6 +440,7 @@ var langArr = {
     ru: "Максим Журавлев",
     en: "Maxim Zhuravlev"
   },
+  //review3
   review3: {
     ru: "\"\u0412\u0441\u0435\u0433\u0434\u0430 \u043D\u0430 \u0441\u0432\u044F\u0437\u0438, \u0435\u0441\u043B\u0438 \u0435\u0441\u0442\u044C \u043A\u0430\u043A\u0438\u0435 \u0442\u043E \u043C\u043E\u043C\u0435\u043D\u0442\u044B - \u0432\u0441\u0435\u0433\u0434\u0430 \u043F\u0440\u0435\u0434\u0443\u043F\u0440\u0435\u0436\u0434\u0430\u0435\u0442 \u0437\u0430\u0440\u0430\u043D\u0435\u0435. \u0420\u0430\u0431\u043E\u0442\u0443 \u0432\u044B\u043F\u043E\u043B\u043D\u0438\u043B \u0445\u043E\u0440\u043E\u0448\u043E.\"",
     en: "\"Always in touch, if there are any moments - always warns in advance. Did the job well\""
@@ -447,6 +449,7 @@ var langArr = {
     ru: "Павел Арнутов",
     en: "Pavel Arnutov"
   },
+  //review4
   review4: {
     ru: "\"\u041E\u0431\u0440\u0430\u0442\u0438\u043B\u0441\u044F \u043A \u0412\u0438\u0442\u0430\u043B\u0438\u044E \u0441 \u043F\u0440\u043E\u0435\u043A\u0442\u043E\u043C \u043D\u0430 SCSS. \u041F\u0440\u043E\u0435\u043A\u0442 \u0431\u044B\u043B \u0441\u043E\u0433\u043B\u0430\u0441\u043E\u0432\u0430\u043D \u0438 \u0432\u044B\u043F\u043E\u043B\u043D\u0435\u043D \u043E\u0447\u0435\u043D\u044C \u0431\u044B\u0441\u0442\u0440\u043E (\u0430 \u044D\u0442\u043E \u043E\u0447\u0435\u043D\u044C \u0432\u0430\u0436\u043D\u043E \u043A\u043E\u0433\u0434\u0430 \u0441\u0440\u043E\u043A\u0438 \u043F\u043E\u0434\u0436\u0438\u043C\u0430\u044E\u0442), \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u043E. \u0420\u0435\u043A\u043E\u043C\u0435\u043D\u0434\u0443\u044E.\"",
     en: "\"I contacted Vitaly with a SCSS project. The project was agreed and completed very quickly (and this is very important when the deadlines are running out). Structured. Recommend.\""
@@ -455,6 +458,7 @@ var langArr = {
     ru: "Мурат Ташенев",
     en: "Murat Tashenov"
   },
+  //review5
   review5: {
     ru: "\"\u0421\u0434\u0435\u043B\u0430\u043D\u043E \u0434\u0435\u043D\u044C \u0432 \u0434\u0435\u043D\u044C! \u041E\u0447\u0435\u043D\u044C \u0434\u043E\u0432\u043E\u043B\u0435\u043D \u0441\u043E\u0442\u0440\u0443\u0434\u043D\u0438\u0447\u0435\u0441\u0442\u0432\u043E\u043C! \u041A\u0430\u0447\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0439 \u0438\u0441\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C!\"",
     en: "\"Made to the day! Very pleased with the cooperation! Quality performer!\""
@@ -463,6 +467,7 @@ var langArr = {
     ru: "Роман Довгаль",
     en: "Roman Dovgal"
   },
+  //review6
   review6: {
     ru: "\"\u041E\u0442\u043B\u0438\u0447\u043D\u044B\u0439 \u0438\u0441\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C!!! \u041E\u0447\u0435\u043D\u044C \u043F\u0440\u0438\u044F\u0442\u043D\u044B\u0439 \u0447\u0435\u043B\u043E\u0432\u0435\u043A \u0438 \u043E\u0447\u0435\u043D\u044C \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u043E \u0432\u0441\u0451 \u0441\u0434\u0435\u043B\u0430\u043B!!! \u0420\u0435\u043A\u043E\u043C\u0435\u043D\u0434\u0443\u044E!!!\"",
     en: "\"Great performer!!! Very nice person and did a great job! Recommend!!!\""
@@ -471,9 +476,10 @@ var langArr = {
     ru: "Ярослав Бурлевич",
     en: "Yaroslav Burlevich"
   },
+  //review7
   review7: {
-    ru: "\"\u0421 \u0443\u0434\u043E\u0432\u043E\u043B\u044C\u0441\u0442\u0432\u0438\u0435\u043C \u043F\u043E\u0440\u0435\u043A\u043E\u043C\u0435\u043D\u0434\u0443\u044E \u0438 \u0445\u043E\u0447\u0443 \u0432\u044B\u0441\u043A\u0430\u0437\u0430\u0442\u044C \u0441\u0432\u043E\u044E \u043F\u0440\u0438\u0437\u043D\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u0420\u0435\u0443\u0442\u0441\u043A\u043E\u043C\u0443 \u0412\u0438\u0442\u0430\u043B\u0438\u044E \u0437\u0430\n\u043E\u043F\u0435\u0440\u0430\u0442\u0438\u0432\u043D\u0443\u044E \u0438, \u0432\u0430\u0436\u043D\u043E, \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u0443\u044E \u0440\u0430\u0431\u043E\u0442\u0443! \u0412\u0438\u0442\u0430\u043B\u0438\u0439 \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0430\u043B \u0437\u0430\u043C\u0435\u0447\u0430\u0442\u0435\u043B\u044C\u043D\u044B\u0439 \u043B\u044D\u043D\u0434\u0438\u043D\u0433, \u043F\u0440\u0438\n\u044D\u0442\u043E\u043C, \u0445\u043E\u0447\u0443 \u0432\u044B\u0434\u0435\u043B\u0438\u0442\u044C \u043E\u0442\u0434\u0435\u043B\u044C\u043D\u043E, \u043E\u043D:\n- \u0432\u044B\u0434\u0432\u0438\u0433\u0430\u043B \u0441\u0432\u043E\u0438 \u0438\u0434\u0435\u0438 \u0438 \u043E\u0431\u043E\u0441\u043D\u043E\u0432\u044B\u0432\u0430\u043B \u043F\u043E\u0447\u0435\u043C\u0443 \u044D\u0442\u043E \u043B\u0443\u0447\u0448\u0435;\n- \u0432\u0441\u0435\u0433\u0434\u0430 \u0432\u043D\u0438\u043C\u0430\u0442\u0435\u043B\u044C\u043D\u043E \u043E\u0442\u043D\u043E\u0441\u0438\u043B\u0441\u044F \u043A \u043C\u043E\u0438\u043C \u043F\u0440\u0435\u0434\u043B\u043E\u0436\u0435\u043D\u0438\u044F\u043C;\n- \u043B\u044E\u0431\u044B\u0435 \xAB\u043F\u043E\u043C\u0430\u0440\u043A\u0438\xBB \u0438\u0441\u043F\u0440\u0430\u0432\u043B\u044F\u043B \u043E\u0447\u0435\u043D\u044C \u0431\u044B\u0441\u0442\u0440\u043E, \u0432\u043D\u043E\u0441\u0438\u043B \u043A\u043E\u0440\u0440\u0435\u043A\u0442\u0438\u0432\u044B \u0447\u0451\u0442\u043A\u043E \u0432 \u0441\u0440\u043E\u043A;\n- \u0442\u0435\u0441\u0442\u0438\u0440\u043E\u0432\u0430\u043B, \u044D\u043A\u0441\u043F\u0435\u0440\u0438\u043C\u0435\u043D\u0442\u0438\u0440\u043E\u0432\u0430\u043B, \u043F\u043E\u0434\u0441\u043A\u0430\u0437\u044B\u0432\u0430\u043B.\n\u0411\u043B\u0430\u0433\u043E\u0434\u0430\u0440\u044F \u043F\u0440\u043E\u0444\u0435\u0441\u0441\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u043E\u043C\u0443 \u043F\u043E\u0434\u0445\u043E\u0434\u0443 \u0443\u0434\u0430\u043B\u043E\u0441\u044C \u0441\u043E\u0437\u0434\u0430\u0442\u044C \u0441\u043E\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u044B\u0439 \u043B\u044D\u043D\u0434\u0438\u043D\u0433 \u043A\u0430\u043A \u0441 \u0442\u043E\u0447\u043A\u0438 \u0437\u0440\u0435\u043D\u0438\u044F\n\u0434\u0438\u0437\u0430\u0439\u043D\u0430, \u0442\u0430\u043A \u0438 \u043C\u0430\u0440\u043A\u0435\u0442\u0438\u043D\u0433\u0430. \u041E\u0442\u043B\u0438\u0447\u043D\u044B\u0435 \u0440\u0435\u0448\u0435\u043D\u0438\u044F \u0438 \u043F\u0440\u0435\u043A\u0440\u0430\u0441\u043D\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430! \u0410 \u0441\u0440\u043E\u043A\u0438 \u2013 \u044D\u0442\u043E, \u043D\u0430 \u043C\u043E\u0439 \u0432\u0437\u0433\u043B\u044F\u0434,\n\u0431\u043E\u043D\u0443\u0441 \u043E\u0442 \u0412\u0438\u0442\u0430\u043B\u0438\u044F \u2013 5 \u0434\u043D\u0435\u0439 \u043E\u0442 \u043D\u0430\u0447\u0430\u043B\u0430 \u0442\u0435\u0445\u0437\u0430\u0434\u0430\u043D\u0438\u044F \u0434\u043E \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043D\u0438\u044F! \u0412 \u043F\u043B\u0430\u043D\u0430\u0445, \u043F\u0440\u0438 \u0441\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0438 \u0412\u0438\u0442\u0430\u043B\u0438\u044F, \u0437\u0430\u043F\u0443\u0441\u0442\u0438\u0442\u044C \u0435\u0449\u0435 2 \u043F\u0440\u043E\u0435\u043A\u0442\u0430 \u043D\u0430 \u043E\u0441\u043D\u043E\u0432\u0435 \u043B\u044D\u043D\u0434\u0438\u043D\u0433\u0430\"",
-    en: "\"I would be happy to recommend and would like to express my gratitude to Vitaly Reutsky for\nPrompt and, importantly, high-quality work! Vitaly developed a great website, and at the same time\nAt the same time, I want to point out separately, he:\n- put forward his ideas and justified why it was better;\n- Always attentive to my suggestions;\n- any \"flaws\" corrected very quickly, making adjustments in time;\n- tested, experimented, suggested.\nThanks to a professional approach we were able to create a modern landing, both in terms of\nboth in terms of design and marketing. Great solutions and great work! And the timing is, in my opinion,\na bonus from Vitaly - 5 days from the beginning of the terms of reference to completion! The plan, with the assistance of Vitaly\nVitaly, I have two more projects based on the branding\""
+    ru: "\"\u0421 \u0443\u0434\u043E\u0432\u043E\u043B\u044C\u0441\u0442\u0432\u0438\u0435\u043C \u043F\u043E\u0440\u0435\u043A\u043E\u043C\u0435\u043D\u0434\u0443\u044E \u0438 \u0445\u043E\u0447\u0443 \u0432\u044B\u0441\u043A\u0430\u0437\u0430\u0442\u044C \u0441\u0432\u043E\u044E \u043F\u0440\u0438\u0437\u043D\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u0420\u0435\u0443\u0442\u0441\u043A\u043E\u043C\u0443 \u0412\u0438\u0442\u0430\u043B\u0438\u044E \u0437\u0430\n\u043E\u043F\u0435\u0440\u0430\u0442\u0438\u0432\u043D\u0443\u044E \u0438, \u0432\u0430\u0436\u043D\u043E, \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u0443\u044E \u0440\u0430\u0431\u043E\u0442\u0443! \u0412\u0438\u0442\u0430\u043B\u0438\u0439 \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0430\u043B \u0437\u0430\u043C\u0435\u0447\u0430\u0442\u0435\u043B\u044C\u043D\u044B\u0439 \u043B\u044D\u043D\u0434\u0438\u043D\u0433, \u043F\u0440\u0438\n\u044D\u0442\u043E\u043C, \u0445\u043E\u0447\u0443 \u0432\u044B\u0434\u0435\u043B\u0438\u0442\u044C \u043E\u0442\u0434\u0435\u043B\u044C\u043D\u043E, \u043E\u043D:\n- \u0432\u044B\u0434\u0432\u0438\u0433\u0430\u043B \u0441\u0432\u043E\u0438 \u0438\u0434\u0435\u0438 \u0438 \u043E\u0431\u043E\u0441\u043D\u043E\u0432\u044B\u0432\u0430\u043B \u043F\u043E\u0447\u0435\u043C\u0443 \u044D\u0442\u043E \u043B\u0443\u0447\u0448\u0435;\n- \u0432\u0441\u0435\u0433\u0434\u0430 \u0432\u043D\u0438\u043C\u0430\u0442\u0435\u043B\u044C\u043D\u043E \u043E\u0442\u043D\u043E\u0441\u0438\u043B\u0441\u044F \u043A \u043C\u043E\u0438\u043C \u043F\u0440\u0435\u0434\u043B\u043E\u0436\u0435\u043D\u0438\u044F\u043C;\n- \u043B\u044E\u0431\u044B\u0435 \xAB\u043F\u043E\u043C\u0430\u0440\u043A\u0438\xBB \u0438\u0441\u043F\u0440\u0430\u0432\u043B\u044F\u043B \u043E\u0447\u0435\u043D\u044C \u0431\u044B\u0441\u0442\u0440\u043E, \u0432\u043D\u043E\u0441\u0438\u043B \u043A\u043E\u0440\u0440\u0435\u043A\u0442\u0438\u0432\u044B \u0447\u0451\u0442\u043A\u043E \u0432 \u0441\u0440\u043E\u043A;\n- \u0442\u0435\u0441\u0442\u0438\u0440\u043E\u0432\u0430\u043B, \u044D\u043A\u0441\u043F\u0435\u0440\u0438\u043C\u0435\u043D\u0442\u0438\u0440\u043E\u0432\u0430\u043B, \u043F\u043E\u0434\u0441\u043A\u0430\u0437\u044B\u0432\u0430\u043B.\n\u0411\u043B\u0430\u0433\u043E\u0434\u0430\u0440\u044F \u043F\u0440\u043E\u0444\u0435\u0441\u0441\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u043E\u043C\u0443 \u043F\u043E\u0434\u0445\u043E\u0434\u0443 \u0443\u0434\u0430\u043B\u043E\u0441\u044C \u0441\u043E\u0437\u0434\u0430\u0442\u044C \u0441\u043E\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u044B\u0439 \u043B\u044D\u043D\u0434\u0438\u043D\u0433 \u043A\u0430\u043A \u0441 \u0442\u043E\u0447\u043A\u0438 \u0437\u0440\u0435\u043D\u0438\u044F\n\u0434\u0438\u0437\u0430\u0439\u043D\u0430, \u0442\u0430\u043A \u0438 \u043C\u0430\u0440\u043A\u0435\u0442\u0438\u043D\u0433\u0430. \u041E\u0442\u043B\u0438\u0447\u043D\u044B\u0435 \u0440\u0435\u0448\u0435\u043D\u0438\u044F \u0438 \u043F\u0440\u0435\u043A\u0440\u0430\u0441\u043D\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430! \u0410 \u0441\u0440\u043E\u043A\u0438 \u2013 \u044D\u0442\u043E, \u043D\u0430 \u043C\u043E\u0439 \u0432\u0437\u0433\u043B\u044F\u0434,\n\u0431\u043E\u043D\u0443\u0441 \u043E\u0442 \u0412\u0438\u0442\u0430\u043B\u0438\u044F \u2013 3 \u0434\u043D\u044F \u043E\u0442 \u043D\u0430\u0447\u0430\u043B\u0430 \u0442\u0435\u0445\u0437\u0430\u0434\u0430\u043D\u0438\u044F \u0434\u043E \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043D\u0438\u044F! \u0412 \u043F\u043B\u0430\u043D\u0430\u0445, \u043F\u0440\u0438 \u0441\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0438 \u0412\u0438\u0442\u0430\u043B\u0438\u044F, \u0437\u0430\u043F\u0443\u0441\u0442\u0438\u0442\u044C \u0435\u0449\u0435 2 \u043F\u0440\u043E\u0435\u043A\u0442\u0430 \u043D\u0430 \u043E\u0441\u043D\u043E\u0432\u0435 \u043B\u044D\u043D\u0434\u0438\u043D\u0433\u0430\"",
+    en: "\"I would be happy to recommend and would like to express my gratitude to Vitaly Reutsky for\nPrompt and, importantly, high-quality work! Vitaly developed a great website, and at the same time\nAt the same time, I want to point out separately, he:\n- put forward his ideas and justified why it was better;\n- Always attentive to my suggestions;\n- any \"flaws\" corrected very quickly, making adjustments in time;\n- tested, experimented, suggested.\nThanks to a professional approach we were able to create a modern landing, both in terms of\nboth in terms of design and marketing. Great solutions and great work! And the timing is, in my opinion,\na bonus from Vitaly - 3 days from the beginning of the terms of reference to completion! The plan, with the assistance of Vitaly\nVitaly, I have two more projects based on the branding\""
   },
   reviewAuthor7: {
     ru: "В.А. Герасим",
@@ -495,65 +501,83 @@ var langArr = {
     ru: "Интернет-магазины",
     en: "Online stores"
   },
-  portfolioMoreWS: {
-    ru: "Подробнее",
-    en: "More"
-  },
+  //white-story
   modalTextWS: {
     ru: "Сайт для стоматологической клиники White Story.",
     en: "Website for the White Story dental clinic."
+  },
+  portfolioMoreWS: {
+    ru: "Подробнее",
+    en: "More"
   },
   modalLinkWS: {
     ru: "Перейти",
     en: "Link"
   },
-  portfolioMoreSS: {
-    ru: "Подробнее",
-    en: "More"
-  },
+  //sneaker-shop
   modalTextSS: {
     ru: "Интернет-магазин мужской спортивной обуви.",
     en: "Online store for men's sports shoes."
+  },
+  portfolioMoreSS: {
+    ru: "Подробнее",
+    en: "More"
   },
   modalLinkSS: {
     ru: "Перейти",
     en: "Link"
   },
+  //chisinau
   modalTextCh: {
     ru: "Страница для молдавского сайта Chisinau Visit.",
     en: "Page for Moldovan site Chisinau Visit."
-  },
-  modalLinkCh: {
-    ru: "Перейти",
-    en: "Link"
-  },
-  modalTextST: {
-    ru: "Сайт для услуги космического туризма.",
-    en: "Site for space tourism service."
-  },
-  modalLinkST: {
-    ru: "Перейти",
-    en: "Link"
-  },
-  modalLinkSinotec: {
-    ru: "Перейти",
-    en: "Link"
-  },
-  modalTextSinotec: {
-    ru: "Сайт для компании по управлению рисками при импорте товаров из Китая.",
-    en: "Site for a risk management company when importing goods from China."
   },
   portfolioMoreCh: {
     ru: "Подробнее",
     en: "More"
   },
+  modalLinkCh: {
+    ru: "Перейти",
+    en: "Link"
+  },
+  //space-tourism
+  modalTextST: {
+    ru: "Сайт для услуги космического туризма.",
+    en: "Site for space tourism service."
+  },
   portfolioMoreST: {
     ru: "Подробнее",
     en: "More"
   },
+  modalLinkST: {
+    ru: "Перейти",
+    en: "Link"
+  },
+  //sinotec
+  modalTextSinotec: {
+    ru: "Сайт для компании по управлению рисками при импорте товаров из Китая.",
+    en: "Site for a risk management company when importing goods from China."
+  },
   portfolioMoreSinotec: {
     ru: "Подробнее",
     en: "More"
+  },
+  modalLinkSinotec: {
+    ru: "Перейти",
+    en: "Link"
+  },
+  //roofing-academy
+  modalTextRoof: {
+    ru: "Продажа кровельных материалов в Тюмени и Тюменской области.",
+    en: "Sales of roofing materials in Tyumen and Tyumen region."
+  },
+  portfolioMoreRoof: {
+    ru: "Подробнее",
+    en: "More"
+  },
+  modalLinkRoof: {
+    ru: "Перейти",
+    en: "Link"
   },
   portfolioDescr: {
     ru: "* большую часть работ можно посмотреть на github",
@@ -635,24 +659,13 @@ changeLanguage();
 /*!**************************************!*\
   !*** ./src/js/components/preload.js ***!
   \**************************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-document.addEventListener("DOMContentLoaded", function () {
-  var mediaFiles = document.querySelectorAll("body");
-  var percents = document.querySelector(".percents");
-  var i = 0;
-  mediaFiles.forEach(function (file) {
-    file.onload = function () {
-      i++;
-      percents.innerHTML = (i * 100 / mediaFiles.length).toFixed(1);
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var pace_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pace-js */ "./node_modules/pace-js/pace.js");
+/* harmony import */ var pace_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(pace_js__WEBPACK_IMPORTED_MODULE_0__);
 
-      if (i === mediaFiles.length) {
-        preloader.classList.add("preloader--hide");
-        percents.innerHTML = 100;
-      }
-    };
-  });
-});
 
 /***/ }),
 
@@ -13623,6 +13636,996 @@ class JustValidate {
 }
 
 
+
+/***/ }),
+
+/***/ "./node_modules/pace-js/pace.js":
+/*!**************************************!*\
+  !*** ./node_modules/pace-js/pace.js ***!
+  \**************************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_RESULT__;/*!
+ * pace.js v1.2.4
+ * https://github.com/CodeByZach/pace/
+ * Licensed MIT © HubSpot, Inc.
+ */
+(function() {
+	var AjaxMonitor, Bar, DocumentMonitor, ElementMonitor, ElementTracker, EventLagMonitor, Evented, Events, NoTargetError, Pace, RequestIntercept, SOURCE_KEYS, Scaler, SocketRequestTracker, XHRRequestTracker, addEventListener, animation, avgAmplitude, bar, cancelAnimation, cancelAnimationFrame, defaultOptions, extend, extendNative, getFromDOM, getIntercept, handlePushState, ignoreStack, init, now, options, requestAnimationFrame, result, runAnimation, scalers, shouldIgnoreURL, shouldTrack, source, sources, uniScaler, _WebSocket, _XDomainRequest, _XMLHttpRequest, _i, _intercept, _len, _pushState, _ref, _ref1, _replaceState,
+		__slice = [].slice,
+		__hasProp = {}.hasOwnProperty,
+		__extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+		__indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; },
+		__bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
+
+	defaultOptions = {
+		className: '',
+		catchupTime: 100,
+		initialRate: .03,
+		minTime: 250,
+		ghostTime: 100,
+		maxProgressPerFrame: 20,
+		easeFactor: 1.25,
+		startOnPageLoad: true,
+		restartOnPushState: true,
+		restartOnRequestAfter: 500,
+		target: 'body',
+		elements: {
+			checkInterval: 100,
+			selectors: ['body']
+		},
+		eventLag: {
+			minSamples: 10,
+			sampleCount: 3,
+			lagThreshold: 3
+		},
+		ajax: {
+			trackMethods: ['GET'],
+			trackWebSockets: true,
+			ignoreURLs: []
+		}
+	};
+
+	now = function() {
+		var _ref;
+		return (_ref = typeof performance !== "undefined" && performance !== null ? typeof performance.now === "function" ? performance.now() : void 0 : void 0) != null ? _ref : +(new Date);
+	};
+
+	requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+
+	cancelAnimationFrame = window.cancelAnimationFrame || window.mozCancelAnimationFrame;
+
+	addEventListener = function(obj, event, callback) {
+		if (typeof obj.addEventListener === "function") {
+			return obj.addEventListener(event, callback, false);
+		} else {
+			return function() {
+				if (typeof obj["on" + event] !== "function" || typeof obj["on" + event].eventListeners !== "object") {
+					var eventListeners = new Events();
+					if (typeof obj["on" + event] === "function") {
+						eventListeners.on(event, obj["on" + event]);
+					}
+					obj["on" + event] = function(evt) {
+						return eventListeners.trigger(event, evt);
+					};
+					obj["on" + event].eventListeners = eventListeners;
+				} else {
+					var eventListeners = obj["on" + event].eventListeners;
+				}
+				eventListeners.on(event, callback);
+			}();
+		}
+	};
+
+	if (requestAnimationFrame == null) {
+		requestAnimationFrame = function(fn) {
+			return setTimeout(fn, 50);
+		};
+		cancelAnimationFrame = function(id) {
+			return clearTimeout(id);
+		};
+	}
+
+	runAnimation = function(fn) {
+		var last, tick;
+		last = now();
+		tick = function() {
+			var diff;
+			diff = now() - last;
+			if (diff >= 33) {
+				last = now();
+				return fn(diff, function() {
+					return requestAnimationFrame(tick);
+				});
+			} else {
+				return setTimeout(tick, 33 - diff);
+			}
+		};
+		return tick();
+	};
+
+	result = function() {
+		var args, key, obj;
+		obj = arguments[0], key = arguments[1], args = 3 <= arguments.length ? __slice.call(arguments, 2) : [];
+		if (typeof obj[key] === 'function') {
+			return obj[key].apply(obj, args);
+		} else {
+			return obj[key];
+		}
+	};
+
+	extend = function() {
+		var key, out, source, sources, val, _i, _len;
+		out = arguments[0], sources = 2 <= arguments.length ? __slice.call(arguments, 1) : [];
+		for (_i = 0, _len = sources.length; _i < _len; _i++) {
+			source = sources[_i];
+			if (source) {
+				for (key in source) {
+					if (!__hasProp.call(source, key)) continue;
+					val = source[key];
+					if ((out[key] != null) && typeof out[key] === 'object' && (val != null) && typeof val === 'object') {
+						extend(out[key], val);
+					} else {
+						out[key] = val;
+					}
+				}
+			}
+		}
+		return out;
+	};
+
+	avgAmplitude = function(arr) {
+		var count, sum, v, _i, _len;
+		sum = count = 0;
+		for (_i = 0, _len = arr.length; _i < _len; _i++) {
+			v = arr[_i];
+			sum += Math.abs(v);
+			count++;
+		}
+		return sum / count;
+	};
+
+	getFromDOM = function(key, json) {
+		var data, e, el;
+		if (key == null) {
+			key = 'options';
+		}
+		if (json == null) {
+			json = true;
+		}
+		el = document.querySelector("[data-pace-" + key + "]");
+		if (!el) {
+			return;
+		}
+		data = el.getAttribute("data-pace-" + key);
+		if (!json) {
+			return data;
+		}
+		try {
+			return JSON.parse(data);
+		} catch (_error) {
+			e = _error;
+			return typeof console !== "undefined" && console !== null ? console.error("Error parsing inline pace options", e) : void 0;
+		}
+	};
+
+	Evented = (function() {
+		function Evented() {}
+
+		Evented.prototype.on = function(event, handler, ctx, once) {
+			var _base;
+			if (once == null) {
+				once = false;
+			}
+			if (this.bindings == null) {
+				this.bindings = {};
+			}
+			if ((_base = this.bindings)[event] == null) {
+				_base[event] = [];
+			}
+			return this.bindings[event].push({
+				handler: handler,
+				ctx: ctx,
+				once: once
+			});
+		};
+
+		Evented.prototype.once = function(event, handler, ctx) {
+			return this.on(event, handler, ctx, true);
+		};
+
+		Evented.prototype.off = function(event, handler) {
+			var i, _ref, _results;
+			if (((_ref = this.bindings) != null ? _ref[event] : void 0) == null) {
+				return;
+			}
+			if (handler == null) {
+				return delete this.bindings[event];
+			} else {
+				i = 0;
+				_results = [];
+				while (i < this.bindings[event].length) {
+					if (this.bindings[event][i].handler === handler) {
+						_results.push(this.bindings[event].splice(i, 1));
+					} else {
+						_results.push(i++);
+					}
+				}
+				return _results;
+			}
+		};
+
+		Evented.prototype.trigger = function() {
+			var args, ctx, event, handler, i, once, _ref, _ref1, _results;
+			event = arguments[0], args = 2 <= arguments.length ? __slice.call(arguments, 1) : [];
+			if ((_ref = this.bindings) != null ? _ref[event] : void 0) {
+				i = 0;
+				_results = [];
+				while (i < this.bindings[event].length) {
+					_ref1 = this.bindings[event][i], handler = _ref1.handler, ctx = _ref1.ctx, once = _ref1.once;
+					handler.apply(ctx != null ? ctx : this, args);
+					if (once) {
+						_results.push(this.bindings[event].splice(i, 1));
+					} else {
+						_results.push(i++);
+					}
+				}
+				return _results;
+			}
+		};
+
+		return Evented;
+
+	})();
+
+	Pace = window.Pace || {};
+
+	window.Pace = Pace;
+
+	extend(Pace, Evented.prototype);
+
+	options = Pace.options = extend({}, defaultOptions, window.paceOptions, getFromDOM());
+
+	_ref = ['ajax', 'document', 'eventLag', 'elements'];
+	for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+		source = _ref[_i];
+		if (options[source] === true) {
+			options[source] = defaultOptions[source];
+		}
+	}
+
+	NoTargetError = (function(_super) {
+		__extends(NoTargetError, _super);
+
+		function NoTargetError() {
+			_ref1 = NoTargetError.__super__.constructor.apply(this, arguments);
+			return _ref1;
+		}
+
+		return NoTargetError;
+
+	})(Error);
+
+	Bar = (function() {
+		function Bar() {
+			this.progress = 0;
+		}
+
+		Bar.prototype.getElement = function() {
+			var targetElement;
+			if (this.el == null) {
+				targetElement = document.querySelector(options.target);
+				if (!targetElement) {
+					throw new NoTargetError;
+				}
+				this.el = document.createElement('div');
+				this.el.className = "pace pace-active";
+				document.body.className = document.body.className.replace(/(pace-done )|/, 'pace-running ');
+				var _custom_class_name = (options.className !== '') ? ' '+options.className : '';
+				this.el.innerHTML = '<div class="pace-progress'+_custom_class_name+'">\n  <div class="pace-progress-inner"></div>\n</div>\n<div class="pace-activity"></div>';
+				if (targetElement.firstChild != null) {
+					targetElement.insertBefore(this.el, targetElement.firstChild);
+				} else {
+					targetElement.appendChild(this.el);
+				}
+			}
+			return this.el;
+		};
+
+		Bar.prototype.finish = function() {
+			var el;
+			el = this.getElement();
+			el.className = el.className.replace('pace-active', 'pace-inactive');
+			return document.body.className = document.body.className.replace('pace-running ', 'pace-done ');
+		};
+
+		Bar.prototype.update = function(prog) {
+			this.progress = prog;
+			Pace.trigger('progress', prog);
+			return this.render();
+		};
+
+		Bar.prototype.destroy = function() {
+			try {
+				this.getElement().parentNode.removeChild(this.getElement());
+			} catch (_error) {
+				NoTargetError = _error;
+			}
+			return this.el = void 0;
+		};
+
+		Bar.prototype.render = function() {
+			var el, key, progressStr, transform, _j, _len1, _ref2;
+			if (document.querySelector(options.target) == null) {
+				return false;
+			}
+			el = this.getElement();
+			transform = "translate3d(" + this.progress + "%, 0, 0)";
+			_ref2 = ['webkitTransform', 'msTransform', 'transform'];
+			for (_j = 0, _len1 = _ref2.length; _j < _len1; _j++) {
+				key = _ref2[_j];
+				el.children[0].style[key] = transform;
+			}
+			if (!this.lastRenderedProgress || this.lastRenderedProgress | 0 !== this.progress | 0) {
+				el.children[0].setAttribute('data-progress-text', "" + (this.progress | 0) + "%");
+				if (this.progress >= 100) {
+					progressStr = '99';
+				} else {
+					progressStr = this.progress < 10 ? "0" : "";
+					progressStr += this.progress | 0;
+				}
+				el.children[0].setAttribute('data-progress', "" + progressStr);
+			}
+			Pace.trigger('change', this.progress);
+			return this.lastRenderedProgress = this.progress;
+		};
+
+		Bar.prototype.done = function() {
+			return this.progress >= 100;
+		};
+
+		return Bar;
+
+	})();
+
+	Events = (function() {
+		function Events() {
+			this.bindings = {};
+		}
+
+		Events.prototype.trigger = function(name, val) {
+			var binding, _j, _len1, _ref2, _results;
+			if (this.bindings[name] != null) {
+				_ref2 = this.bindings[name];
+				_results = [];
+				for (_j = 0, _len1 = _ref2.length; _j < _len1; _j++) {
+					binding = _ref2[_j];
+					_results.push(binding.call(this, val));
+				}
+				return _results;
+			}
+		};
+
+		Events.prototype.on = function(name, fn) {
+			var _base;
+			if ((_base = this.bindings)[name] == null) {
+				_base[name] = [];
+			}
+			return this.bindings[name].push(fn);
+		};
+
+		return Events;
+
+	})();
+
+	_XMLHttpRequest = window.XMLHttpRequest;
+
+	_XDomainRequest = window.XDomainRequest;
+
+	_WebSocket = window.WebSocket;
+
+	extendNative = function(to, from) {
+		var e, key, _results;
+		_results = [];
+		for (key in from.prototype) {
+			try {
+				if ((to[key] == null) && typeof from[key] !== 'function') {
+					if (typeof Object.defineProperty === 'function') {
+						_results.push(Object.defineProperty(to, key, {
+							get: (function(key) {
+								return function() {
+									return from.prototype[key];
+								};
+							})(key),
+							configurable: true,
+							enumerable: true
+						}));
+					} else {
+						_results.push(to[key] = from.prototype[key]);
+					}
+				} else {
+					_results.push(void 0);
+				}
+			} catch (_error) {
+				e = _error;
+			}
+		}
+		return _results;
+	};
+
+	ignoreStack = [];
+
+	Pace.ignore = function() {
+		var args, fn, ret;
+		fn = arguments[0], args = 2 <= arguments.length ? __slice.call(arguments, 1) : [];
+		ignoreStack.unshift('ignore');
+		ret = fn.apply(null, args);
+		ignoreStack.shift();
+		return ret;
+	};
+
+	Pace.track = function() {
+		var args, fn, ret;
+		fn = arguments[0], args = 2 <= arguments.length ? __slice.call(arguments, 1) : [];
+		ignoreStack.unshift('track');
+		ret = fn.apply(null, args);
+		ignoreStack.shift();
+		return ret;
+	};
+
+	shouldTrack = function(method) {
+		var _ref2;
+		if (method == null) {
+			method = 'GET';
+		}
+		if (ignoreStack[0] === 'track') {
+			return 'force';
+		}
+		if (!ignoreStack.length && options.ajax) {
+			if (method === 'socket' && options.ajax.trackWebSockets) {
+				return true;
+			} else if (_ref2 = method.toUpperCase(), __indexOf.call(options.ajax.trackMethods, _ref2) >= 0) {
+				return true;
+			}
+		}
+		return false;
+	};
+
+	RequestIntercept = (function(_super) {
+		__extends(RequestIntercept, _super);
+
+		function RequestIntercept() {
+			var monitorXHR,
+				_this = this;
+			RequestIntercept.__super__.constructor.apply(this, arguments);
+			monitorXHR = function(req) {
+				var _open;
+				_open = req.open;
+				return req.open = function(type, url, async) {
+					if (shouldTrack(type)) {
+						_this.trigger('request', {
+							type: type,
+							url: url,
+							request: req
+						});
+					}
+					return _open.apply(req, arguments);
+				};
+			};
+			window.XMLHttpRequest = function(flags) {
+				var req;
+				req = new _XMLHttpRequest(flags);
+				monitorXHR(req);
+				return req;
+			};
+			try {
+				extendNative(window.XMLHttpRequest, _XMLHttpRequest);
+			} catch (_error) {}
+			if (_XDomainRequest != null) {
+				window.XDomainRequest = function() {
+					var req;
+					req = new _XDomainRequest;
+					monitorXHR(req);
+					return req;
+				};
+				try {
+					extendNative(window.XDomainRequest, _XDomainRequest);
+				} catch (_error) {}
+			}
+			if ((_WebSocket != null) && options.ajax.trackWebSockets) {
+				window.WebSocket = function(url, protocols) {
+					var req;
+					if (protocols != null) {
+						req = new _WebSocket(url, protocols);
+					} else {
+						req = new _WebSocket(url);
+					}
+					if (shouldTrack('socket')) {
+						_this.trigger('request', {
+							type: 'socket',
+							url: url,
+							protocols: protocols,
+							request: req
+						});
+					}
+					return req;
+				};
+				try {
+					extendNative(window.WebSocket, _WebSocket);
+				} catch (_error) {}
+			}
+		}
+
+		return RequestIntercept;
+
+	})(Events);
+
+	_intercept = null;
+
+	getIntercept = function() {
+		if (_intercept == null) {
+			_intercept = new RequestIntercept;
+		}
+		return _intercept;
+	};
+
+	shouldIgnoreURL = function(url) {
+		var pattern, _j, _len1, _ref2;
+		_ref2 = options.ajax.ignoreURLs;
+		for (_j = 0, _len1 = _ref2.length; _j < _len1; _j++) {
+			pattern = _ref2[_j];
+			if (typeof pattern === 'string') {
+				if (url.indexOf(pattern) !== -1) {
+					return true;
+				}
+			} else {
+				if (pattern.test(url)) {
+					return true;
+				}
+			}
+		}
+		return false;
+	};
+
+	getIntercept().on('request', function(_arg) {
+		var after, args, request, type, url;
+		type = _arg.type, request = _arg.request, url = _arg.url;
+		if (shouldIgnoreURL(url)) {
+			return;
+		}
+		if (!Pace.running && (options.restartOnRequestAfter !== false || shouldTrack(type) === 'force')) {
+			args = arguments;
+			after = options.restartOnRequestAfter || 0;
+			if (typeof after === 'boolean') {
+				after = 0;
+			}
+			return setTimeout(function() {
+				var stillActive, _j, _len1, _ref2, _ref3, _results;
+				if (type === 'socket') {
+					stillActive = request.readyState < 1;
+				} else {
+					stillActive = (0 < (_ref2 = request.readyState) && _ref2 < 4);
+				}
+				if (stillActive) {
+					Pace.restart();
+					_ref3 = Pace.sources;
+					_results = [];
+					for (_j = 0, _len1 = _ref3.length; _j < _len1; _j++) {
+						source = _ref3[_j];
+						if (source instanceof AjaxMonitor) {
+							source.watch.apply(source, args);
+							break;
+						} else {
+							_results.push(void 0);
+						}
+					}
+					return _results;
+				}
+			}, after);
+		}
+	});
+
+	AjaxMonitor = (function() {
+		function AjaxMonitor() {
+			this.complete = __bind(this.complete, this);
+			var _this = this;
+			this.elements = [];
+			getIntercept().on('request', function() {
+				return _this.watch.apply(_this, arguments);
+			});
+		}
+
+		AjaxMonitor.prototype.watch = function(_arg) {
+			var request, tracker, type, url;
+			type = _arg.type, request = _arg.request, url = _arg.url;
+			if (shouldIgnoreURL(url)) {
+				return;
+			}
+			if (type === 'socket') {
+				tracker = new SocketRequestTracker(request, this.complete);
+			} else {
+				tracker = new XHRRequestTracker(request, this.complete);
+			}
+			return this.elements.push(tracker);
+		};
+
+		AjaxMonitor.prototype.complete = function(tracker) {
+			return this.elements = this.elements.filter(function(e) {
+				return e !== tracker;
+			});
+		};
+
+		return AjaxMonitor;
+
+	})();
+
+	XHRRequestTracker = (function() {
+		function XHRRequestTracker(request, completeCallback) {
+			var event, size, _j, _len1, _onreadystatechange, _ref2,
+				_this = this;
+			this.progress = 0;
+			if (window.ProgressEvent != null) {
+				size = null;
+				addEventListener(request, 'progress', function(evt) {
+					if (evt.lengthComputable) {
+						return _this.progress = 100 * evt.loaded / evt.total;
+					} else {
+						return _this.progress = _this.progress + (100 - _this.progress) / 2;
+					}
+				}, false);
+				_ref2 = ['load', 'abort', 'timeout', 'error'];
+				for (_j = 0, _len1 = _ref2.length; _j < _len1; _j++) {
+					event = _ref2[_j];
+					addEventListener(request, event, function() {
+						completeCallback(_this);
+						return _this.progress = 100;
+					}, false);
+				}
+			} else {
+				_onreadystatechange = request.onreadystatechange;
+				request.onreadystatechange = function() {
+					var _ref3;
+					if ((_ref3 = request.readyState) === 0 || _ref3 === 4) {
+						completeCallback(_this);
+						_this.progress = 100;
+					} else if (request.readyState === 3) {
+						_this.progress = 50;
+					}
+					return typeof _onreadystatechange === "function" ? _onreadystatechange.apply(null, arguments) : void 0;
+				};
+			}
+		}
+
+		return XHRRequestTracker;
+
+	})();
+
+	SocketRequestTracker = (function() {
+		function SocketRequestTracker(request, completeCallback) {
+			var event, _j, _len1, _ref2,
+				_this = this;
+			this.progress = 0;
+			_ref2 = ['error', 'open'];
+			for (_j = 0, _len1 = _ref2.length; _j < _len1; _j++) {
+				event = _ref2[_j];
+				addEventListener(request, event, function() {
+					completeCallback(_this);
+					return _this.progress = 100;
+				}, false);
+			}
+		}
+
+		return SocketRequestTracker;
+
+	})();
+
+	ElementMonitor = (function() {
+		function ElementMonitor(options) {
+			var selector, _j, _len1, _ref2;
+			if (options == null) {
+				options = {};
+			}
+			this.complete = __bind(this.complete, this);
+			this.elements = [];
+			if (options.selectors == null) {
+				options.selectors = [];
+			}
+			_ref2 = options.selectors;
+			for (_j = 0, _len1 = _ref2.length; _j < _len1; _j++) {
+				selector = _ref2[_j];
+				this.elements.push(new ElementTracker(selector, this.complete));
+			}
+		}
+
+		ElementMonitor.prototype.complete = function(tracker) {
+			return this.elements = this.elements.filter(function(e) {
+				return e !== tracker;
+			});
+		};
+
+		return ElementMonitor;
+
+	})();
+
+	ElementTracker = (function() {
+		function ElementTracker(selector, completeCallback) {
+			this.selector = selector;
+			this.completeCallback = completeCallback;
+			this.progress = 0;
+			this.check();
+		}
+
+		ElementTracker.prototype.check = function() {
+			var _this = this;
+			if (document.querySelector(this.selector)) {
+				return this.done();
+			} else {
+				return setTimeout((function() {
+					return _this.check();
+				}), options.elements.checkInterval);
+			}
+		};
+
+		ElementTracker.prototype.done = function() {
+			this.completeCallback(this);
+			this.completeCallback = null;
+			return this.progress = 100;
+		};
+
+		return ElementTracker;
+
+	})();
+
+	DocumentMonitor = (function() {
+		DocumentMonitor.prototype.states = {
+			loading: 0,
+			interactive: 50,
+			complete: 100
+		};
+
+		function DocumentMonitor() {
+			var _onreadystatechange, _ref2,
+				_this = this;
+			this.progress = (_ref2 = this.states[document.readyState]) != null ? _ref2 : 100;
+			_onreadystatechange = document.onreadystatechange;
+			document.onreadystatechange = function() {
+				if (_this.states[document.readyState] != null) {
+					_this.progress = _this.states[document.readyState];
+				}
+				return typeof _onreadystatechange === "function" ? _onreadystatechange.apply(null, arguments) : void 0;
+			};
+		}
+
+		return DocumentMonitor;
+
+	})();
+
+	EventLagMonitor = (function() {
+		function EventLagMonitor() {
+			var avg, interval, last, points, samples,
+				_this = this;
+			this.progress = 0;
+			avg = 0;
+			samples = [];
+			points = 0;
+			last = now();
+			interval = setInterval(function() {
+				var diff;
+				diff = now() - last - 50;
+				last = now();
+				samples.push(diff);
+				if (samples.length > options.eventLag.sampleCount) {
+					samples.shift();
+				}
+				avg = avgAmplitude(samples);
+				if (++points >= options.eventLag.minSamples && avg < options.eventLag.lagThreshold) {
+					_this.progress = 100;
+					return clearInterval(interval);
+				} else {
+					return _this.progress = 100 * (3 / (avg + 3));
+				}
+			}, 50);
+		}
+
+		return EventLagMonitor;
+
+	})();
+
+	Scaler = (function() {
+		function Scaler(source) {
+			this.source = source;
+			this.last = this.sinceLastUpdate = 0;
+			this.rate = options.initialRate;
+			this.catchup = 0;
+			this.progress = this.lastProgress = 0;
+			if (this.source != null) {
+				this.progress = result(this.source, 'progress');
+			}
+		}
+
+		Scaler.prototype.tick = function(frameTime, val) {
+			var scaling;
+			if (val == null) {
+				val = result(this.source, 'progress');
+			}
+			if (val >= 100) {
+				this.done = true;
+			}
+			if (val === this.last) {
+				this.sinceLastUpdate += frameTime;
+			} else {
+				if (this.sinceLastUpdate) {
+					this.rate = (val - this.last) / this.sinceLastUpdate;
+				}
+				this.catchup = (val - this.progress) / options.catchupTime;
+				this.sinceLastUpdate = 0;
+				this.last = val;
+			}
+			if (val > this.progress) {
+				this.progress += this.catchup * frameTime;
+			}
+			scaling = 1 - Math.pow(this.progress / 100, options.easeFactor);
+			this.progress += scaling * this.rate * frameTime;
+			this.progress = Math.min(this.lastProgress + options.maxProgressPerFrame, this.progress);
+			this.progress = Math.max(0, this.progress);
+			this.progress = Math.min(100, this.progress);
+			this.lastProgress = this.progress;
+			return this.progress;
+		};
+
+		return Scaler;
+
+	})();
+
+	sources = null;
+
+	scalers = null;
+
+	bar = null;
+
+	uniScaler = null;
+
+	animation = null;
+
+	cancelAnimation = null;
+
+	Pace.running = false;
+
+	handlePushState = function() {
+		if (options.restartOnPushState) {
+			return Pace.restart();
+		}
+	};
+
+	if (window.history.pushState != null) {
+		_pushState = window.history.pushState;
+		window.history.pushState = function() {
+			handlePushState();
+			return _pushState.apply(window.history, arguments);
+		};
+	}
+
+	if (window.history.replaceState != null) {
+		_replaceState = window.history.replaceState;
+		window.history.replaceState = function() {
+			handlePushState();
+			return _replaceState.apply(window.history, arguments);
+		};
+	}
+
+	SOURCE_KEYS = {
+		ajax: AjaxMonitor,
+		elements: ElementMonitor,
+		document: DocumentMonitor,
+		eventLag: EventLagMonitor
+	};
+
+	(init = function() {
+		var type, _j, _k, _len1, _len2, _ref2, _ref3, _ref4;
+		Pace.sources = sources = [];
+		_ref2 = ['ajax', 'elements', 'document', 'eventLag'];
+		for (_j = 0, _len1 = _ref2.length; _j < _len1; _j++) {
+			type = _ref2[_j];
+			if (options[type] !== false) {
+				sources.push(new SOURCE_KEYS[type](options[type]));
+			}
+		}
+		_ref4 = (_ref3 = options.extraSources) != null ? _ref3 : [];
+		for (_k = 0, _len2 = _ref4.length; _k < _len2; _k++) {
+			source = _ref4[_k];
+			sources.push(new source(options));
+		}
+		Pace.bar = bar = new Bar;
+		scalers = [];
+		return uniScaler = new Scaler;
+	})();
+
+	Pace.stop = function() {
+		Pace.trigger('stop');
+		Pace.running = false;
+		bar.destroy();
+		cancelAnimation = true;
+		if (animation != null) {
+			if (typeof cancelAnimationFrame === "function") {
+				cancelAnimationFrame(animation);
+			}
+			animation = null;
+		}
+		return init();
+	};
+
+	Pace.restart = function() {
+		Pace.trigger('restart');
+		Pace.stop();
+		return Pace.start();
+	};
+
+	Pace.go = function() {
+		var start;
+		Pace.running = true;
+		bar.render();
+		start = now();
+		cancelAnimation = false;
+		return animation = runAnimation(function(frameTime, enqueueNextFrame) {
+			var avg, count, done, element, elements, i, j, remaining, scaler, scalerList, sum, _j, _k, _len1, _len2, _ref2;
+			remaining = 100 - bar.progress;
+			count = sum = 0;
+			done = true;
+			for (i = _j = 0, _len1 = sources.length; _j < _len1; i = ++_j) {
+				source = sources[i];
+				scalerList = scalers[i] != null ? scalers[i] : scalers[i] = [];
+				elements = (_ref2 = source.elements) != null ? _ref2 : [source];
+				for (j = _k = 0, _len2 = elements.length; _k < _len2; j = ++_k) {
+					element = elements[j];
+					scaler = scalerList[j] != null ? scalerList[j] : scalerList[j] = new Scaler(element);
+					done &= scaler.done;
+					if (scaler.done) {
+						continue;
+					}
+					count++;
+					sum += scaler.tick(frameTime);
+				}
+			}
+			avg = sum / count;
+			bar.update(uniScaler.tick(frameTime, avg));
+			if (bar.done() || done || cancelAnimation) {
+				bar.update(100);
+				Pace.trigger('done');
+				return setTimeout(function() {
+					bar.finish();
+					Pace.running = false;
+					return Pace.trigger('hide');
+				}, Math.max(options.ghostTime, Math.max(options.minTime - (now() - start), 0)));
+			} else {
+				return enqueueNextFrame();
+			}
+		});
+	};
+
+	Pace.start = function(_options) {
+		extend(options, _options);
+		Pace.running = true;
+		try {
+			bar.render();
+		} catch (_error) {
+			NoTargetError = _error;
+		}
+		if (!document.querySelector('.pace')) {
+			return setTimeout(Pace.start, 50);
+		} else {
+			Pace.trigger('start');
+			return Pace.go();
+		}
+	};
+
+	if (true) {
+		!(__WEBPACK_AMD_DEFINE_RESULT__ = (function() {
+			return Pace;
+		}).call(exports, __webpack_require__, exports, module),
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	} else {}
+
+}).call(this);
 
 /***/ }),
 

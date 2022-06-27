@@ -29,22 +29,15 @@
   />
   <link rel="stylesheet" href="css/vendor.css" />
   <link rel="stylesheet" href="css/main.css" />
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script
+    defer
+    src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"
+  ></script>
   <script defer src="js/main.js"></script>
 </head>
 
   <body class="page__body">
-    <div class="preloader" id="preloader">
-  <div class="preloader__loader">
-    <div class="loadingio-spinner-eclipse-zkb2yqi6scr">
-      <div class="ldio-6u3plm6m91y">
-        <div></div>
-      </div>
-    </div>
-
-    <span class="preloader__percents"> <span class="percents">0</span>% </span>
-  </div>
-</div>
 
      <button class="btn-reset scroll-btn">
    <svg class="icon-scroll">
@@ -226,6 +219,34 @@
       >
     </div>
   </div>
+
+  <div
+    class="graph-modal__container graph-modal__roof"
+    role="dialog"
+    aria-modal="true"
+    data-graph-target="modal-roof"
+  >
+    <button
+      class="btn-reset graph-modal__close"
+      aria-label="Закрыть модальное окно"
+    >
+      <svg class="modal-close">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="graph-modal__content graph-modal__portfolio">
+      <p class="graph-modal__descr" lng-modalTextRoof>
+        Продажа кровельных материалов в Тюмени и Тюменской области.
+      </p>
+      <a
+        href="https://vitalyreutsky.github.io/roofing-academy/"
+        class="graph-modal__link"
+        target="_blank"
+        lng-modalLinkRoof
+        >Перейти</a
+      >
+    </div>
+  </div>
 </div>
 
     <div class="site-container">
@@ -387,9 +408,9 @@
       Привет! Я занимаюсь разработкой сайтов любой сложности и веб-приложений.
       Также специализируюсь на веб-дизайне. Создаю не только красивый и
       уникальный продукт, но и продающий. Опыт более 2-х лет. За это время помог
-      реализовать идеи своих клиентов из Украины, Молдовы, Казахстана, Беларуси
+      реализовать идеи своих клиентов из Украины, Молдовы, Эстонии, Казахстана, Беларуси
       и России. В своей работе (frontend) использую такие технологии как HTML5,
-      SCSS3, Bootstrap, JavaScript, JQuery, различные библиотеки Slick, Swiper,
+      SCSS3, Bootstrap, JavaScript, различные библиотеки Slick, Swiper,
       AOS и многое другое. Автоматизирую свой процесс разработки с помощью Gulp,
       Webpack. Также есть опыт с React JS. Есть опыт с backend частью — PHP. И
       это далеко не все на чем я готов остановиться. Для улучшения своих
@@ -536,7 +557,7 @@
               подсказывал. Благодаря профессиональному подходу удалось создать
               современный лэндинг как с точки зрения дизайна, так и маркетинга.
               Отличные решения и прекрасная работа! А сроки — это, на мой
-              взгляд, бонус от Виталия — 5 дней от начала техзадания до
+              взгляд, бонус от Виталия — 3 дня от начала техзадания до
               завершения! В планах, при содействии Виталия, запустить еще 2
               проекта на основе лэндинга.»
             </p>
@@ -630,6 +651,12 @@
     <div class="tabs" data-tabs="portfolio">
       <ul class="tabs__nav">
         <li class="tabs__nav-item">
+          <button class="tabs__nav-btn btn-reset" type="button">
+            Landing-page
+          </button>
+        </li>
+
+        <li class="tabs__nav-item">
           <button class="tabs__nav-btn btn-reset" type="button" lng-portfolioMP>
             Многостраничные сайты
           </button>
@@ -639,61 +666,8 @@
             Интернет-магазины
           </button>
         </li>
-        <li class="tabs__nav-item">
-          <button class="tabs__nav-btn btn-reset" type="button">
-            Landing-page
-          </button>
-        </li>
       </ul>
       <div class="tabs__content">
-        <div class="tabs__panel">
-          <div class="tabs__panel-inner">
-            <div class="portfolio__item">
-              <picture>
-                <source srcset="img/ws.avif" type="image/avif" />
-                <source srcset="img/ws.webp" type="image/webp" />
-                <img
-                  loading="lazy"
-                  src="img/ws.jpg"
-                  class="image"
-                  alt="White-story"
-                />
-              </picture>
-              <a
-                class="portfolio__item-title"
-                lng-portfolioMoreWS
-                target="blank"
-                data-graph-path="modal-whitestory"
-                data-graph-animation="fadeInUp"
-                >Подробнее</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="tabs__panel">
-          <div class="tabs__panel-inner">
-            <div class="portfolio__item">
-              <picture>
-                <source srcset="img/sneaker-shop.avif" type="image/avif" />
-                <source srcset="img/sneaker-shop.webp" type="image/webp" />
-                <img
-                  loading="lazy"
-                  src="img/sneaker-shop.jpg"
-                  class="image"
-                  alt="Sneaker-shop"
-                />
-              </picture>
-              <a
-                class="portfolio__item-title"
-                lng-portfolioMoreSS
-                target="blank"
-                data-graph-path="modal-sneaker-shop"
-                data-graph-animation="fadeInUp"
-                >Подробнее</a
-              >
-            </div>
-          </div>
-        </div>
         <div class="tabs__panel">
           <div class="tabs__panel-inner">
             <div class="portfolio__item">
@@ -740,6 +714,27 @@
 
             <div class="portfolio__item">
               <picture>
+                <source srcset="img/roof.avif" type="image/avif" />
+                <source srcset="img/roof.webp" type="image/webp" />
+                <img
+                  loading="lazy"
+                  src="img/roof.jpg"
+                  class="image"
+                  alt="Roof"
+                />
+              </picture>
+              <a
+                class="portfolio__item-title"
+                lng-portfolioMoreRoof
+                target="blank"
+                data-graph-path="modal-roof"
+                data-graph-animation="fadeInUp"
+                >Подробнее</a
+              >
+            </div>
+
+            <div class="portfolio__item">
+              <picture>
                 <source srcset="img/space-tourism.avif" type="image/avif" />
                 <source srcset="img/space-tourism.webp" type="image/webp" />
                 <img
@@ -754,6 +749,55 @@
                 lng-portfolioMoreST
                 target="blank"
                 data-graph-path="modal-spacetourism"
+                data-graph-animation="fadeInUp"
+                >Подробнее</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="tabs__panel">
+          <div class="tabs__panel-inner">
+            <div class="portfolio__item">
+              <picture>
+                <source srcset="img/ws.avif" type="image/avif" />
+                <source srcset="img/ws.webp" type="image/webp" />
+                <img
+                  loading="lazy"
+                  src="img/ws.jpg"
+                  class="image"
+                  alt="White-story"
+                />
+              </picture>
+              <a
+                class="portfolio__item-title"
+                lng-portfolioMoreWS
+                target="blank"
+                data-graph-path="modal-whitestory"
+                data-graph-animation="fadeInUp"
+                >Подробнее</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="tabs__panel">
+          <div class="tabs__panel-inner">
+            <div class="portfolio__item">
+              <picture>
+                <source srcset="img/sneaker-shop.avif" type="image/avif" />
+                <source srcset="img/sneaker-shop.webp" type="image/webp" />
+                <img
+                  loading="lazy"
+                  src="img/sneaker-shop.jpg"
+                  class="image"
+                  alt="Sneaker-shop"
+                />
+              </picture>
+              <a
+                class="portfolio__item-title"
+                lng-portfolioMoreSS
+                target="blank"
+                data-graph-path="modal-sneaker-shop"
                 data-graph-animation="fadeInUp"
                 >Подробнее</a
               >
