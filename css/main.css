@@ -79,9 +79,13 @@ h6 {
   background-color: #1e1c1c;
   color: #fff;
   font-size: 16px;
-  position: relative;
 }
-.page__body::after {
+
+.site-container {
+  position: relative;
+  opacity: 0;
+}
+.site-container::after {
   content: "";
   position: fixed;
   background-image: url("../img/bg.png");
@@ -100,11 +104,11 @@ h6 {
 }
 
 @media (max-width: 576px) {
-  .page__body::after {
-    background-image: url("../img/bg.jpg");
+  .site-container::after {
+    background-image: url("/img/bg.jpg");
     /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
-    background-image: -webkit-image-set("../img/bg.avif" type("image/avif"), "../img/bg.webp" type("image/webp"), "../img/bg.jpg" type("image/jpg"));
-    background-image: image-set("../img/bg.avif" type("image/avif"), "../img/bg.webp" type("image/webp"), "../img/bg.jpg" type("image/jpg"));
+    background-image: -webkit-image-set("/img/bg.avif" type("image/avif"), "/img/bg.webp" type("image/webp"), "/img/bg.jpg" type("image/jpg"));
+    background-image: image-set("/img/bg.avif" type("image/avif"), "/img/bg.webp" type("image/webp"), "/img/bg.jpg" type("image/jpg"));
     background-size: cover;
     background-position: center bottom;
     left: 0;
@@ -208,7 +212,6 @@ a {
 }
 
 .pace {
-  width: 250px;
   border-radius: 0;
 }
 
@@ -217,7 +220,7 @@ a {
   background: #bdb76b;
   top: 0;
   font-family: "Mont", sans-serif;
-  height: 5px;
+  height: 2px;
   width: 97%;
   border-radius: 0px;
   -webkit-box-shadow: 120px 0 #000, 240px 0 #000;
@@ -256,60 +259,6 @@ a {
 .graph-modal__portfolio {
   text-align: left;
   font-size: 18px;
-}
-
-.graph-modal__ws {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9))), url("../img/ws.jpg");
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.9)), url("../img/ws.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.9)), url("../img/ws.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.graph-modal__sh {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9))), url("../img/sneaker-shop.jpg");
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.9)), url("../img/sneaker-shop.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.9)), url("../img/sneaker-shop.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.graph-modal__ch {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9))), url("../img/chisinau.jpg");
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.9)), url("../img/chisinau.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.9)), url("../img/chisinau.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.graph-modal__st {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9))), url("../img/space-tourism.jpg");
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.9)), url("../img/space-tourism.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.9)), url("../img/space-tourism.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.graph-modal__sinotec {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9))), url("../img/sinotec.jpg");
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.9)), url("../img/sinotec.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.9)), url("../img/sinotec.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.graph-modal__roof {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9))), url("../img/roof.jpg");
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.9)), url("../img/roof.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.9)), url("../img/roof.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .graph-modal__close {
@@ -985,8 +934,8 @@ a {
   margin-bottom: 100px;
 }
 .about__image {
-  height: 350px;
-  width: 550px;
+  height: 300px;
+  width: 500px;
 }
 .about__image img {
   width: 100%;
@@ -1253,7 +1202,6 @@ a {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  border: 2px solid #bdb76b;
 }
 .portfolio__item-title {
   color: #bdb76b;
