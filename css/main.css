@@ -83,7 +83,6 @@ h6 {
 
 .site-container {
   position: relative;
-  opacity: 0;
 }
 .site-container::after {
   content: "";
