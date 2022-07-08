@@ -210,34 +210,35 @@ a {
   position: relative;
 }
 
-.pace {
-  border-radius: 0;
-}
-
-.pace .pace-progress {
-  color: #bdb76b;
-  background: #bdb76b;
+.preloader {
+  position: absolute;
   top: 0;
-  font-family: "Mont", sans-serif;
-  height: 2px;
-  width: 97%;
-  border-radius: 0px;
-  -webkit-box-shadow: 120px 0 #000, 240px 0 #000;
-  box-shadow: 120px 0 #000, 240px 0 #000;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 100%;
+  background: #1e1c1c;
+  z-index: 1000;
 }
-
-.pace.pace-progress-inner {
-  background-color: #bdb76b;
+.preloader__loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-
-.pace .pace-activity {
-  width: none;
-  height: 0;
-  border-radius: 0px;
-}
-
-.pace .pace-progress:after {
-  top: -5px;
+.preloader__percents {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: var(--light-color);
+  font-size: 50px;
+  font-weight: bold;
 }
 
 .graph-modal__container {

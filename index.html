@@ -29,24 +29,24 @@
   />
   <link rel="stylesheet" href="css/vendor.css" />
   <link rel="stylesheet" href="css/main.css" />
-  <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <!--<script
-    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
-    integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+    integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
-  ></script>-->
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script defer src="js/main.js"></script>
 </head>
 
   <body class="page__body">
-
- <button class="btn-reset scroll-btn">
+    <button class="btn-reset scroll-btn">
   <svg class="icon-scroll">
     <use xlink:href="img/sprite.svg#scrollTop"></use>
   </svg>
 </button>
-
-    <div class="graph-modal">
+ <div class="graph-modal">
   <div
     class="graph-modal__container"
     role="dialog"
@@ -636,12 +636,7 @@
 </section>
 
           <section class="portfolio bg-content portfolio-scroll">
-  <div
-    class="portfolio__content"
-    data-aos="fade-up"
-    data-aos-duration="1000"
-    data-aos-once="true"
-  >
+  <div class="portfolio__content">
     <div class="title">
       <div class="title">
         <h2 class="main-title" lng-portfolioTitle>Портфолио</h2>
@@ -682,6 +677,7 @@
                   alt="Sinotec audit"
                 />
               </picture>
+
               <a
                 class="portfolio__item-title"
                 lng-portfolioMoreSinotec
@@ -959,8 +955,5 @@
 </footer>
 
     </div>
-
-    <script src="js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.3/pace.min.js"></script>
   </body>
 </html>
