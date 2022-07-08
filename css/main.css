@@ -82,6 +82,7 @@ h6 {
 }
 
 .site-container {
+  opacity: 0;
   position: relative;
 }
 .site-container::after {
@@ -210,35 +211,63 @@ a {
   position: relative;
 }
 
-.preloader {
+#preloader {
+  width: 100%;
+  height: 100%;
+  background: #1e1c1c;
   position: absolute;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.loading__text {
+  letter-spacing: 30px;
+  color: #fff;
+  font-weight: 700;
+  position: relative;
+  top: -50px;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+}
+
+.pace {
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  margin: auto;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  width: 400px;
+  border: 0;
+  height: 1px;
+  overflow: hidden;
+  background: #1b1b1b;
+}
+
+.pace .pace-progress {
+  max-width: 400px;
+  position: absolute;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  height: 100%;
   width: 100%;
-  min-height: 100%;
-  background: #1e1c1c;
-  z-index: 1000;
-}
-.preloader__loader {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-.preloader__percents {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  color: var(--light-color);
-  font-size: 50px;
-  font-weight: bold;
+  background: #bdb76b;
 }
 
 .graph-modal__container {
