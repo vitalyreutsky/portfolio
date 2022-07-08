@@ -672,10 +672,15 @@ Pace.on("done", function () {
   gsap.timeline().add("p").to(".pace", {
     transform: "scale(10, 1)",
     duration: 3
-  }, "+=.2").to(".pace", {
-    duration: 1,
-    height: "100%"
-  }, "-=2.5").to(".loading__text", {
+  }, "+=.2") //.to(
+  //  ".pace",
+  //  {
+  //    duration: 1,
+  //    height: "100%",
+  //  },
+  //  "-=2.5"
+  //)
+  .to(".loading__text", {
     delay: 0.2,
     duration: 1,
     opacity: 0,
