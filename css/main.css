@@ -104,10 +104,10 @@ h6 {
 
 @media (max-width: 576px) {
   .site-container::after {
-    background-image: url("/img/bg.jpg");
+    background-image: url("../img/bg.jpg");
     /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
-    background-image: -webkit-image-set("/img/bg.avif" type("image/avif"), "/img/bg.webp" type("image/webp"), "/img/bg.jpg" type("image/jpg"));
-    background-image: image-set("/img/bg.avif" type("image/avif"), "/img/bg.webp" type("image/webp"), "/img/bg.jpg" type("image/jpg"));
+    background-image: -webkit-image-set("../img/bg.avif" type("image/avif"), "../img/bg.webp" type("image/webp"), "../img/bg.jpg" type("image/jpg"));
+    background-image: image-set("../img/bg.avif" type("image/avif"), "../img/bg.webp" type("image/webp"), "../img/bg.jpg" type("image/jpg"));
     background-size: cover;
     background-position: center bottom;
     left: 0;
@@ -214,7 +214,7 @@ a {
   width: 100%;
   height: 100vh;
   background: #1e1c1c;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
@@ -250,6 +250,7 @@ a {
 
 .preloader--show {
   opacity: 0;
+  visibility: hidden;
 }
 
 .graph-modal__container {
