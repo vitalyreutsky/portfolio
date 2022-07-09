@@ -662,38 +662,14 @@ changeLanguage();
   \**************************************/
 /***/ (() => {
 
-paceOptions = {
-  ajax: true,
-  //Checks AJAX requests
-  document: true //Document is ready
-
-};
-Pace.on("done", function () {
-  gsap.timeline().add("p").to(".pace", {
-    transform: "scale(10, 1)",
-    duration: 3
-  }, "+=.2") //.to(
-  //  ".pace",
-  //  {
-  //    duration: 1,
-  //    height: "100%",
-  //  },
-  //  "-=2.5"
-  //)
-  .to(".loading__text", {
-    delay: 0.2,
-    duration: 1,
-    opacity: 0,
-    yPercent: -400,
-    ease: "BezierEasing(0.19,1,0.22,1)"
-  }, "p").to(".site-container", {
-    duration: 1,
-    delay: 0.3,
-    //y: -10,
-    opacity: 1,
-    ease: Expo.easeInOut
-  }, "-=2.5");
-});
+var preloader = document.querySelector(".preloader");
+var preloaderTitle = document.querySelector(".preloader__title");
+setTimeout(function () {
+  preloaderTitle.classList.add("preloader--show");
+}, 1000);
+setTimeout(function () {
+  preloader.classList.add("preloader--show");
+}, 1500);
 
 /***/ }),
 

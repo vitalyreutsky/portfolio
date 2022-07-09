@@ -82,7 +82,6 @@ h6 {
 }
 
 .site-container {
-  opacity: 0;
   position: relative;
 }
 .site-container::after {
@@ -211,11 +210,14 @@ a {
   position: relative;
 }
 
-#preloader {
+.preloader {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: #1e1c1c;
   position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
@@ -224,9 +226,11 @@ a {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
-
-.loading__text {
+.preloader__title {
   letter-spacing: 20px;
   font-size: 15px;
   color: #fff;
@@ -239,10 +243,13 @@ a {
   -ms-user-select: none;
   user-select: none;
   text-align: center;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
-.pace {
-  display: none;
+.preloader--show {
+  opacity: 0;
 }
 
 .graph-modal__container {
