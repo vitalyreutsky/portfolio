@@ -667,11 +667,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(nprogress__WEBPACK_IMPORTED_MODULE_0__);
 
 nprogress__WEBPACK_IMPORTED_MODULE_0___default().configure({
-  easing: "ease",
-  speed: 1500
+  easing: "ease-in-out",
+  speed: 1000
 });
 nprogress__WEBPACK_IMPORTED_MODULE_0___default().configure({
-  template: "\n  <div class=\"preloader\">\n      <div class=\"preloader__content\">\n          <div role=\"bar\" class=\"preloader__title\"></div>\n      </div>\n  </div>\""
+  template: "\n  <div class=\"preloader\">\n      <h2 class=\"preloader__title\">Loading</h2>\n      <div class=\"preloader__content\">\n          <div role=\"bar\" class=\"preloader__progress\"></div>\n      </div>\n  </div>\""
 });
 nprogress__WEBPACK_IMPORTED_MODULE_0___default().start();
 nprogress__WEBPACK_IMPORTED_MODULE_0___default().set(0.5); //Increment
