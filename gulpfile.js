@@ -33,8 +33,8 @@ const srcFolder = "./src";
 const buildFolder = "./app";
 const paths = {
   srcSvg: `${srcFolder}/img/svg/**.svg`,
-  srcImgFolder: `${srcFolder}/img`,
-  buildImgFolder: `${buildFolder}/img`,
+  srcimgFolder: `${srcFolder}/img`,
+  buildimgFolder: `${buildFolder}/img`,
   srcScss: `${srcFolder}/scss/**/*.scss`,
   buildCssFolder: `${buildFolder}/css`,
   srcFullJs: `${srcFolder}/js/**/*.js`,
@@ -82,7 +82,7 @@ const svgSprites = () => {
         },
       })
     )
-    .pipe(dest(paths.buildImgFolder));
+    .pipe(dest(paths.buildimgFolder));
 };
 
 // scss styles
@@ -242,7 +242,7 @@ const resources = () => {
 };
 
 const images = () => {
-  return src([`${paths.srcImgFolder}/**/**.{jpg,jpeg,png,svg}`])
+  return src([`${paths.srcimgFolder}/**/**.{jpg,jpeg,png,svg}`])
     .pipe(
       gulpif(
         isProd,
@@ -257,19 +257,19 @@ const images = () => {
         ])
       )
     )
-    .pipe(dest(paths.buildImgFolder));
+    .pipe(dest(paths.buildimgFolder));
 };
 
 const webpImages = () => {
-  return src([`${paths.srcImgFolder}/**/**.{jpg,jpeg,png}`])
+  return src([`${paths.srcimgFolder}/**/**.{jpg,jpeg,png}`])
     .pipe(webp())
-    .pipe(dest(paths.buildImgFolder));
+    .pipe(dest(paths.buildimgFolder));
 };
 
 const avifImages = () => {
-  return src([`${paths.srcImgFolder}/**/**.{jpg,jpeg,png}`])
+  return src([`${paths.srcimgFolder}/**/**.{jpg,jpeg,png}`])
     .pipe(avif())
-    .pipe(dest(paths.buildImgFolder));
+    .pipe(dest(paths.buildimgFolder));
 };
 
 const htmlInclude = () => {
@@ -301,9 +301,9 @@ const watchFiles = () => {
   watch(`${paths.srcPartialsFolder}/*.html`, htmlInclude);
   watch(`${srcFolder}/*.html`, htmlInclude);
   watch(`${paths.resourcesFolder}/**`, resources);
-  watch(`${paths.srcImgFolder}/**/**.{jpg,jpeg,png,svg}`, images);
-  watch(`${paths.srcImgFolder}/**/**.{jpg,jpeg,png}`, webpImages);
-  watch(`${paths.srcImgFolder}/**/**.{jpg,jpeg,png}`, avifImages);
+  watch(`${paths.srcimgFolder}/**/**.{jpg,jpeg,png,svg}`, images);
+  watch(`${paths.srcimgFolder}/**/**.{jpg,jpeg,png}`, webpImages);
+  watch(`${paths.srcimgFolder}/**/**.{jpg,jpeg,png}`, avifImages);
   watch(paths.srcSvg, svgSprites);
 };
 

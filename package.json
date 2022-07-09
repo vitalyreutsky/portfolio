@@ -65,6 +65,7 @@
     "gsap": "^3.10.0",
     "inputmask": "^5.0.7",
     "just-validate": "^3.3.3",
+    "nprogress": "^0.2.0",
     "pace-js": "^1.2.4",
     "particles": "^0.3.1",
     "particles.js": "^2.0.0",
