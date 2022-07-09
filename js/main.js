@@ -666,8 +666,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! nprogress */ "./node_modules/nprogress/nprogress.js");
 /* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(nprogress__WEBPACK_IMPORTED_MODULE_0__);
 
+nprogress__WEBPACK_IMPORTED_MODULE_0___default().configure({
+  easing: "ease",
+  speed: 2000
+});
+nprogress__WEBPACK_IMPORTED_MODULE_0___default().configure({
+  template: "\n  <div class=\"preloader\" role=\"bar\">\n      <div class=\"preloader__content\">\n          <h2 class=\"preloader__title\">Loading</h2>\n      </div>\n  </div>\""
+});
 nprogress__WEBPACK_IMPORTED_MODULE_0___default().start();
-nprogress__WEBPACK_IMPORTED_MODULE_0___default().set(0.4); //Increment
+nprogress__WEBPACK_IMPORTED_MODULE_0___default().set(0.9); //Increment
 
 var interval = setInterval(function () {
   nprogress__WEBPACK_IMPORTED_MODULE_0___default().inc();
@@ -676,6 +683,8 @@ $(document).ready(function () {
   nprogress__WEBPACK_IMPORTED_MODULE_0___default().done();
   clearInterval(interval);
 });
+var progress = document.getElementById("nprogress");
+console.log(progress);
 
 /***/ }),
 
