@@ -668,23 +668,23 @@ __webpack_require__.r(__webpack_exports__);
 
 nprogress__WEBPACK_IMPORTED_MODULE_0___default().configure({
   easing: "ease",
-  speed: 2000
+  speed: 1500
 });
 nprogress__WEBPACK_IMPORTED_MODULE_0___default().configure({
-  template: "\n  <div class=\"preloader\" role=\"bar\">\n      <div class=\"preloader__content\">\n          <h2 class=\"preloader__title\">Loading</h2>\n      </div>\n  </div>\""
+  template: "\n  <div class=\"preloader\">\n      <div class=\"preloader__content\">\n          <div role=\"bar\" class=\"preloader__title\"></div>\n      </div>\n  </div>\""
 });
 nprogress__WEBPACK_IMPORTED_MODULE_0___default().start();
-nprogress__WEBPACK_IMPORTED_MODULE_0___default().set(0.9); //Increment
+nprogress__WEBPACK_IMPORTED_MODULE_0___default().set(0.5); //Increment
 
 var interval = setInterval(function () {
   nprogress__WEBPACK_IMPORTED_MODULE_0___default().inc();
-}, 1000);
+}, 500);
 $(document).ready(function () {
   nprogress__WEBPACK_IMPORTED_MODULE_0___default().done();
   clearInterval(interval);
 });
 var progress = document.getElementById("nprogress");
-console.log(progress);
+console.log(progress.style);
 
 /***/ }),
 
